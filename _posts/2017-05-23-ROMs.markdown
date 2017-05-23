@@ -25,11 +25,12 @@ Here I met another special guy, <a href="https://github.com/tsvietOK" target="_b
 Of course a laptop wasn't sufficient to build , considering each build took me about 6 hours, and here comes <a href="https://github.com/zagi988" target="_blank">Bruno Negovec</a>, a croat motherfucker with a lot of money to spend in PCs, so much he was so kind to give me the remote access to an Ubuntu VM in his powerful monster.
 
 So now, with a fucking good internet speed (of course Bruno's) and a pretty nice server, it was time for some fresh air. What about Resurrection RemixOS?
-And there it goes, new ROM, new <a href="https://forum.xda-developers.com/galaxy-s4-active/development/7-1-1-rr-5-8-0-t3541969" target="_blank">RR thread</a> and new donators. Yep, donators. Cause some amazing guys even donated me money, like in the case of <a href="https://github.com/olooikea" target="_blank">Viatcheslav Ivanov</a>, who donated me a 1TB Western Digital Blue HDD, or again Joachim Wanke (1,62 USD), Martin Müller (9,31 USD) and Krystian Herman (5,47 USD).
+And there it goes, new ROM, new <a href="https://forum.xda-developers.com/galaxy-s4-active/development/7-1-1-rr-5-8-0-t3541969" target="_blank">RR thread</a> and new donators. Yep, donators. Cause some amazing guys even donated me money, like in the case of <a href="https://github.com/olooikea" target="_blank">Viatcheslav Ivanov</a>, who donated me a 1TB Western Digital Blue HDD, or again Joachim Wanke (1,62 USD), Martin MÃ¼ller (9,31 USD) and Krystian Herman (5,47 USD).
 
 Thanks to all these superguys you can now enjoy our builds, located at <a href="https://www.androidfilehost.com/?w=files&flid=141424my" target="_blank">my AFH</a>, or at <a href="https://drive.google.com/drive/folders/0Bx-MjaVCl0SsV3R2enJqSkpKVUU" target="_blank">Vlad's Google Drive</a>.
 
 ## Wanna build?
 
 No problem! I made a <a href="https://ivancristina.github.io/HowToBuild/" target="_blank">n00bproof guide about how to compile LOS/based 14.1 ROMs</a> for our friend the S4 Active. You cannot make mistakes, every single step is guided.
+
 So... have a nice day and happy building!
