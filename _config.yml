@@ -1,0 +1,95 @@
+# Site settings
+title: Ivan's Blog
+SEOTitle: Ivan | Blog
+header-img: img/home-bg.jpg
+email: ivancristina5@gmail.com
+description: ""
+keyword: ""
+url: "https://ivancristina.github.io/" # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: false
+github_username:    ivancristina
+twitter_username:   ivan_cristin
+instagram_username: ivancristina5
+telegram_username:  IvanCristina
+xda_username:       IvanCristina
+xda_member_id:      6243385
+#facebook_username: ivancristina
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+disqus_username: ivancristina5
+
+
+# Analytics settings
+# Google Analytics
+ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "A 17 years old italian nerd. Not a big deal"
+sidebar-avatar: /img/avatar-ivan.jpg    # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+#Markdown
+encoding: utf-8
+
+
+# Friends
+friends: [
+    {
+        title: "Me",
+        href: "https://github.com/ivancristina"
+    },{
+        title: "Bruno",
+        href: "https://github.com/zagi988"
+    },{
+        title: "Vlad",
+        href: "https://github.com/tsvietOK"
+    },{
+        title: "Viatcheslav",
+        href: "https://github.com/olooikea"
+    },{
+        title: "I have no others friends. I'm a sad person",
+        href: "#"
+    }
+]

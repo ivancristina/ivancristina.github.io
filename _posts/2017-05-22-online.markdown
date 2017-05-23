@@ -1,0 +1,28 @@
+---
+layout:     post
+title:      "Online!"
+subtitle:   "New site now online"
+date:       2017-05-22
+author:     "Ivan"
+header-img: "img/post-bg-online.jpg"
+tags:
+    - Blog
+    - Hello
+    - OS
+---
+
+> "Of all the sites on all the web, I had to click onto his."
+> *- Homer Simpson*
+
+
+## Well. I did it
+
+After hours of nerding, I finally managed to get this crap working. Dunno completely why, but I did.
+Huge thanks to <a href="https://github.com/Huxpro">Hux</a> for his incredibly well-made base. Without him I'd probably still trying to mess with html syntax.
+Anyway, I don't think there's a lot more to say, so hope you all the best my friend, cause if you're here there's something wrong in you.
+
+---
+
+# Content
+
+Oh, I almost forgot. I opened this blog in order to publish rubbish about my "projects", so if you're in search of something intresting here, you could go away.
