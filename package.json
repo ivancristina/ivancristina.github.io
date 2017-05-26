@@ -2,7 +2,7 @@
     "name": "ivan-blog",
     "title": "Ivan's Blog",
     "version": "1.0.0",
-    "homepage": "http://alfiomessina0.github.io",
+    "homepage": "https://ivancristina.github.io/",
     "author": "Ivan",
     "devDependencies": {
         "grunt": "~0.4.5",
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/alfiomessina0/alfiomessina0.github.io"
+        "url": "https://github.com/ivancristina/ivancristina.github.io"
     },
     "scripts": {
         "preview": "cd _site; python -m SimpleHTTPServer 8020",
