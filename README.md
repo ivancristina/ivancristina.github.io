@@ -1,4 +1,4 @@
-# Ivan's Blog!
+# Ivan's Git!
 
 Hey there. How you doing?
 Everything's ok? No? PERFECT!

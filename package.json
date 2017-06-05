@@ -1,6 +1,6 @@
 {
-    "name": "ivan-blog",
-    "title": "Ivan's Blog",
+    "name": "ivan-git",
+    "title": "Ivan's Git",
     "version": "1.0.0",
     "homepage": "https://ivancristina.github.io/",
     "author": "Ivan",
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ivancristina/ivancristina.github.io"
+        "url": "https://ivancristina.github.io"
     },
     "scripts": {
         "preview": "cd _site; python -m SimpleHTTPServer 8020",

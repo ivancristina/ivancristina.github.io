@@ -1,6 +1,6 @@
 # Site settings
-title: Ivan's Blog
-SEOTitle: Ivan | Blog
+title: Ivan's Git
+SEOTitle: Ivan | Git
 header-img: img/home-bg.jpg
 email: ivancristina5@gmail.com
 description: ""
@@ -37,6 +37,7 @@ anchorjs: true                          # if you want to customize anchor. check
 gems:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jemoji
 
 
 

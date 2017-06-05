@@ -52,7 +52,7 @@ layout: default
                 <hr>
 
                 {% if site.duoshuo_share && site.duoshuo_username %}
-                <!-- 多说 Share start -->
+                <!-- Share start -->
                 </style>
                 <div class="ds-share"
                     style="text-align: right"
@@ -63,17 +63,17 @@ layout: default
                     data-content="{{ content | strip_html | truncate:80 }} | {{ site.SEOTitle }} " >
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
-                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
-                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
-                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">Share to:</a></li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">Wechat</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">Weibo</a></li>
+                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">Douban</a></li>
                       </ul>
                       <div class="ds-share-icons-more">
                       </div>
                     </div>
                 <hr>
                 </div>
-                <!-- 多说 Share end-->
+                <!-- Share end-->
                 {% endif %}
 
 
@@ -92,7 +92,7 @@ layout: default
 
 
                 {% if site.duoshuo_username %}
-                <!-- 多说评论框 start -->
+                <!-- Comment start -->
                 <div class="comment">
                     <div class="ds-thread"
                         data-thread-key="{{page.id}}"
@@ -100,15 +100,15 @@ layout: default
                         data-url="{{site.url}}{{site.baseurl}}{{page.url}}" >
                     </div>
                 </div>
-                <!-- 多说评论框 end -->
+                <!-- Comment end -->
                 {% endif %}
 
                 {% if site.disqus_username %}
-                <!-- disqus 评论框 start -->
+                <!-- Disquis comment start -->
                 <div class="comment">
                     <div id="disqus_thread" class="disqus-thread"></div>
                 </div>
-                <!-- disqus 评论框 end -->
+                <!-- Disquis comment end -->
                 {% endif %}
 
             </div>
@@ -152,7 +152,7 @@ layout: default
 </article>
 
 {% if site.duoshuo_username %}
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<!-- About public JS code start (Needs to be inserted once) -->
 <script type="text/javascript">
     // dynamic User by Hux
     var _user = '{{site.duoshuo_username}}';
@@ -168,12 +168,12 @@ layout: default
          || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
 </script>
-<!-- 多说公共JS代码 end -->
+<!-- About public JS code end -->
 {% endif %}
 
 
 {% if site.disqus_username %}
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<!-- Disqus public JS code start (Needs to be inserted once) -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "{{site.disqus_username}}";
@@ -186,7 +186,7 @@ layout: default
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<!-- disqus 公共JS代码 end -->
+<!-- Disqus public JS code end -->
 {% endif %}
 
 

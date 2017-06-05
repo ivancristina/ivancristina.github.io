@@ -9,6 +9,9 @@
     padding-right: 5%;
   }
 }
+.roundrect {
+border-radius: 10px;
+}
 .sidebar-container {
   color: #bfbfbf;
   font-size: 14px;
