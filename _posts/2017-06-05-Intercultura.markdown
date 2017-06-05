@@ -85,7 +85,7 @@ And now the last step. While boarding to the Alitalia's Roma - Belgrade flight, 
 
 # Serbia's turn
 
-Right before leaving the plane, our italian charm let us socialize with the pilots, who let us visit the 737's cockpit. No better way to start.
+Right before leaving the plane, our italian charm let us socialize with the pilots, who let us visit the A320's cockpit. No better way to start.
 <img class="roundrect" src="/img/in-post/post-js-version/Cockpit.jpg">
 
 Once got out from the finger, the first thing we faced (of course), was a beautiful Airport, clean and tidy. Thanks to the WiFi Airport (Serbia's full of free WiFi APs) we also had the possibility to call our families. Italy's got a lot to learn from this side.
