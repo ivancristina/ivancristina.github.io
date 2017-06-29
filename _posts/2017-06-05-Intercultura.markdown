@@ -21,9 +21,9 @@ The are no other ways to talk about the Italy-Serbia cultural exchange, made pos
 
 But let's make a step back.
 
-## The preparatives
+## The arrangements
 
-The first contacts between the school started a year ago, during the School Year 2015/2016. Much was the excitement, both among students and teachers. After a lot of preparatives, the schools (the <a href="https://www.itaerferrarin.gov.it/pasw4/" target="_blank">Aeronautical Technical Institute "Arturo Ferrarin"</a> of Catania and the Belgrade's <a href="http://www.vakademija.edu.rs/?lang=en" target="_blank">Vazduhoplovna Akademija</a>) finally managed to get ready and fix the dates. And that's where the story begins.
+The first contacts between the schools started one year ago, during the School Year 2015/2016. Much was the excitement, both among students and teachers. After a lot of preparatives, the schools (the <a href="https://www.itaerferrarin.gov.it/pasw4/" target="_blank">Aeronautical Technical Institute "Arturo Ferrarin"</a> of Catania and the Belgrade <a href="http://www.vakademija.edu.rs/?lang=en" target="_blank">Vazduhoplovna Akademija</a>) finally managed to get ready and fix the dates. And that's where the story begins.
 
 # Italy!
 
@@ -31,80 +31,77 @@ So the day finally arrived. The night of the 5th March 2017, 22 Serbian guys arr
 
 They gifted us lots of things, starting from the Rakija (a typical liquor), to clothes, gadgets, food and so on and so on.
 
-Just the time for the presentations, some little snacks (we are Italians by-the-way, aren't we?) and then immediately to bed, because it was late. Well, of course it wasn't like that, at least for the courageous.
-Yep, because they day after at the 8:30am we were already at school, in order to visit the laboratories and listen to the school presentation and then the teachers and the headmaster's speechs, followed by a typical italian appetizers' buffet.
+Just the time for the presentations, some little snacks (we are Italians by-the-way, aren’t we?) and then immediately to bed, because it was late. Well, of course it wasn’t like that, at least for the courageous. Yep, because they day after at the 8:30am we were already at school, in order to visit the laboratories and listen to the school presentation and then the teachers’ and the headmaster’s speeches, followed by a typical Italian appetizers’ buffet.
 
-At midday we were again on our way, and after a day long guided trip of Catania, we finally returned home, just like the following day.
+At midday we were again on our way, and after a daylong guided trip around Catania, we finally returned home, just like the following days.
 <img class="roundrect" src="/img/in-post/post-js-version/Visit.jpg">
 
-Wednesday, after an hour of lesson at school (which allowed the guys to realise the differences between the instruction methods and the schools themselves), we went to the <a href="http://www.aeroclubcatania.com" target="_blank">Catania Aeroclub</a>, and thanks to the teachers, the Aeroclub staff and the pilot Stefano Mirulla, we had the chance to board the Aeroclub's aircrafts and talk directly to the pilots (and of course taking photos with them, teachers included). Once we finished, the bus brought us to a trip to Acicastello and Acireale, and then back to house.
+On Wednesday, after an hour of lesson at school (which allowed the guys to realize the differences between our school systems), we went to the <a href="http://www.aeroclubcatania.com" target="_blank">Catania Aeroclub</a>, and thanks to the teachers, the Aeroclub staff and the pilot Stefano Mirulla, we had the chance to board the Aeroclub’s aircrafts and talk directly to the pilots (and of course taking photos with them, teachers included). Once we finished, the bus brought us to a trip to Acicastello and Acireale, and then back home.
 <img class="roundrect" src="/img/in-post/post-js-version/Aeroclub.jpg">
 
 On Thursday we first visited the Mount Etna, and after some slips and snowball wars we also had the possibility to visit Taormina, where recently the G7 took place.
 <img class="roundrect" src="/img/in-post/post-js-version/Etna.jpg">
 
-Indeed in those days there were the very first preparatives for the event. Anyway, they did not forbid us to visit the beautiful city and its markets.
+Indeed in those days there were the very first preparatives for the event. Anyway, they did not forbid us to visit the beautiful town and its markets.
 <img class="roundrect" src="/img/in-post/post-js-version/Taormina.jpg">
 
-It was the turn of Noto and Syracuse on Saturday, were we visited the local gardens, the Theater of Siracusa, the Dionigi's Ear (Orecchio di Dionisio) and even the little jetty.
+On Saturday we visited Noto and Syracuse, were we went around the local gardens, the Theatre of Siracusa, the Dionigi’s Ear (Orecchio di Dionisio) and even the little jetty.
 
-After three hours of lessons, Saturday the guys had the possibility to try our school's Simulator.
+After three hours of lessons, Saturday the guys had the possibility to try our school Simulator.
 <center><video class="roundrect" width="100%" height="100%" controls>
   <source src="/vid/ALSIM.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video></center>
 
-Then we managed to play an off-ball match, which unfortunately was won by the serbs. Here we realise how strong Serbs are in sports. Well, by our side, they'll never have **"o sole, o core, o mare"**. To console us, a great buffet ended the school day. After that, we moved to the shopping center "Centro Sicilia", and after hours of shopping and laughs, we returned home.
+Then we managed to play an off-ball match, which unfortunately was won by the Serbs. Here we realized how strong Serbs are in sports. Well, by our side, they’ll never have **"o sole, o core, o mare"**. To console us, a great buffet ended the school day. After that, we moved to the shopping centre “Centro Sicilia”, and after hours of shopping and laughs, we came back home.
 <center><video class="roundrect" width="75%" height="75%" controls>
   <source src="/vid/Centro.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video></center>
 
-But we couldn't finish like that. So the night we met all together again, and after a short walk on the beautiful center, we went to drink soft drinks (so non-alcoholic, huh) before finally salute us all and return home.
+But it couldn’t finish like that. So the night we met all together again, and after a short walk around the beautiful centre, we went to drink soft drinks (so non-alcoholic, huh) before finally say goodbye and return home.
 
-The following day, the 12th March 2017, at the 9am we met together back at the Fontarossa Airport, where Italian and Serbian guys grew up for the last time in Italy. Once returned home, a general sense of melancholy assaulted us. We already missed those friendly, or better, fraternal faces. The only thing that comforted us was the idea that in less than one month we would have been together again.
+The following day, the 12th March 2017, at the 9am again back at the Fontarossa Airport, Italian and Serbian guys for the last time in Italy. Once we got back home, a general sense of melancholy assaulted us. We already missed those friendly, or better, fraternal faces. The only thing that comforted us was the idea that in less than one month we would be together again.
 
-## The preparatives (again!)
+## Getting ready to go!
 
-And again. It was our turn now. What did I have to bring with me? How much money? What should I gift them?
+It was our turn now. What did I have to bring with me? How much money? What should I gift them?
 
 Here Intercultura came in our help. Thanks to them we clarified all our doubts, starting from the money exchange to end with the passports.
 
-Now the crucial step. Was everything into the baggage? The toothbrush? The socks? The books (ok maybe not those). Well, actually I brought one, and we also did a book exchange with a Serbian girl, which was funny. But anyway...
+Now the crucial step. Was everything into the baggage? The toothbrush? The socks? The books... well, actually I brought one, and I also did a book exchange with a Serbian girl, which was funny. But anyway...
 
-After a sleepless night ('cause of the excitement) I woke up in the early morning, and after a shower and the last check to the baggage, we went to the airport.
-
-So after reaching my mates and the last greeting to my family, it was time to take-off.
+After a sleepless night (‘cause of the excitement) we woke up in the early morning, and after a shower and the last check to the baggage, we went to the airport. The last greeting to families and it was time to take-off... at last!
 <img class="roundrect" src="/img/in-post/post-js-version/Ticket.jpg">
 
 First plane, an Alitalia Catania Fontanarossa - Roma Fiumicino. Nice flight, but long waiting. Three hours. Thankfully there were my friends. And briscola cards.
 <img class="roundrect" src="/img/in-post/post-js-version/Roma.jpg">
 
-And now the last step. While boarding to the Alitalia's Roma - Belgrade flight, there was a general fervor. So after two hours of some countries' overflow, the afternoon of the 2nd April 2017 we finally touched the Belgrade's <a href="http://www.beg.aero/en/home" target="_blank">Nikola Tesla</a>'s Runway.
+And now the last step. While boarding to the Alitalia’s Roma - Belgrade flight, there was a general excitement. So after a two hour flight, the afternoon of the 2nd April 2017 we finally touched the runway of the Belgrade airport <a href="http://www.beg.aero/en/home" target="_blank">Nikola Tesla</a>'s Runway.
 
 
 # Serbia's turn
 
-Right before leaving the plane, our italian charm let us socialize with the pilots, who let us visit the A320's cockpit. No better way to start.
+Right before leaving the plane, our Italian charm let us socialize with the pilots, who let us visit the A320’s cockpit. No better way to start.
 <img class="roundrect" src="/img/in-post/post-js-version/Cockpit.jpg">
 
-Once got out from the finger, the first thing we faced (of course), was a beautiful Airport, clean and tidy. Thanks to the WiFi Airport (Serbia's full of free WiFi APs) we also had the possibility to call our families. Italy's got a lot to learn from this side.
+Once got out from the finger, the first thing we faced (of course), was a beautiful Airport, clean and tidy. Thanks to the Wi-Fi Airport (Serbia’s full of free Wi-Fi APs) we also had the possibility to call our families. Italy’s got a lot to learn from this side.
 
-Passed the immigration controls, we finally saw them again. Everyone with his partner's name written on the t-shirt (both in cyrillic and latin), our mates welcomed us, some with traditional food and clothes too. It was beautiful, like seeing them for the first time.
+Passed the airport checks, we finally saw our friends again. Our mates, each one of them with his/her partner’s name written on the t-shirt (both in cyrillic and latin), welcomed us, some with traditional food and clothes too. It was beautiful, like seeing them for the first time.
 <!-- <img class="roundrect" src="/img/in-post/post-js-version/SerbiaWelcome.jpg"> -->
 
-So after the greetings, we went to our pair's house. On my way to the house, I saw how much green there is Serbia. It somehow remembered me the Sicilian camps. The air is clean and fresh, and the weather is not that different from our one. Personally I found a great family, clean, tidy, kind and polite, and just like me all my italian mates. We were really lucky.
+So after the greetings, we went to our pair’s house. On my way to the house, I saw how much green there is Serbia. It somehow remembered me the Sicilian camps. The clean and fresh air, the weather not different from ours. Personally, I found a great family, clean, tidy, kind and polite, and just like me did all my Italian mates. We were really lucky.
 
-The same night we went out by the public transport. I was amazed by how good they work, or maybe the fact is that italian ones are not that good. Food was a crucial point instead: some of us (like me) literally loved it, others did not. During the night Belgrade is absolutely alive, moreover that day (2/4/17) was elected as President of the Republic Aleksandar Vučić, against whom several protests took place in those days during the week we were there.
+The same night we went out by the public transport. I was amazed by how efficiently they work. Food was a crucial point instead: some of us (like me) literally loved it, others did not. During the night Belgrade is absolutely alive; moreover that day (2/4/17) was elected as President of the Republic Aleksandar Vučić, against whom several protests took place those days.
 
 The following day the school welcomed us and let us visit all its laboratories and the main classrooms.
 <img class="roundrect" src="/img/in-post/post-js-version/Library.jpg">
 
-Moreover, thanks also to a partnership with Etihad, the school managed to equip a rich mechanics laboratory. 
+Moreover, thanks also to a partnership with Etihad, the school managed to equip a rich mechanics laboratory.
 <img class="roundrect" src="/img/in-post/post-js-version/Ethiad.jpg">
 <img class="roundrect" src="/img/in-post/post-js-version/Engine.jpg">
 
-Then, after a short trip with the bus (which allowed us to see the Sava river and also some familiar brands, like Huawei, Samsung and even Emmezeta), we stopped at the Jatov Hangar, where we saw the personnel working and the manager and a graduated student answered our questions.
+Then, after a short trip by bus (which allowed us to see the Sava river and also some familiar brands, like Huawei, Samsung and even Emmezeta), we stopped at the Jatov Hangar, where we saw the personnel working and the manager and a graduated student answered our questions.
 
 <img class="roundrect" src="/img/in-post/post-js-version/Hangar.jpg">
 <img class="roundrect" src="/img/in-post/post-js-version/Split.jpg">
@@ -115,22 +112,22 @@ The next step was the <a href="http://www.aeronauticalmuseum.com/index.php?jez=e
 <img class="roundrect" src="/img/in-post/post-js-version/Guide.jpg">
 <img class="roundrect" src="/img/in-post/post-js-version/Spitfire.jpg">
 
-And then what's better than taking an orange juice at the river Sava during the sunset? (Yeah, that one up in the header)
+And then what’s better than taking an orange juice on the river Sava during the sunset? (Yeah, that one up in the header)
 <img class="roundrect" src="/img/in-post/post-js-version/River.jpg">
 <img class="roundrect" src="/img/in-post/post-js-version/ForzaCatania.jpg">
 
-The following day we visited the Belgrade Fortress, the most visited Serbian attraction, which consists of the old citadel and the huge Kalemegdan Park. The panorama was simply breathtaking. We also visited a small chapel inside the park, the Ružica Church, famous for the two chandeliers made entirely of spent bullet casing, swords and cannon parts.
+The following day we visited the Belgrade Fortress, the most visited Serbian attraction, which consists of the old citadel and the huge Kalemegdan Park. The panorama was simply breath-taking. We also visited a small chapel inside the park, the Ružica Church, famous for the two chandeliers made entirely of spent bullet casing, swords and cannon parts.
 <img class="roundrect" src="/img/in-post/post-js-version/Panorama.jpg">
 <img class="roundrect" src="/img/in-post/post-js-version/Chandelier.jpg">
 
-Always inside the park there is also the Military Museum, founded in 1878. It has over 3000 historical memorabilia, including Roman and Greek armors till WW1 and WW2 weapons, clothes and medals.
+Always inside the park there is also the Military Museum, founded in 1878. It has over 3000 historical memorabilia, including Roman and Greek armours till WW1 and WW2 weapons, clothes and medals.
 <img class="roundrect" src="/img/in-post/post-js-version/Flags.jpg">
 <img class="roundrect" src="/img/in-post/post-js-version/Rocket.jpg">
 <img class="roundrect" src="/img/in-post/post-js-version/Matija.jpg">
 <img class="roundrect" src="/img/in-post/post-js-version/Romans.jpg">
 <img class="roundrect" src="/img/in-post/post-js-version/Weapons.jpg">
 
-Another stage was the Nikola Tesla Museum, and the name itself explains everything you could expect there. What I didn't expect was an AMD sponsored server, though.
+Another stage was the Nikola Tesla Museum, and the name itself explains everything you could expect there. What I didn’t expect was an AMD sponsored server, though.
 
 <center><video class="roundrect" width="100%" height="100%" controls>
   <source src="/vid/Tesla.mp4" type="video/mp4">
@@ -143,27 +140,27 @@ There was also a landscaped garden with some mechanical dinosaurs.
 Your browser does not support the video tag.
 </video></center>
 
-After that, the Church of Saint Sava, one of the biggest orthodox churches in the world. Though the inside couldn't look that good right now because of the renovations, a "secret" look at the underground permitted us to see how actually rich it is, by any means. Everything's gold plated, every wall, every mosaic, everything. They didn't allow us to take photos, though a photo couldn't let you understand the feeling. You have to see with your eyes. Another reason why you should visit Serbia. And after a 20km walk, we finally came back home.
+After that, the Church of Saint Sava, one of the biggest orthodox churches in the world. There were works inside, but we were allowed to visit the underground that is very precious: everything’s gold plated, every wall, every mosaic, everything; they didn’t allow us to take photos, though a photo couldn’t let you understand the feeling, you have to see with your eyes. Another reason why you should visit Serbia. And after a 20km walk, we finally came back home.
 
-The day after we visited the Viminacium, a Roman military camp of the old province of Moesia (now Serbia, of course), some temples and even archeological finds, like the skeleton of the female mammoth Vika.
+The day after we visited the Viminacium, a Roman military camp of the old province of Moesia (now Serbia, of course), some temples and even archaeological finds, like the skeleton of the female mammoth Vika.
 <img class="roundrect" src="/img/in-post/post-js-version/Vika.jpg">
 
-The next day we visited the zoo. I actually saw for the first time a lot of animals, like the wolves, the seal and the monkeys. I took so many photos I will not attach anyone, because I can't choose. But let me attach a video, I think it's worth it.
+The next day we visited the zoo. I actually saw for the first time a lot of animals, like the wolves, the seal and the monkeys. I took so many photos I will not attach anyone, because I can’t choose. But let me attach a video, I think it’s worth it.
 <center><video class="roundrect" width="100%" height="100%" controls>
   <source src="/vid/Zoo.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video></center>
 
-But that day, the 8th April 2017 wasn't a day like another: it was Alberto's 18th birthday. So thanks to Nikola's mother we ate 2 different (and very good) cakes. But of course it wasn't enough, indeed the night before we celebrated all together at a local pub.
+But that day, the 8th April 2017 wasn’t a day like another: it was Alberto’s 18th birthday. So thanks to Nikola’s mother we ate 2 different (and very good) cakes. But of course it wasn’t enough, indeed the night before we celebrated all together at a local pub.
 
 Later, thanks to an adult who granted for us and assisted us, we managed to go to the polygon.
 <center><video class="roundrect" width="100%" height="100%" controls>
   <source src="/vid/Polygon.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video></center>
-And believe it or not, that bullet ended into my shoes. Dunno how, but now it's at my house.
+And believe it or not, that bullet ended into my shoes. Dunno how, but now it’s at my house.
 
-The end for our trip was near, indeed the last day, the 9th April, we went to the shopping center Ušće, and after a coffee and some purchases, we returned home to close the suitcase and going to the Airport.
+The end for our trip was near, indeed the last day, the 9th April, we went to the shopping centre Ušće, and after a coffee and some purchase, we returned home to close the suitcase and go to the Airport.
 <img class="roundrect" src="/img/in-post/post-js-version/Shopping.jpg">
 
 Here, we greeted our new families for the last time, and with a lot of sadness and the eyes full of tears, we went back home.
@@ -173,11 +170,11 @@ Here, we greeted our new families for the last time, and with a lot of sadness a
 Your browser does not support the video tag.
 </video></center>
 
-That's the end of a trip, but it's surely not the end of a cultural exchange, a great experience and most important, a friendship.
+That’s the end of a trip, but it’s surely not the end of a cultural exchange, a great experience and most important, a friendship.
 Hope to see you around the world a day or another one. Love you Serbia ❤️
 
 <center>
-<h1>The heroes</h1>
+<h1>The students</h1>
 Battaglia Domenico - Mosurović Dušan<br>
 Leonardi Andrea - Marković Mihajlo<br>
 Pappalardo Giovanni - Jovanović Jovan<br>
@@ -205,8 +202,14 @@ Scuderi Nico - Vuletić Anđela<br>
 <h2>The teachers who made this possible</h2>
 Cunsolo Caterina Rita (English Teacher - Ferrarin)<br>
 Astuto Maria Rita (Aviation Teacher - Ferrarin)<br>
-Giusi Lazzara (English Teacher - Ferrarin)<br>
 Finocchiaro Giuseppe (Headmaster - Ferrarin)<br>
+Goran Cvijović (Headmaster- Vakademija)<br>
 Manić Danijela (English Teacher - Vakademija)<br>
+Marković Aleksandar (Pedagogue - Vakademija)<br>
+
+<h3>Thanks to</h3>
+Giusi Lazzara (English Teacher - Ferrarin)<br>
+Russo Angela(English Teacher - Ferrarin)<br>
+Scalia  Rossella(English Teacher - Ferrarin)<br>
 Manić Nevena (Italian Interpreter - Vakademija)<br>
-Marković Aleksandar (Pedagogue - Vakademija)</center>
+<h4>And all the teachers and staff of the I.T.AER. Arturo Ferrarin and Vazduhoplovna Akademija</h4></center>
