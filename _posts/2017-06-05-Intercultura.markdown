@@ -203,13 +203,13 @@ Scuderi Nico - Vuletić Anđela<br>
 Cunsolo Caterina Rita (English Teacher - Ferrarin)<br>
 Astuto Maria Rita (Aviation Teacher - Ferrarin)<br>
 Finocchiaro Giuseppe (Headmaster - Ferrarin)<br>
-Goran Cvijović (Headmaster- Vakademija)<br>
+Cvijović Goran (Headmaster- Vakademija)<br>
 Manić Danijela (English Teacher - Vakademija)<br>
 Marković Aleksandar (Pedagogue - Vakademija)<br>
 
 <h3>Thanks to</h3>
-Giusi Lazzara (English Teacher - Ferrarin)<br>
-Russo Angela(English Teacher - Ferrarin)<br>
-Scalia  Rossella(English Teacher - Ferrarin)<br>
+Lazzara Giusi (English Teacher - Ferrarin)<br>
+Russo Angela (English Teacher - Ferrarin)<br>
+Scalia  Rossella (English Teacher - Ferrarin)<br>
 Manić Nevena (Italian Interpreter - Vakademija)<br>
 <h4>And all the teachers and staff of the I.T.AER. Arturo Ferrarin and Vazduhoplovna Akademija</h4></center>
