@@ -23,7 +23,7 @@ The process is not reccomended for noobs (although I am one myself), unless you 
 
 So let's start with my build. I assembled it something like 7 months ago, and it costed me around €500. Now it could cost like 100 uro less, but I'm pretty happy for the result I got with those money anyway.
 
-My entire setup has been built by:
+My entire setup has been built with:
 
 - an **<a href="http://amzn.eu/h3i8nZy" target="_blank">MSI H270 Gaming M3</a>**, a 200 serie mobo, with a bunch of RGB LEDs and an overall fancy aestetich. Worth the €126 I spent, now at €116*.
 - an **<a href="http://amzn.eu/5WilklT" target="_blank">Intel Core i5-7500</a>**, a 3.4Ghz with 6Mb of cache Kaby Lake. Bought at €211, now at €184*
@@ -32,7 +32,7 @@ My entire setup has been built by:
 - a **<a href="http://amzn.eu/7L74v01" target="_blank">Corsair VS450</a>** PSU, 80+ certification and huge quality that you can afford at €41* (as I did, for instance). Bought because didn't plan about a GPU, **now regretting** a bit if I have to tell you.
 - and at the end, the <a href="http://amzn.eu/6XEPdiw" target="_blank">Carbide Spec-03</a>. Fancy ATX case, with a nice glass (plastic, in reality) panel, with 2 quiet Corsair fans inside (one LED and one not). Kept its price of €65.
 
-*Prices are referred to those on Amazon.it in March 2017*
+> *Prices are referred to those on Amazon.it in March 2017*
 
 So you could ask... why not a more powerful PSU? Why not an external GPU instead of that sh**ty HD 630? And moreover, why not a damn SSD?
 Well. I was a stupid. A **very poor stupid**. Dind't think and didn't have money. Moreover expecially in these months, along with the price of high end GPUs for bitcoin mining *(thanks dears, hope you to loose all the bitcoin you mined)*, both italian physical and virtual shops (like Amazon) well thought to increase prices. For everything! Even CPUs, low end GPUs and SSD. Those in particular actually costs **almost the double** of the "real" price.
@@ -149,6 +149,7 @@ In case you have a build equal or very similar to mine, rename the existing **co
 ***Move ALL the downloaded Files into USB, create a folder and paste it there.***
 
 ### USB ports tweaking
+> *Not needed with my config.plist*
 
 *After Creating Bootable USB, you should do some tweaks on the USB if your motherboard has no USB 2.0 Port. If you have USB 2.0, then the below steps is not needed, although I reccomend you to follow these steps anyway*
 
@@ -245,6 +246,7 @@ After the successful installation, you must install necessary kext and patches t
 ![java-javascript](/img/in-post/post-js-version/MultiBeast.png)
 
 #### Post Installation Using Clover Configurator
+> *Not needed with my config.plist*
 
 ##### Basic Configuration
 
@@ -343,6 +345,12 @@ As you may have seen I didn't apply the first patch, because I didn't need it.
 ### Geekbench Scores
 
 The results are very nice, considering we're talking about an Os running on non-natively supported hardware.
+![java-javascript](/img/in-post/post-js-version/Device.png)
+![java-javascript](/img/in-post/post-js-version/Score.png)
+![java-javascript](/img/in-post/post-js-version/SCComparison.png)
+![java-javascript](/img/in-post/post-js-version/MCComparison.png)
+![java-javascript](/img/in-post/post-js-version/OpenCL.png)
+![java-javascript](/img/in-post/post-js-version/OpenCLComparison.png)
 
 ### Frequently Asked Questions
 
@@ -365,10 +373,10 @@ Make sure that the Audio is working because these two is the main part will have
 
 ### Thanks to
 
-<a href="https://www.tonymacx86.com/members/jktaurus8.1548388/" target="_blank">jktaurus8</a> and his <a href="https://www.tonymacx86.com/threads/updated-for-multibeast-9-2-1-and-sierra-10-12-6-sierra-on-200-series-with-kabylake-processor.218494/" target="_blank">awesome guide</a>.
-<a href="https://www.tonymacx86.com/members/rehabman.429483/" target="_blank">RehabMan</a>
-<a href="https://www.tonymacx86.com/members/ghosthitwall.1415514/" target="_blank">GhostHitWall</a>
-<a href="https://www.tonymacx86.com/members/tonymacx86.3/" target="_blank">tonymacx86</a>
-<a href="https://www.tonymacx86.com/members/onmybikedrunk.1085297/" target="_blank">onmybikedrunk</a>
-<a href="https://www.tonymacx86.com/members/toleda.2393/" target="_blank">toleda</a>
-<a href="https://www.tonymacx86.com/members/p1lgrim.374452/" target="_blank">P1LGRIM</a>
+* <a href="https://www.tonymacx86.com/members/jktaurus8.1548388/" target="_blank">jktaurus8</a> and his <a href="https://www.tonymacx86.com/threads/updated-for-multibeast-9-2-1-and-sierra-10-12-6-sierra-on-200-series-with-kabylake-processor.218494/" target="_blank">awesome guide</a>.
+* <a href="https://www.tonymacx86.com/members/rehabman.429483/" target="_blank">RehabMan</a>
+* <a href="https://www.tonymacx86.com/members/ghosthitwall.1415514/" target="_blank">GhostHitWall</a>
+* <a href="https://www.tonymacx86.com/members/tonymacx86.3/" target="_blank">tonymacx86</a>
+* <a href="https://www.tonymacx86.com/members/onmybikedrunk.1085297/" target="_blank">onmybikedrunk</a>
+* <a href="https://www.tonymacx86.com/members/toleda.2393/" target="_blank">toleda</a>
+* <a href="https://www.tonymacx86.com/members/p1lgrim.374452/" target="_blank">P1LGRIM</a>
