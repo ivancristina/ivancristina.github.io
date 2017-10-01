@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Hackintoshed!"
+title:      "Hackintosh"
 subtitle:   "Think really different"
 date:       2017-10-01
 author:     "Ivan"
@@ -9,11 +9,9 @@ tags:
     - OS
     - macOS
     - Hackintosh
-	- Blog
+    - Blog
 ---
 
-
-# Hackintosh
 
 ![java-javascript](/img/in-post/post-js-version/Hackintosh.png)
 
