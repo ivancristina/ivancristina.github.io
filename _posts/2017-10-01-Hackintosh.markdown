@@ -13,8 +13,6 @@ tags:
 ---
 
 
-![java-javascript](/img/in-post/post-js-version/HackintoshSmall.png)
-
 It wasn't very easy to accomplish, but dang! An Hackintosh (almost) completely working!
 
 The process is not reccomended for noobs (although I am one myself), unless you really want to spend a lot of time to even try to make it boot, but I ensure you that the overall result will be worth the hours of headache you'll get later!
