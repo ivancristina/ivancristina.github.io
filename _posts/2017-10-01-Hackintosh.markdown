@@ -5,6 +5,7 @@ subtitle:   "Think really different"
 date:       2017-10-01
 author:     "Ivan"
 header-img: "img/post-bg-hackintosh.jpg"
+header-mask: 0.3
 catalog:    true
 tags:
     - OS
@@ -18,7 +19,7 @@ It wasn't very easy to accomplish, but dang! An Hackintosh (almost) completely w
 
 The process is not reccomended for noobs (although I am one myself), unless you really want to spend a lot of time to even try to make it boot, but I ensure you that the overall result will be worth the hours of headache you'll get later!
 
-# 1. My build
+## 1. My build
 
 So let's start with my build. I assembled it something like 7 months ago, and it costed me around €500. Now it could cost like 100 euro less, but I'm pretty happy for the result I got with those money anyway.
 
@@ -69,7 +70,7 @@ The following patches (needed in 10.12.5 or before in order to let the CPU and I
 
 You could find my <a href="https://github.com/ivancristina/ivancristina.github.io/raw/master/resources/config.plist" target="_blank">complete config.plist here</a>.
 
-# 2. How To Hackintosh
+## 2. How To Hackintosh
 
 ### 2.2 BIOS Config (may vary)
 
