@@ -339,7 +339,7 @@ Comment: Change 15 port limit to 24 in XHCI kext
 
 As you may have seen I didn't apply the first patch, because I didn't need it.
 
-### 3.6 iMessage
+#### 3.6 iMessage
 <a href="https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/" target="_blank">An iDiot's Guide To iMessage</a> it is the best iMessage Guide we can found on the internet, just follow this guide straightforward.
 
 ## 4 Geekbench Scores
