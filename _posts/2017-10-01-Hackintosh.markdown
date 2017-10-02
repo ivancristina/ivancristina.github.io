@@ -19,7 +19,7 @@ The process is not reccomended for noobs (although I am one myself), unless you 
 
 # My build
 
-So let's start with my build. I assembled it something like 7 months ago, and it costed me around €500. Now it could cost like 100 uro less, but I'm pretty happy for the result I got with those money anyway.
+So let's start with my build. I assembled it something like 7 months ago, and it costed me around €500. Now it could cost like 100 euro less, but I'm pretty happy for the result I got with those money anyway.
 
 My entire setup has been built with:
 
