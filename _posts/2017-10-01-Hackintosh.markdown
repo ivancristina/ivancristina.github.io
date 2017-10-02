@@ -148,7 +148,7 @@ In case you have a build equal or very similar to mine, rename the existing **co
 
 ***Move ALL the downloaded Files into USB, create a folder and paste it there.***
 
-### 2.5 USB ports tweaking
+#### 2.5 USB ports tweaking
 > *Not needed with my config.plist*
 
 *After Creating Bootable USB, you should do some tweaks on the USB if your motherboard has no USB 2.0 Port. If you have USB 2.0, then the below steps is not needed, although I reccomend you to follow these steps anyway*
