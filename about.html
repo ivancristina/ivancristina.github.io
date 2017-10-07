@@ -13,55 +13,73 @@ header-img: "img/about-bg.jpg"
 
 <!-- Italian Version -->
 <div class="it post-container">
-    <blockquote><p>Vorrei scrivere tante belle cose,<br>
-     ma ho la fantasia di uno sgabello. Mi disp.</p></blockquote>
-
-    <p>Hey, sono <strong>Ivan Cristina</strong>, "programmatore", designer e mantenuto nullafacente. Se stai visitando questo sito, o ti sei perduto nei meandri del web, o sei un persona molto triste.</p>
-
-    <p>Ogni tanto lavoro a qualcosa. Puoi vedere qualche progetto inutile, incompiuto o fallito nel mio <a href="http://github.com/ivancristina">Github</a>.</p>
-    
-    <p>Tento miseramente di fare qualcosa nella vita, e qualche volta qualcosa funziona. Molto probabilmente questo sito no.</p>
-    <h5>Progetti</h5>
-
-    <ul>
-	<li><a href="https://ivancristina.github.io/HowToBuild/">Come compilare una ROM</a> · Generale, S4 Active (GT-I9525)</li>
-    <li><a href="https://forum.xda-developers.com/galaxy-s4-active/development/7-1-1-optimized-cyanogenmod-14-1-t3528753">LineageOS</a> · S4 Active (GT-I9525)</li>
-	<li><a href="https://forum.xda-developers.com/galaxy-s4-active/development/7-1-1-rr-5-8-0-t3541969">Resurrection Remix OS</a> · S4 Active (GT-I9525)</li>
-    </ul>
+	{% capture about_it %}{% include about/it.md %}{% endcapture %}
+	{{ about_it | markdownify }}
 </div>
 
 <!-- English Version -->
 <div class="en post-container">
-    <blockquote><p>I'd like to write something funny,<br>
-    but I'm not. Sorry</p></blockquote>
-
-    <p>Hi, I am <strong>Ivan Cristina</strong>, you can call me <strong>Ivan</strong> (funny level 99999,99%). I'm an engineer,  a designer &amp; a kept man. If you're visiting this site, you just lost yourself into the web or you're a sad person.</p>
-    
-    <p>Sometimes I work on rubbish. You could see some useless, unfinished or failed project on my <a href="http://github.com/ivancristina">Github</a>.</p>
-
-    <p>I poorly try to do something in my life, and sometimes I manage to get something work. Probably this site not.</p>
-
-    <h5>Projects</h5>
-
-    <ul>
-	<li><a href="https://ivancristina.github.io/HowToBuild/">How to build a ROM</a> · General, S4 Active (GT-I9525)</li>
-    <li><a href="https://forum.xda-developers.com/galaxy-s4-active/development/7-1-1-optimized-cyanogenmod-14-1-t3528753">LineageOS</a> · S4 Active (GT-I9525)</li>
-	<li><a href="https://forum.xda-developers.com/galaxy-s4-active/development/7-1-1-rr-5-8-0-t3541969">Resurrection Remix OS</a> · S4 Active (GT-I9525)</li>
-    </ul>
+	{% capture about_en %}{% include about/en.md %}{% endcapture %}
+	{{ about_en | markdownify }}
 </div>
 
 <!-- Handle Language Change -->
 <script type="text/javascript">
+    // get nodes
     var $it = document.querySelector(".it");
     var $en = document.querySelector(".en");
-    function onLanChange(index){
-        if(index == 0){
-            $it.style.display = "block";
-            $en.style.display = "none";
-        }else{
+    var $select = document.querySelector("select");
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+    // handle render
+    function _render(){
+        var _hash = window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
             $en.style.display = "block";
             $it.style.display = "none";
+        // it by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $it.style.display = "block";
+            $en.style.display = "none";
         }
     }
-    onLanChange(0);
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            window.location.hash = "#it"
+        }else{
+            window.location.hash = "#en"
+        }
+    }
+    // init
+    _render();
 </script>
+
+
+{% if site.disqus_username %}
+<!-- disqus start -->
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+
+    </div>
+</div>
+<!-- disqus end -->
+
+<!-- disqus start (Needs to be insterted just once) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus_username}}";
+    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus end -->
+{% endif %}
