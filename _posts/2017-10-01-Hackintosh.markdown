@@ -70,7 +70,7 @@ The following patches (needed in 10.12.5 or before in order to let the CPU and I
 
 You could find my <a href="https://github.com/ivancristina/ivancristina.github.io/raw/master/resources/config.plist" target="_blank">complete config.plist here</a>.
 
-## 2 BIOS Configuration
+## 2. BIOS Configuration
 It may vary by your motherboard.
 
 * **Step 1:** Load Optimised Default
@@ -86,15 +86,15 @@ It may vary by your motherboard.
 	DVMT Pre-Allocated = 64M
 * **Step 5:** Save and Exit
 
-### 3 What To Download
+### 3. What To Download
 
 You need to download some files to get things work. These files are necessary for the entire session of the Mac OS installation.
 
-##### 3.1 Bootloader:
+##### 3.1. Bootloader:
 
 Latest version of <a href="https://sourceforge.net/projects/cloverefiboot/" target="_blank">Clover Bootloader</a>. This Bootloader let you boot both MacOS, Windows and Linux distros, all in one and with a customizable interface.
 
-##### 3.2 Utilities:
+##### 3.2. Utilities:
 
 They're apps or scripts that will help you with the initialization, installation and configuration of Hackintosh. Download the latest version according to your macOS version
 * <a href="http://mackie100projects.altervista.org/download-clover-configurator/" target="_blank">Clover Configurator</a>. If you encounter the **7mb bug** use the Classic version instead of the Vibrant. This apps let you configure your bootloader settings with a fancy UI, instead than in command line (available also)
@@ -102,7 +102,7 @@ They're apps or scripts that will help you with the initialization, installation
 Those apps respectively let you create a bootable USB, configure your Hackintosh machine and install some primary drivers in **post-installation**
 * <a href="https://github.com/toleda/audio_CloverHDMI/blob/master/audio_cloverHDMI-130.command.zip?raw=true" target="_blank">Toleda's audio_cloverHDMI-130.command</a>. This script basically allows you to enable in a few clicks the **HD630 onboard audio**.
 
-##### 3.3 Kexts:
+##### 3.3. Kexts:
 
 Kexts are basically drivers, which let you use your devices in a *plug&play-like* way.
 
@@ -119,22 +119,22 @@ Other kexts you'll need later: *(in post installation, with MultiBeast)*
 * IntelMausiEthernet.kext
 * RealtekRTL8111.kext
 
-## 4 Installation
+## 4. Installation
 
-##### 4.1 Prerequisites
+##### 4.1. Prerequisites
 
 * A **200 Series Motherboard** with Intel 7th Gen *(KabyLake)* Processor
 * A ***working*** Mac, Hackintosh or Virtual Machine (VM is not reccomended though) - without one of those you can’t move forward.
 * USB stick, **16GB** or larger (some reported they got it working even with an 8GB stick, not my case though)
 
-##### 4.2 Get macOS
+##### 4.2. Get macOS
 
 1. Go to your Mac, Hackintosh or VM and open the Mac App Store
 2. Log in with your Apple ID
 3. Download macOS Sierra (10.12.6) or High Sierra *- this guide is based on 10.12.6, but is appliable even to High Sierra with some modifications*
 4. After the download finishes the setup screen will appear you should **Quit** the app from the Dock. You can see the application in **/Applications/Install MacOS Sierra.app**
 
-##### 4.3 Preparing USB
+##### 4.3. Preparing USB
 
 ***If the below guide didn't work for you then try <a href="https://www.tonymacx86.com/threads/updated-for-multibeast-9-2-1-and-sierra-10-12-6-sierra-on-200-series-with-kabylake-processor.218494/page-12#post-1586314" target="_blank">this one instead</a>***
 
@@ -147,7 +147,7 @@ In case you have a build equal or very similar to mine, rename the existing **co
 
 ***Move ALL the downloaded Files into USB, create a folder and paste it there.***
 
-##### 4.4 USB ports tweaking
+##### 4.4. USB ports tweaking
 > *Not needed with my config.plist*
 
 *After Creating Bootable USB, you should do some tweaks on the USB if your motherboard has no USB 2.0 Port. If you have USB 2.0, then the below steps is not needed, although I reccomend you to follow these steps anyway*
@@ -187,7 +187,7 @@ Replace: 45483032
 
 Move **USBInjectAll.kext** & **XHCI-200-series-injector.kext** to USB’s EFI partition **/EFI/Clover/kexts/Other**.
 
-##### 4.5 Install MacOS Sierra
+##### 4.5. Install MacOS Sierra
 
 1. Turn on the computer
 2. Press the hotkey **Canc** to choose boot device *(it may differ on your motherboard)*
@@ -209,11 +209,11 @@ Move **USBInjectAll.kext** & **XHCI-200-series-injector.kext** to USB’s EFI pa
 
 ***If you don’t know how to install then follow the steps in the <a href="https://www.tonymacx86.com/threads/unibeast-install-macos-sierra-on-any-supported-intel-based-pc.200564/" target="_blank">Installation Guide</a>***
 
-## 5 Post-Installation
+## 5. Post-Installation
 
 After the successful installation, you must install necessary kext and patches to get things work. These are the same thing that we were doing after the installation of Windows OS. In Windows, drivers are in a package and it automatically installed within few clicks, while with macOS we should **manually** do these steps. As I said before, after the release of macOS 10.12.6 everything became easier because 10.12.6 brings the native support for Kabylake Processors. Also, tonymacx86 released a new version of the MultiBeast, which supports 200 Series Motherboard with 7th generation Kabylake processor. *Imagine how many steps you had to do before...*
 
-#### 5.1 Post Installation Using MultiBeast
+#### 5.1. Post Installation Using MultiBeast
 
 * **1st Step** = Copy all the downloaded files to the desktop.
 * **2nd Step** = Open Multibeast –> Quick Start –> **UEFI Boot Mode**
@@ -244,10 +244,10 @@ After the successful installation, you must install necessary kext and patches t
 * **8th Step** = Final Build Configuration Build –> ***Install***
 ![java-javascript](/img/in-post/post-js-version/MultiBeast.png)
 
-#### 5.2 Post Installation Using Clover Configurator
+#### 5.2. Post Installation Using Clover Configurator
 > *Not needed with my config.plist*
 
-##### 5.2.1 Basic Configuration
+##### 5.2.1. Basic Configuration
 
 * Open Clover Configurator Then mount EFI Partition if not mounted (Multibeast will automatically mount the EFI partition)
 * Fix Random Restart problem when system shutdown by Selecting **FixShutdown_0004** under ACPI –> Fixes
@@ -258,7 +258,7 @@ After the successful installation, you must install necessary kext and patches t
 
 ***Don’t Close Clover Configurator. Add all entries from the below steps or else you should open the Clover Configurator for every step.***
 
-#### 5.2.2 Intel HD Graphics 630 With QuickSync and iTunes DRM Contents
+#### 5.2.2. HD Graphics 630 w/ QuickSync & iTunes DRM Contents
 
 Open Clover Configurator if not open.
 
@@ -279,7 +279,7 @@ Replace: 49475055
 * Copy **Shiki.kext** and **AppleALC.kext** and paste them in to **EFI drive/EFI/Clover/kexts/Other**.
 ![java-javascript](/img/in-post/post-js-version/kextsOther.png)
 
-##### 5.2.3 Second Audio Method
+##### 5.2.3. Second Audio Method
 
 Open Clover Configurator if not open.
 
@@ -307,7 +307,7 @@ Devices –> Audio –> Change it to **1** or **2** or **11**
 Run **audio_cloverHDMI-130.command** to get HDMI Audio working if you want. If this method of HDMI Audio didn’t work for you then follow the <a href="https://www.tonymacx86.com/threads/quick-fix-200-series-kaby-lake-audio-onboard-and-or-hd-6x0-hdmi.221618/" target="_blank">toleda guide on how to enable HDMI Audio</a>.
 ![java-javascript](/img/in-post/post-js-version/toledaHDMI.png)
 
-#### 5.3 SMBIOS
+#### 5.3. SMBIOS
 
 We need to change the SMBIOS to iMac 18.1 or 18.2 or 18.3 because these are the SMBIOS for the Kabylake processors. This is necessary because without SMBIOS the system will not boot and other features like power management, iMessage, Graphics acceleration won’t work.
 
@@ -316,7 +316,7 @@ For the perfect configuration of SMBIOS head over to <a href="http://www.everyma
 In my case, I changed the SMBIOS to 18.2 (cause it's the SMBIOS of the i5-75000 powered iMac).
 ![java-javascript](/img/in-post/post-js-version/SMBIOS.png)
 
-##### 5.4 USB Power Management
+##### 5.4. USB Power Management
 
 Those who looking for the proper USB Power management go to the <a href="https://www.tonymacx86.com/threads/guide-usb-power-property-injection-for-sierra-and-later.222266/" target="_blank">USB power property injection for Sierra (and later) Guide</a> by RehabMan.
 
@@ -338,10 +338,10 @@ Comment: Change 15 port limit to 24 in XHCI kext
 
 As you may have seen I didn't apply the first patch, because I didn't need it.
 
-#### 5.5 iMessage
+#### 5.5. iMessage
 <a href="https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/" target="_blank">An iDiot's Guide To iMessage</a> it is the best iMessage Guide we can found on the internet, just follow this guide straightforward.
 
-## 6 Geekbench Scores
+## 6. Geekbench Scores
 
 The results are very nice, considering we're talking about an Os running on non-natively supported hardware.
 ![java-javascript](/img/in-post/post-js-version/Device.png)
@@ -351,7 +351,7 @@ The results are very nice, considering we're talking about an Os running on non-
 ![java-javascript](/img/in-post/post-js-version/OpenCL.png)
 ![java-javascript](/img/in-post/post-js-version/OpenCLComparison.png)
 
-### 7 Frequently Asked Questions
+### 7. Frequently Asked Questions
 
 * **Question:** After the installation macOS won’t boot from the HDD drive. It only boots from the USB!
 	**Answer:** In this case first of all you need to boot using USB. After you reached the desktop copy the entire EFI folder from USB to your Hackintosh. Then replace the one in the HDD’s EFI folder with that one you just copied
@@ -360,7 +360,7 @@ The results are very nice, considering we're talking about an Os running on non-
 * **Question:** Will this guide work with all the motherboards?
 	**Answer: Yes, it will work but you have to select the suitable drivers from the post installation and make sure that the BIOS settings are matched with your motherboard.
 
-### 8 Updating to the latest Version
+### 8. Updating to the latest Version
 
 Apple releases the updates in every one or two months. After using this steps, you can easily update it through your Mac App Store. Sometimes some error could occur. That's why I raccomend you to keep a backup of your EFI folder and the most important file in another partition. Anyway if that happens let me know in the comment box.
 
@@ -370,7 +370,7 @@ Make sure that the Audio is working because these two is the main part will have
 
 ![java-javascript](/img/in-post/post-js-version/HighSierra.png)
 
-### 9 Thanks to
+### 9. Thanks to
 
 * <a href="https://www.tonymacx86.com/members/jktaurus8.1548388/" target="_blank">jktaurus8</a> and his <a href="https://www.tonymacx86.com/threads/updated-for-multibeast-9-2-1-and-sierra-10-12-6-sierra-on-200-series-with-kabylake-processor.218494/" target="_blank">awesome guide</a>.
 * <a href="https://www.tonymacx86.com/members/rehabman.429483/" target="_blank">RehabMan</a>
