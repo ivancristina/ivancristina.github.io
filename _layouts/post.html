@@ -47,6 +47,15 @@ layout: default
                 col-md-10 col-md-offset-1
                 post-container">
 
+                <!-- Multi-Lingual -->
+                {% if page.multilingual %}
+                <!-- Language Selector -->
+                <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+                    <option value="0" selected> Italiano </option>
+                    <option value="1"> English </option>
+                </select>
+                {% endif %}
+
 				{{ content }}
 
                 <hr>
