@@ -1,33 +1,34 @@
-
+> *If you wanna read the guide in English, just click on the selector right up here*
 
 Non è stato per niente facile, ma ne è valsa la pena! Un Hackintosh (quasi) completamente funzionante!
 
-The process is not reccomended for noobs (although I am one myself), unless you really want to spend a lot of time to even try to make it boot, but I ensure you that the overall result will be worth the hours of headache you'll get later!
+La seguente guida non è raccomandata ai nabbi (nonostante ne sia uno io stesso), a meno che non tu voglia perdere un sacco di tempo anche solo per riuscire ad effettuare il primo avvio, ma ti assicuro che il risultato vale tutti i mal di testa che ti verranno dopo!
 
-# 1. My build
+# 1. La mia build
 
-So let's start with my build. I assembled it something like 7 months ago, and it costed me around €500. Now it could cost like 100 euro less, but I'm pretty happy for the result I got with those money anyway.
+Cominciamo con la mia build. L'ho assemblata circa 7 mesi fa, e mi è costata qualcosa tipo €500. Adesso potrebbe costare anche 100 euro in meno, ma sono comunque felice del risultato ottenuto con quel budget.
 
-My entire setup has been built with:
+Il mio intero setup comprende:
 
-- an **<a href="http://amzn.eu/h3i8nZy" target="_blank">MSI H270 Gaming M3</a>**, a 200 serie mobo, with a bunch of RGB LEDs and an overall fancy aestetich. Worth the €126 I spent, now at €116*.
-- an **<a href="http://amzn.eu/5WilklT" target="_blank">Intel Core i5-7500</a>**, a 3.4Ghz with 6Mb of cache Kaby Lake. Bought at €211, now at €184*
-- a **<a href="http://amzn.eu/1DicCyw" target="_blank">Western Digital Blue</a>** 1 Tb @ 7200RPM HDD. Really solid. Very nice product for the 51 euro I spent for it* (price it has kept).
-- a single slot of **<a href="http://amzn.eu/j4PcU9x" target="_blank">Ballistix Sport LT</a>** RAM. 8 Gb DDR4 at 2400Mhz clock. A nice deal for €54, considering now it costs more than €10 more.
-- a **<a href="http://amzn.eu/7L74v01" target="_blank">Corsair VS450</a>** PSU, 80+ certification and huge quality that you can afford at €41* (as I did, for instance). Bought because didn't plan about a GPU, **now regretting** a bit if I have to tell you.
-- and at the end, the <a href="http://amzn.eu/6XEPdiw" target="_blank">Carbide Spec-03</a>. Fancy ATX case, with a nice glass (plastic, in reality) panel, with 2 quiet Corsair fans inside (one LED and one not). Kept its price of €65.
+- una **<a href="http://amzn.eu/h3i8nZy" target="_blank">MSI H270 Gaming M3</a>**, una mobo serie 200, con una striscia di LED rossi a lato ed una bella estetica dopotutto. Vale i €126 spesi, ora €116*.
+- un **<a href="http://amzn.eu/5WilklT" target="_blank">Intel Core i5-7500</a>**, un Kaby Lake a 3.4Ghz con 6Mb di cache. Comprato a €211, ora a €184*
+- un **<a href="http://amzn.eu/1DicCyw" target="_blank">Western Digital Blue</a>** 1 Tb a 7200RPM HDD. Davvero solido. Ottimo prodotto per i 51 euro che mi è costato* (prezzo che ha mantenuto).
+- un singolo slot di RAM **<a href="http://amzn.eu/j4PcU9x" target="_blank">Ballistix Sport LT</a>**. 8 Gb DDR4 a 2400Mhz di clock. Buon affare per €54, considerato che ora costa più di €10 in più.
+- un PSU **<a href="http://amzn.eu/7L74v01" target="_blank">Corsair VS450</a>**, certificazione 80+ ed ottima qualità a €41*. Comprato per via di un non pianificato acquisto di una GPU, ora **me ne pento un po'**, ad essere sincero.
+- ed infine, il **<a href="http://amzn.eu/6XEPdiw" target="_blank">Carbide Spec-03</a>**. Stupendo case ATX, con un bel pannello laterale in plastica, dotato di due silenziosissime ventole Corsair (una LED e l'altra no). Ha mantenuto il suo prezzo di €65.
 
-> *Prices are referred to those on Amazon.it in March 2017*
+> *I prezzi sono riferiti a quelli su Amazon.it nel Marzo 2017*
 
-So you could ask... why not a more powerful PSU? Why not an external GPU instead of that sh**ty HD 630? And moreover, why not a damn SSD?
-Well. I was a stupid. A **very poor stupid**. Dind't think and didn't have money. Moreover expecially in these months, along with the price of high end GPUs for bitcoin mining *(thanks dears, hope you to loose all the bitcoin you mined)*, both italian physical and virtual shops (like Amazon) well thought to increase prices. For everything! Even CPUs, low end GPUs and SSD. Those in particular actually costs **almost the double** of the "real" price.
+Ma potresti chiederti.. perché non un alimentatore più potente? Perché non una scheda video dedicata a posto di quella mer$!osa HD 630? O ancora, perché non un dannato SSD?
+Beh, sono stato stupido. Un **povero stupido**. Non pensavo e non avevo soldi. Soprattutto in questi mesi, assieme al prezzo delle GPU di fascia alta per il bitcoin mining *(grazie cari, vi auguro di perdere tutti i bitcoin che avete minato finora)*, gli shop italiani, sia fisici che virtuali (come Amazon), hanno pensato bene di alzare i prezzi. Di tutto! Anche CPU, GPU di fascia bassa ed SSD. Quest'ultimi in particolare costano **circa il doppio** del loro prezzo "reale".
 
-About the Motherboard, **totally worth it**. H serie because I didn't need the Z feautures, and also because as a (poor) student, I don't have enough money to afford a Z Mobo and a K CPU. Anyway nice to see, very well built and managed by MSI softwares in Windows. With Hackintosh... you know, newer not always means better, expecially if you basically adapting a closed source OS with non proprietary hardware. But some patches, and I was good to go.
-The CPU... DAMN, if **I hated it!** I mean, it's actually powerful an power-friendly, but the price was actually a bit high *IMHO*. And as I told before... It was a mess let it work in Sierra, until finally the 2017 Mac serie came out, along with their new Kaby Lake models. That made everything **ALOT EASIER**. In fact, before the 10.12.6 update (with the new Kaby Lake kernel support), in order to let Kaby Lake run you had to <a href="https://www.tonymacx86.com/threads/new-testing-intel-7th-generation-kaby-lake-cpus-200-series-motherboards-in-macos.219877/" target="_blank">spoof your CPU and GPU ID</a>, and some of the times it wouldn't even boot after that (like in my case .-.). Make the GPU work with full acceleration was a mess, but at the end instead of the fu**ing 7mb of virtualized nvram, I managed to get the GPU working along all its 1536 MB of memory. And then, thanks to the 10.12.6 update, I finally also managed to power the CPU at its full power.
+Per quanto concerne la scheda madre, **assolutamente degna di nota**. Serie H perché non avevo bisogno delle features della Z, ed anche perché in veste di (povero) studente, non posso permettermi nè una mobo di serie Z nè una CPU serie K (con moltiplicatore sbloccato). In ogni caso, bella da vedere, ben costruita ed ottimamente gestita dai software MSI su Windows. Su Hackintosh... si sà, nuovo non sempre significa migliore, specialmente se in pratica stai adattando un OS closed source su hardware non proprietario. Ma alcune patch, e tutto è a posto.
+
+La CPU... DANNAZIONE, se **l'ho odiata!** Voglio dire, è efficiente energeticamente ed abbastanza prestante, ma il prezzo era un po' troppo alto per il prodotto *IMHO*. E come ho detto prima... È stata davvero un'ammazzata farla funzionare su Sierra, fino all'arrivo della nuova serie Mac 2017, assieme ai suoi nuovi modelli Kaby Lake. Ciò rese tutto  **MOLTO PIÙ SEMPLICE**. Infatti, prima dell'update a 10.12.6 (con relativo supporto kernel ai modelli Kaby Lake), per fare funzionare Hackintosh su un Kaby Lake era necessario effettuare uno <a href="https://www.tonymacx86.com/threads/new-testing-intel-7th-generation-kaby-lake-cpus-200-series-motherboards-in-macos.219877/" target="_blank">spoofing di CPU e GPU ID</a>, ed a volte nemmeno questo risolveva molto (come nel mio caso .-.). Far funzionare la GPU con la piena accelerazione è stato un casino, ma alla fine a posto dei fo$!uti 7mb di nvram virtualizzata, sono riuscito a far andare la GPU con tutti i suoi 1536 MB di memoria. E solo dopo, grazie all'update 10.12.6, sono anche riuscito a far funzionare la CPU alla massima potenza.
 
 ![java-javascript](/img/in-post/post-js-version/Info.png)
 
-The following patches (needed in 10.12.5 or before in order to let the CPU and Integrated Graphics work) are indeed no more needed on Sierra 10.12.6 or in any version of the new Apple macOS version, <a href="https://www.tonymacx86.com/threads/macos-high-sierra-is-now-available-on-the-mac-app-store.231773/" target="_blank">High Sierra!</a> *(what a huge fantasy, though...)*
+Le seguenti patches (necessarie su 10.12.5 o antecedente per far funzionare CPU e Grafica Integrata) non sono infatti più necessarie su Sierra 10.12.6 o in ogni versione della nuova versione di Apple macOS, <a href="https://www.tonymacx86.com/threads/macos-high-sierra-is-now-available-on-the-mac-app-store.231773/" target="_blank">High Sierra!</a> *(che fantasia, però...)*
 
 ```html
 <key>FakeID</key>
@@ -53,13 +54,13 @@ The following patches (needed in 10.12.5 or before in order to let the CPU and I
 	</array>
 ```
 
-You could find my <a href="https://github.com/ivancristina/ivancristina.github.io/raw/master/resources/config.plist" target="_blank">complete config.plist here</a>.
+Puoi trovare il mio <a href="https://github.com/ivancristina/ivancristina.github.io/raw/master/resources/config.plist" target="_blank">config.plist completo qui</a>.
 
-## 2. BIOS Configuration
-It may vary by your motherboard.
+## 2. Configurazioni BIOS
+Potrebbero variare in base alla scheda madre.
 
 * **Step 1:** Load Optimised Default
-* **Step 2:** IN BIOS Tab
+* **Step 2:** Sulla BIOS Tab
 	Windows 8/10 Features = Other OS
 	Storage Boot Option Control = UEFI
 * **Step 3:** Peripherals Tab
@@ -71,75 +72,75 @@ It may vary by your motherboard.
 	DVMT Pre-Allocated = 64M
 * **Step 5:** Save and Exit
 
-### 3. What To Download
+### 3. Cosa scaricare
 
-You need to download some files to get things work. These files are necessary for the entire session of the Mac OS installation.
+Hai bisogno di scaricare diversi file per funzionare tutto. Questi file sono necessari durante tutta la sessione di installazione di Mac OS.
 
-##### 3.1. Bootloader:
+##### 3.1. Bootloader
 
-Latest version of <a href="https://sourceforge.net/projects/cloverefiboot/" target="_blank">Clover Bootloader</a>. This Bootloader let you boot both MacOS, Windows and Linux distros, all in one and with a customizable interface.
+L'ultima versione di <a href="https://sourceforge.net/projects/cloverefiboot/" target="_blank">Clover Bootloader</a>. Questo Bootloader permette di avviare sia MacOS, che Windows e distro Linux, tutte in uno e con una interfaccia altamente personalizzabile.
 
-##### 3.2. Utilities:
+##### 3.2. Utilità
 
-They're apps or scripts that will help you with the initialization, installation and configuration of Hackintosh. Download the latest version according to your macOS version
-* <a href="http://mackie100projects.altervista.org/download-clover-configurator/" target="_blank">Clover Configurator</a>. If you encounter the **7mb bug** use the Classic version instead of the Vibrant. This apps let you configure your bootloader settings with a fancy UI, instead than in command line (available also)
-* <a href="https://www.tonymacx86.com/resources/categories/tonymacx86-downloads.3" target="_blank">UniBeast, MultiBeast and KextBeast</a>.
-Those apps respectively let you create a bootable USB, configure your Hackintosh machine and install some primary drivers in **post-installation**
-* <a href="https://github.com/toleda/audio_CloverHDMI/blob/master/audio_cloverHDMI-130.command.zip?raw=true" target="_blank">Toleda's audio_cloverHDMI-130.command</a>. This script basically allows you to enable in a few clicks the **HD630 onboard audio**.
+Sono apps o scripts che ti aiuteranno durante l'inizializzazione, installazione e configurazione di Hackintosh. Scarica le ultime versione in base alla tua versione di macOS
+* <a href="http://mackie100projects.altervista.org/download-clover-configurator/" target="_blank">Clover Configurator</a>. Se dovessi riscontrare il **bug dei 7mb** usa la versione Classic a posto della Vibrant. Quest'app ti permette di configurare le tue impostazioni bootloader tramite un'accattivamente UI, invece che tramite riga di comando (disponibile pure)
+* <a href="https://www.tonymacx86.com/resources/categories/tonymacx86-downloads.3" target="_blank">UniBeast, MultiBeast e KextBeast</a>.
+Queste apps ti permettono rispettivamente di creare una USB avviabile, configurare la tua Hackintosh machine ed installare alcuni drivers primari in **post-installazione**
+* <a href="https://github.com/toleda/audio_CloverHDMI/blob/master/audio_cloverHDMI-130.command.zip?raw=true" target="_blank">audio_cloverHDMI-130.command</a> di <a href="https://github.com/toleda/" target="_blank">Toleda</a>. Questo script permette in pochi click di abilitare l'**audio onboard** della HD630.
 
-##### 3.3. Kexts:
+##### 3.3. Kexts
 
-Kexts are basically drivers, which let you use your devices in a *plug&play-like* way.
+I kexts sono praticamente drivers, che permettono di usare le varie periferiche nel modo più *plug&play* possibile.
 
-* <a href="https://github.com/vit9696/AppleALC/releases" target="_blank">AppleALC.kext</a> by <a href="https://github.com/vit9696" target="_blank">vit9696</a> (Github repo <a href="https://github.com/vit9696/AppleALC" target="_blank">here</a>)
-* <a href="https://github.com/vit9696/Lilu/releases" target="_blank">Lilu.kext</a> by <a href="https://github.com/vit9696" target="_blank">vit9696</a> (Github repo <a href="https://github.com/vit9696/Lilu" target="_blank">here</a>)
-* <a href="https://github.com/vit9696/Shiki/releases" target="_blank">Shiki.kext</a> by <a href="https://github.com/vit9696" target="_blank">vit9696</a> (Github repo <a href="https://github.com/vit9696/Shiki" target="_blank">here</a>)
-* <a href="https://github.com/RehabMan/OS-X-USB-Inject-All/tree/master/XHCI-200-series-injector.kext" target="_blank">XHCI-200-series-injector.kext</a> by <a href="https://github.com/RehabMan" target="_blank">RehabMan</a> (Github repo <a href="https://github.com/RehabMan/OS-X-USB-Inject-All" target="_blank">here</a>)
-* <a href="https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/" target="_blank">USBInjectAll.kext</a> by <a href="https://github.com/RehabMan" target="_blank">RehabMan</a> (Bitbucket repo <a href="https://bitbucket.org/RehabMan/os-x-usb-inject-all/src" target="_blank">here</a>)
+* <a href="https://github.com/vit9696/AppleALC/releases" target="_blank">AppleALC.kext</a> di <a href="https://github.com/vit9696" target="_blank">vit9696</a> (repo Github <a href="https://github.com/vit9696/AppleALC" target="_blank">qui</a>)
+* <a href="https://github.com/vit9696/Lilu/releases" target="_blank">Lilu.kext</a> di <a href="https://github.com/vit9696" target="_blank">vit9696</a> (repo Github <a href="https://github.com/vit9696/Lilu" target="_blank">qui</a>)
+* <a href="https://github.com/vit9696/Shiki/releases" target="_blank">Shiki.kext</a> di <a href="https://github.com/vit9696" target="_blank">vit9696</a> (repo Github <a href="https://github.com/vit9696/Shiki" target="_blank">qui</a>)
+* <a href="https://github.com/RehabMan/OS-X-USB-Inject-All/tree/master/XHCI-200-series-injector.kext" target="_blank">XHCI-200-series-injector.kext</a> di <a href="https://github.com/RehabMan" target="_blank">RehabMan</a> (repo Github <a href="https://github.com/RehabMan/OS-X-USB-Inject-All" target="_blank">qui</a>)
+* <a href="https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/" target="_blank">USBInjectAll.kext</a> di <a href="https://github.com/RehabMan" target="_blank">RehabMan</a> (repo Bitbucket <a href="https://bitbucket.org/RehabMan/os-x-usb-inject-all/src" target="_blank">qui</a>)
 
-Other kexts you'll need later: *(in post installation, with MultiBeast)*
+Altri kexts di cui avrai bisogno in seguito: *(in post installazione, tramite MultiBeast)*
 
 * AtherosE2200Ethernet.kext
 * FakeSMC.kext
 * IntelMausiEthernet.kext
 * RealtekRTL8111.kext
 
-## 4. Installation
+## 4. Installazione
 
-##### 4.1. Prerequisites
+##### 4.1. Prerequisiti
 
-* A **200 Series Motherboard** with Intel 7th Gen *(KabyLake)* Processor
-* A ***working*** Mac, Hackintosh or Virtual Machine (VM is not reccomended though) - without one of those you can’t move forward.
-* USB stick, **16GB** or larger (some reported they got it working even with an 8GB stick, not my case though)
+* Una **Mobo Serie 200** con Processore Intel di 7<sup>a</sup> Generazione *(KabyLake)*
+* Un Mac, Hackintosh o Macchina Virtuale ***funzionante*** (sebbene le VM non siano raccomandate) - senza uno di questi non puoi proseguire.
+* Una chiavetta USB da **16GB** o più (alcuni riportano di essere riusciti a far funzionare il tutto con una da 8GB, sebbene non sia il mio caso)
 
-##### 4.2. Get macOS
+##### 4.2. Scaricare macOS
 
-1. Go to your Mac, Hackintosh or VM and open the Mac App Store
-2. Log in with your Apple ID
-3. Download macOS Sierra (10.12.6) or High Sierra *- this guide is based on 10.12.6, but is appliable even to High Sierra with some modifications*
-4. After the download finishes the setup screen will appear you should **Quit** the app from the Dock. You can see the application in **/Applications/Install MacOS Sierra.app**
+1. Sul tuo Mac, Hackintosh o VM apri il Mac App Store
+2. Accedi con il tuo Apple ID
+3. Scarica macOS Sierra (10.12.6) o High Sierra *- questa guida è basata su 10.12.6, ma potrebbe essere applicabile anche su High Sierra con qualche dovuta modifica*
+4. Al termine del download il setup dovrebbe avviarsi e dovresti premere **Esci** tramite tasto destro sull'icona del Dock. Puoi trovare l'app del setup in **/Applicazioni/Install MacOS Sierra.app**
 
-##### 4.3. Preparing USB
+##### 4.3. Preparare la USB
 
-***If the below guide didn't work for you then try <a href="https://www.tonymacx86.com/threads/updated-for-multibeast-9-2-1-and-sierra-10-12-6-sierra-on-200-series-with-kabylake-processor.218494/page-12#post-1586314" target="_blank">this one instead</a>***
+***Se la seguente guida non funziona nel tuo caso prova invece <a href="https://www.tonymacx86.com/threads/updated-for-multibeast-9-2-1-and-sierra-10-12-6-sierra-on-200-series-with-kabylake-processor.218494/page-12#post-1586314" target="_blank">con questa</a>***
 
-1. Open Disk Utilities –> Select USB and Erase using **Mac OSX Extended Journaled** –> **GUID Partition Map** –> **Erase**
-2. Then open Unibeast –> Choose USB –> Then Select **UEFI** –> After that select Sierra
-3. Open USB’s EFI partition –> EFI/Clover –> Open config.plist Using Clover Configurator
-4. Make the necessaries edits (not needed in our case)
+1. Apri Utility Disco –> Seleziona la USB ed Inizializzala usando **Mac OS esteso (journaled)** –> **Mappa partizione GUID** –> **Inizializza**
+2. Ora apri Unibeast –> Scegli la USB –> Quindi seleziona **UEFI** –> Dopodichè seleziona Sierra
+3. Apri la partizione EFI della USB –> EFI/Clover –> Apri il config.plist tramite Clover Configurator
+4. Esegui le modifiche necessarie (nessuna nel mio caso)
 
-In case you have a build equal or very similar to mine, rename the existing **conf.plist** as **orig-config.plist** and paste mine there.
+Nel caso tua abbia un build molto simile alla mia, rinomina l'esistente **conf.plist** in **orig-config.plist** ed incollagli il mio.
 
-***Move ALL the downloaded Files into USB, create a folder and paste it there.***
+***Sposta TUTTI i file scaricati nella USB, crea una cartella ed incollali lì.***
 
-##### 4.4. USB ports tweaking
-> *Not needed with my config.plist*
+##### 4.4. Tweak porte USB
+> *Non necessario se usi il mio config.plist*
 
-*After Creating Bootable USB, you should do some tweaks on the USB if your motherboard has no USB 2.0 Port. If you have USB 2.0, then the below steps is not needed, although I reccomend you to follow these steps anyway*
+*Dopo aver creato la USB avviaibile, dovresti effettuare qualche tweak sulle porte USB nel caso in cui la tua mobo abbia porte USB 3.0+. Se hai solo porte USB 2.0, allora gli step successivi non sono necessari, ma ti raccomando di seguirli lo stesso*
 
-Add these configurations in config.plist using Clover Configurator. ***(Patches already applied in my config.plist)***
+Aggiungi queste configurazioni nel config.plist tramite Clover Configurator. ***(Patches già applicate nel mio config.plist)***
 
-**Increase port limit**
+**Incrementare il limite delle porte**
 
 Kernel and Kext Patches –> KextToPatch –> +
 
@@ -151,11 +152,11 @@ Comment: Increase port limit
 ```
 ![java-javascript](/img/in-post/post-js-version/PortLimit.png)
 
-**Rename EHC to EH0**
+**Rinominare EHC a EH0**
 
 ACPI –> DSDT –> Patches –> +
 
-This two patches would let **USBInjectAll.kext** load:
+Queste due patches permettono allo **USBInjectAll.kext** di essere caricato:
 
 ```html
 Comment: change EHC1 to EH01
@@ -170,84 +171,84 @@ Replace: 45483032
 ![java-javascript](/img/in-post/post-js-version/EHx1.png)
 ![java-javascript](/img/in-post/post-js-version/EHx2.png)
 
-Move **USBInjectAll.kext** & **XHCI-200-series-injector.kext** to USB’s EFI partition **/EFI/Clover/kexts/Other**.
+Sposta **USBInjectAll.kext** e **XHCI-200-series-injector.kext** nella partizione EFI della USB, in **/EFI/Clover/kexts/Other**.
 
-##### 4.5. Install MacOS Sierra
+##### 4.5. Installazione MacOS Sierra
 
-1. Turn on the computer
-2. Press the hotkey **Canc** to choose boot device *(it may differ on your motherboard)*
-3. Select USB
-4. At Clover boot screen, select **Boot Mac OS X from USB**
-5. When you arrive at the Installer, choose a language.
-6. In the top menu bar select Utilities and open **Disk Utility**
-7. Highlight your target drive for the Sierra installation in the left column.
-8. Click Erase button
-9. **Name:** type Sierra (You can rename it later)
-10. **Format:** choose OS X Extended (Journaled)
-11. **For Scheme:** Choose GUID Partition Map
-12. Click **Erase**
-13. Close Disk Utility
-14. Highlight your target drive for the Sierra installation then click continue.
-15. After the first restart Press the hotkey Canc to choose boot device
-16. Select USB
-17. At Clover boot screen, Choose MacOS X **from the HDD** you installed.
+1. Spegni il computer
+2. Premi l'hotkey **Canc** per scegliere il disco di avvio *(potrebbe differire in base alla scheda madre)*
+3. Seleziona la USB
+4. Alla schermata di Clover, seleziona **Boot Mac OS X from USB**
+5. Arrivato all'Installer, scegli la lingua.
+6. Nella barra in alto seleziona Utilità e quindi **Utility Disco**
+7. Evidenzia il tuo disco scelto per l'installazione di Sierra tramite la colonna a sinistra.
+8. Premi il tasto *Inizializza*
+9. **Nome:** scrivi *Sierra* (puoi rinominarlo in seguito)
+10. **Formato:** segli *Mac OS esteso (journaled)*
+11. **Schema:** Scegli *Mappa partizione GUID*
+12. Seleziona **Inizializza**
+13. Chiudi *Utility Disco*
+14. Evidenzia la tua partizione di installazione per Sierra e clicca *Continua*.
+15. Dopo il primo riavvio premi nuovamente l'hotkey *Canc* per scegliere il disco di avvio
+16. Seleziona la USB
+17. Alla schermata di Clover, scegli **Boot MacOS from the HDD** dove lo hai installato.
 
-***If you don’t know how to install then follow the steps in the <a href="https://www.tonymacx86.com/threads/unibeast-install-macos-sierra-on-any-supported-intel-based-pc.200564/" target="_blank">Installation Guide</a>***
+***Se non sai come installare MacOS segui la <a href="https://www.tonymacx86.com/threads/unibeast-install-macos-sierra-on-any-supported-intel-based-pc.200564/" target="_blank">Installation Guide</a>***
 
-## 5. Post-Installation
+## 5. Post-Installazione
 
-After the successful installation, you must install necessary kext and patches to get things work. These are the same thing that we were doing after the installation of Windows OS. In Windows, drivers are in a package and it automatically installed within few clicks, while with macOS we should **manually** do these steps. As I said before, after the release of macOS 10.12.6 everything became easier because 10.12.6 brings the native support for Kabylake Processors. Also, tonymacx86 released a new version of the MultiBeast, which supports 200 Series Motherboard with 7th generation Kabylake processor. *Imagine how many steps you had to do before...*
+Dopo un'installazione riuscita, hai bisogno di installare i kexts e le patches necessarie per far funzionare il tutto. In poche parole è la stessa cosa che avviene subito dopo l'installazione di Windows, ma leggermente diversa. Su Windows, i drivers sono contenuti in pacchetti installabili tramite pochi click, mentre in macOS dovremmo installarli **manualmente** passo passo. Come ho detto prima, a seguito del rilascio di macOS 10.12.6 tutto è diventato più semplice a seguito del supporto nativo dei processori Kabylake. Inoltre, tonymacx86 ha rilasciato una nuova versione di MultiBeast, con il supporto alla Serie 200 con processori Kabylake di 7<sup>a</sup> generazione. *Immagina questi steps avresti dovuto seguire prima...*
 
-#### 5.1. Post Installation Using MultiBeast
+#### 5.1. Post Installazione con MultiBeast
 
-* **1st Step** = Copy all the downloaded files to the desktop.
-* **2nd Step** = Open Multibeast –> Quick Start –> **UEFI Boot Mode**
+* **1° Step** = Copia tutti i file scaricati sulla Scrivania.
+* **2° Step** = Apri Multibeast –> Quick Start –> **UEFI Boot Mode**
 ![java-javascript](/img/in-post/post-js-version/UEFI.png)
 
-* **3rd Step** = Drivers –> Audio –> Check both **ALC1220** and **100/200 Series Audio**. *(I also select the 5.1 Output as I have it built onboard)*
+* **3° Step** = Drivers –> Audio –> Seleziona sia **ALC1220** che **100/200 Series Audio**. *(Io ho abilitato anche l'Output a 5.1 canali, dato che lo ho integrato)*
 ![java-javascript](/img/in-post/post-js-version/Audio.png)
 
-*If you have different codec then select the codec that you want. Codec version can be found on the specification of your Motherboard*
+*Se hai un codec audio diverso seleziona quello che ti interessa. La versione del codec è specificata tra le componenti della scheda madre*
 
-*There are two methods to get Audio Work. This is the First Method If this not works For you then Try method Two in “Post Installation Using Clover Configurator/Audio” Section.*
+*Ci sono due modi per far funzionare l'audio. Questo è il primo. Se nel tuo caso non funziona prova il secondo nella sezione “Post Installazione con Clover Configurator/Audio”.*
 
 
-* **4th Step** = Drivers –> Network –> Check **IntelMausiEthernet v2.3** *(I also install RealtekRTL8111 v2.2.1)*
+* **4° Step** = Drivers –> Network –> Seleziona **IntelMausiEthernet v2.3** *(Io ho installato anche il RealtekRTL8111 v2.2.1)*
 ![java-javascript](/img/in-post/post-js-version/Network.png)
 
-* **5th Step** = Drivers –> USB –> Check **Increase Max Port Limit 200 Series**
+* **5° Step** = Drivers –> USB –> Seleziona **Increase Max Port Limit 200 Series**
 ![java-javascript](/img/in-post/post-js-version/PortLimit.png)
 
-* **6th Step** = Bootloader –> Check **Clover + Emulated NVRAM**
+* **6° Step** = Bootloader –> Seleziona **Clover + Emulated NVRAM**
 ![java-javascript](/img/in-post/post-js-version/CloverBootloader.png)
 
-***Note: After installing Multibeast don’t forget update clover to the latest version, you can find the link above.***
+***Nota: Dopo aver terminato con Multibeast non dimenticare di aggiornare Clover Bootloader all'ultima versione. Puoi farlo tramite l'app Clover Configurator o tramite il link sopra.***
 
-* **7th Step** = Customize –> Graphics Configuration –> Select on **Intel HD 6xx**
+* **7° Step** = Customize –> Graphics Configuration –> Seleziona **Intel HD 6xx**
 ![java-javascript](/img/in-post/post-js-version/Graphics.png)
 
-* **8th Step** = Final Build Configuration Build –> ***Install***
+* **8° Step** = Final Build Configuration Build –> ***Install***
 ![java-javascript](/img/in-post/post-js-version/MultiBeast.png)
 
-#### 5.2. Post Installation Using Clover Configurator
-> *Not needed with my config.plist*
+#### 5.2. Post Installazione con Clover Configurator
+> *Non necessario se usi il mio config.plist*
 
-##### 5.2.1. Basic Configuration
+##### 5.2.1. Configurazione Base
 
-* Open Clover Configurator Then mount EFI Partition if not mounted (Multibeast will automatically mount the EFI partition)
-* Fix Random Restart problem when system shutdown by Selecting **FixShutdown_0004** under ACPI –> Fixes
+* Apri Clover Configurator, quindi monta la Partizione EFI se non lo è già (Multibeast dovrebbe montarla automaticamente)
+* Risolvi il bug del riavvio casuale in fase di spegnimento tramite la spunta **FixShutdown_0004** sotto ACPI –> Fixes
 ![java-javascript](/img/in-post/post-js-version/Shutdown.png)
 
-* **XMPDetection=Yes** (If your RAM clock speed is higher than 2133MHz, like in my case)
+* **XMPDetection=Yes** (Se la tua RAM ha un clock maggiore di 2133MHz, come nel mio caso)
 ![java-javascript](/img/in-post/post-js-version/XMP.png)
 
-***Don’t Close Clover Configurator. Add all entries from the below steps or else you should open the Clover Configurator for every step.***
+***Non chiudere Clover Configurator. Aggiungi tutte le entries dai passi sotto prima o dovrai riaprire Clover Configurator ad ogni step.***
 
-#### 5.2.2. HD Graphics 630 w/ QuickSync & iTunes DRM Contents
+#### 5.2.2. HD Graphics 630 con QuickSync & Contentuti iTunes DRM
 
-Open Clover Configurator if not open.
+Apri Clover Configurator se non aperto.
 
-**Add patches in DSDT**
+**Aggiungi patches in DSDT**
 
 ACPI –> DSDT –> Patches –> +
 
@@ -258,20 +259,20 @@ Replace: 49475055
 ```
 ![java-javascript](/img/in-post/post-js-version/IGPU.png)
 
-* Add Custom BootFlag **shikigva=1** In Boot –> Custom Flags
+* Aggiungi la bootflag **shikigva=1** in Boot –> Custom Flags
 ![java-javascript](/img/in-post/post-js-version/shikigva.png)
 
-* Copy **Shiki.kext** and **AppleALC.kext** and paste them in to **EFI drive/EFI/Clover/kexts/Other**.
+* Copia **Shiki.kext** e **AppleALC.kext** ed incollali in **EFI drive/EFI/Clover/kexts/Other**.
 ![java-javascript](/img/in-post/post-js-version/kextsOther.png)
 
-##### 5.2.3. Second Audio Method
+##### 5.2.3. Secondo Metodo Audio
 
-Open Clover Configurator if not open.
+Apri Clover Configurator se non aperto.
 
-* Make sure that **Lilu.kext** and **AppleALC.kext** ( If you use the above step then AppleALC will already be in the **kexts/Other** folder) are installed if not install these Kexts.
-* Add patches in Clover Configurator
+* Assicurati che **Lilu.kext** e **AppleALC.kext** (se hai appena seguito gli step precedenti AppleALC dovrebbe già trovarsi in **kexts/Other**) siano installati. In caso contrario installali.
+* Aggiungi patches in Clover Configurator
 
-**Add patches in DSDT if not present.**
+**Aggiungi patches in DSDT se non presente.**
 
 ACPI –> DSDT –> Patches –> +
 
@@ -282,30 +283,30 @@ Replace: 48444546
 ```
 ![java-javascript](/img/in-post/post-js-version/HDxx.png)
 
-**Change Audio ID to 1 or 2 if not.**
+**Cambia l'Audio ID a 1 o 2 se non diverso.**
 
-In the latest version of **AppleALC.kext**, audio ID 1 or 2 or 11 is fully supported for ALC1220 and ALCS 1220A codecs.
+Nell'ultima versione di **AppleALC.kext**, gli audio ID 1, 2 o 11 sono pienamente supportati dai codecs ALC1220 e ALC1220A.
 
-Devices –> Audio –> Change it to **1** or **2** or **11**
+Devices –> Audio –> Cambialo in **1** o **2** o **11**
 ![java-javascript](/img/in-post/post-js-version/AudioInjection.png)
 
-Run **audio_cloverHDMI-130.command** to get HDMI Audio working if you want. If this method of HDMI Audio didn’t work for you then follow the <a href="https://www.tonymacx86.com/threads/quick-fix-200-series-kaby-lake-audio-onboard-and-or-hd-6x0-hdmi.221618/" target="_blank">toleda guide on how to enable HDMI Audio</a>.
+Esegui **audio_cloverHDMI-130.command** in modo da far funzionare l'HDMI Audio se lo necessiti. Se questo metodo non funziona segui la <a href="https://www.tonymacx86.com/threads/quick-fix-200-series-kaby-lake-audio-onboard-and-or-hd-6x0-hdmi.221618/" target="_blank">guida di Toleda sull'HDMI Audio</a>.
 ![java-javascript](/img/in-post/post-js-version/toledaHDMI.png)
 
 #### 5.3. SMBIOS
 
-We need to change the SMBIOS to iMac 18.1 or 18.2 or 18.3 because these are the SMBIOS for the Kabylake processors. This is necessary because without SMBIOS the system will not boot and other features like power management, iMessage, Graphics acceleration won’t work.
+Abbiamo bisogno di cambiare il nostro SMBIOS ad iMac 18.1 o 18.2 o 18.3 poiché questi sono gli SMBIOS dei nuovi Mac Kabylake. Questo step è necessario perché senza il giusto SMBIOS il sistema non si avvierà e peccherà di alcune funzioni come la gestione energetica, iMessage, l'accelerazione grafica ecc.
 
-For the perfect configuration of SMBIOS head over to <a href="http://www.everymac.com/systems/by_year/macs-released-in-2017.html" target="_blank">this link</a> and choose SMBIOS that matches your processor.
+Per la perfetta configurazione SMBIOS dai un'occhiata a <a href="http://www.everymac.com/systems/by_year/macs-released-in-2017.html" target="_blank">questo link</a> e segli l'SMBIOS che più si addice al tuo processore.
 
-In my case, I changed the SMBIOS to 18.2 (cause it's the SMBIOS of the i5-75000 powered iMac).
+Nel mio caso, ho cambiato il mio SMBIOS a 18.2 (perché è l'SMBIOS del Mac con i5-7500).
 ![java-javascript](/img/in-post/post-js-version/SMBIOS.png)
 
-##### 5.4. USB Power Management
+##### 5.4. Gestione Energetica USB
 
-Those who looking for the proper USB Power management go to the <a href="https://www.tonymacx86.com/threads/guide-usb-power-property-injection-for-sierra-and-later.222266/" target="_blank">USB power property injection for Sierra (and later) Guide</a> by RehabMan.
+Per chi voglia implementare correttamente la gestione energetica segua la <a href="https://www.tonymacx86.com/threads/guide-usb-power-property-injection-for-sierra-and-later.222266/" target="_blank">guida alla corretta injection per la USB Power Management su Sierra (o successivo)</a> di RehabMan.
 
-Also, don’t forget to add patches in Kernal and Kext Patches –> Kext To Patch
+Inoltre, non dimenticare l'aggiunta delle seguentu patches in Kernel and Kext Patches –> Kext To Patch
 
 ```html
 Name: com.apple.driver.usb.AppleUSBXHCIPCI
@@ -321,14 +322,14 @@ Comment: Change 15 port limit to 24 in XHCI kext
 ```
 ![java-javascript](/img/in-post/post-js-version/AppleUSBXHCIPCI.png)
 
-As you may have seen I didn't apply the first patch, because I didn't need it.
+Come potresti aver notato non ho applicato la prima patch, perché non ne avevo bisogno.
 
 #### 5.5. iMessage
-<a href="https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/" target="_blank">An iDiot's Guide To iMessage</a> it is the best iMessage Guide we can found on the internet, just follow this guide straightforward.
+<a href="https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/" target="_blank">An iDiot's Guide To iMessage</a> è la migliore guida al corretto funzionamento di iMessage che possiamo trovare su internet, segui solo ogni indicazione passo passo.
 
-## 6. Geekbench Scores
+## 6. Punteggi Geekbench
 
-The results are very nice, considering we're talking about an Os running on non-natively supported hardware.
+I risultati sono davvero buoni, considerato il fatto che stiamo parlando di un un OS in esecuzione su hardware non nativamente supportato.
 ![java-javascript](/img/in-post/post-js-version/Device.png)
 ![java-javascript](/img/in-post/post-js-version/Score.png)
 ![java-javascript](/img/in-post/post-js-version/SCComparison.png)
@@ -336,33 +337,33 @@ The results are very nice, considering we're talking about an Os running on non-
 ![java-javascript](/img/in-post/post-js-version/OpenCL.png)
 ![java-javascript](/img/in-post/post-js-version/OpenCLComparison.png)
 
-### 7. Frequently Asked Questions
+### 7. Domande Frequenti
 
-* **Question:** After the installation macOS won’t boot from the HDD drive. It only boots from the USB!
-	**Answer:** In this case first of all you need to boot using USB. After you reached the desktop copy the entire EFI folder from USB to your Hackintosh. Then replace the one in the HDD’s EFI folder with that one you just copied
-* **Question:** How to enable NVIDIA Graphics card?
-	**Answer:** Now NVIDIA releases the new web drivers for Pascal Graphics card. To get NVIDIA card work you need to download NVIDIA FixUP or simply select the NVIDIA Web option from the New Multibeast.
-* **Question:** Will this guide work with all the motherboards?
-	**Answer: Yes, it will work but you have to select the suitable drivers from the post installation and make sure that the BIOS settings are matched with your motherboard.
+* **Domanda:** Dopo l'installazione di macOS questo non si avvia dall'HHD, ma solo dalla USB!
+	**Risposta:** In questo caso devi prima di tutto avviare appunto da USB. Una volta arrivato alla Scrivania copia l'intera cartella EFI dalla USB sul tuo Hackintosh. Quindi rimpiazza quella già presente nella partizione EFI dell'HHD con quella appena copiata.
+* **Domanda:** Come abilitare le schede video NVIDIA?
+	**Risposta:** Adesso NVIDIA rilascia anche i nuovi Web Driver per GPU con architettura Pascal. Per farle funzionare scarica lo NVIDIA FixUP o semplicemente seleziona l'opzione NVIDIA Web dal nuovo Multibeast.
+* **Domanda:** Questa guida può essere applicata anche ad altre schede madre?
+	**Risposta:** Sì, potrebbe, ma devi adottare i necessari cambiamenti (kexts, config.plist, bootflags...) in post-installazione ed essere sicuro che le opzioni BIOS siano compatibili con l'avvio di Hackintosh.
 
-### 8. Updating to the latest Version
+### 8. Aggiornamenti?
 
-Apple releases the updates in every one or two months. After using this steps, you can easily update it through your Mac App Store. Sometimes some error could occur. That's why I raccomend you to keep a backup of your EFI folder and the most important file in another partition. Anyway if that happens let me know in the comment box.
+Apple rilascia in media un aggiornamento ogni uno o due mesi. Dopo aver seguito tutti gli step precedenti, potresti aggiornare facilmente tramite il Mac App Store. Ma a volte qualcosa può andare storto. Per questo ti raccomando di mantenere sempre una copia della tua cartella EFI e dei tuoi file più importanti in una partizione/disco a parte. Comunque se qualcosa del genere dovesse succedere scrivimi nei commenti sotto o alla mia mail, nella sezione About.
 
-Graphics issue. After the update, if you can’t boot into desktop then disable **Inject Intel** from the Clover **Boot/Options/Graphics Injector/Untick inject-intel**. After you reach in desktop, Install **Lilu.kext** and **IntelGraphicsFixup.kext** into **Library/Extension**. If this didn’t help then follow the Graphics section from this guide. If your kexts are already installed, then you will not have any issues with the upgrade.
+Problemi Grafici? Dopo l'aggiornamento se non riesci più ad avviare prova disabilitando **Inject Intel** da **Boot/Options/Graphics Injector/Untick inject-intel**. Una volta raggiunta la Scrivania, installa **Lilu.kext** e **IntelGraphicsFixup.kext** in **Library/Extension**. Se questo non ti aiuta ancora segui la relativa sezione nella guida sovrastante. Se tutti i kexts necessari sono già installati, però, non dovresti avre alcun problema ad aggiornare.
 
-Make sure that the Audio is working because these two is the main part will have an issue after updating. If you had any trouble with the audio, then follow the steps from this Guide.
+Assicurati che l'audio funzioni perché il secondo metodo potrebbe essere affetto da eventuali aggiornamenti. Se hai problemi audio, segui nuovamente i relativi step nella guida sopra.
 
 ![java-javascript](/img/in-post/post-js-version/HighSierra.png)
 
-### 9. Thanks to
+### 9. Ringraziamenti
 
-* <a href="https://www.tonymacx86.com/members/jktaurus8.1548388/" target="_blank">jktaurus8</a> and his <a href="https://www.tonymacx86.com/threads/updated-for-multibeast-9-2-1-and-sierra-10-12-6-sierra-on-200-series-with-kabylake-processor.218494/" target="_blank">awesome guide</a>.
+* <a href="https://www.tonymacx86.com/members/jktaurus8.1548388/" target="_blank">jktaurus8</a> e la sua <a href="https://www.tonymacx86.com/threads/updated-for-multibeast-9-2-1-and-sierra-10-12-6-sierra-on-200-series-with-kabylake-processor.218494/" target="_blank">fantastica guide</a>.
 * <a href="https://www.tonymacx86.com/members/rehabman.429483/" target="_blank">RehabMan</a>
 * <a href="https://www.tonymacx86.com/members/ghosthitwall.1415514/" target="_blank">GhostHitWall</a>
 * <a href="https://www.tonymacx86.com/members/tonymacx86.3/" target="_blank">tonymacx86</a>
 * <a href="https://www.tonymacx86.com/members/onmybikedrunk.1085297/" target="_blank">onmybikedrunk</a>
 * <a href="https://www.tonymacx86.com/members/toleda.2393/" target="_blank">toleda</a>
 * <a href="https://www.tonymacx86.com/members/p1lgrim.374452/" target="_blank">P1LGRIM</a>
-* You, if you readed the entired guide. But if you did not... well... fy.
+* Te, se hai letto l'intera guida. In caso contrario... beh... fanghule.
 

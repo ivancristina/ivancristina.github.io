@@ -10,20 +10,21 @@ So let's start with my build. I assembled it something like 7 months ago, and it
 
 My entire setup has been built with:
 
-- an **<a href="http://amzn.eu/h3i8nZy" target="_blank">MSI H270 Gaming M3</a>**, a 200 serie mobo, with a bunch of RGB LEDs and an overall fancy aestetich. Worth the €126 I spent, now at €116*.
+- an **<a href="http://amzn.eu/h3i8nZy" target="_blank">MSI H270 Gaming M3</a>**, a 200 serie mobo, with a bunch of red LEDs and an overall fancy aestetich. Worth the €126 I spent, now at €116*.
 - an **<a href="http://amzn.eu/5WilklT" target="_blank">Intel Core i5-7500</a>**, a 3.4Ghz with 6Mb of cache Kaby Lake. Bought at €211, now at €184*
 - a **<a href="http://amzn.eu/1DicCyw" target="_blank">Western Digital Blue</a>** 1 Tb @ 7200RPM HDD. Really solid. Very nice product for the 51 euro I spent for it* (price it has kept).
 - a single slot of **<a href="http://amzn.eu/j4PcU9x" target="_blank">Ballistix Sport LT</a>** RAM. 8 Gb DDR4 at 2400Mhz clock. A nice deal for €54, considering now it costs more than €10 more.
 - a **<a href="http://amzn.eu/7L74v01" target="_blank">Corsair VS450</a>** PSU, 80+ certification and huge quality that you can afford at €41* (as I did, for instance). Bought because didn't plan about a GPU, **now regretting** a bit if I have to tell you.
-- and at the end, the <a href="http://amzn.eu/6XEPdiw" target="_blank">Carbide Spec-03</a>. Fancy ATX case, with a nice glass (plastic, in reality) panel, with 2 quiet Corsair fans inside (one LED and one not). Kept its price of €65.
+- and at the end, the **<a href="http://amzn.eu/6XEPdiw" target="_blank">Carbide Spec-03</a>**. Fancy ATX case, with a nice glass (plastic, in reality) panel, with 2 quiet Corsair fans inside (one LED and one not). Kept its price of €65.
 
 > *Prices are referred to those on Amazon.it in March 2017*
 
-So you could ask... why not a more powerful PSU? Why not an external GPU instead of that sh**ty HD 630? And moreover, why not a damn SSD?
+So you could ask... why not a more powerful PSU? Why not a dedicated GPU instead of that sh$!ty HD 630? And moreover, why not a damn SSD?
 Well. I was a stupid. A **very poor stupid**. Dind't think and didn't have money. Moreover expecially in these months, along with the price of high end GPUs for bitcoin mining *(thanks dears, hope you to loose all the bitcoin you mined)*, both italian physical and virtual shops (like Amazon) well thought to increase prices. For everything! Even CPUs, low end GPUs and SSD. Those in particular actually costs **almost the double** of the "real" price.
 
 About the Motherboard, **totally worth it**. H serie because I didn't need the Z feautures, and also because as a (poor) student, I don't have enough money to afford a Z Mobo and a K CPU. Anyway nice to see, very well built and managed by MSI softwares in Windows. With Hackintosh... you know, newer not always means better, expecially if you basically adapting a closed source OS with non proprietary hardware. But some patches, and I was good to go.
-The CPU... DAMN, if **I hated it!** I mean, it's actually powerful an power-friendly, but the price was actually a bit high *IMHO*. And as I told before... It was a mess let it work in Sierra, until finally the 2017 Mac serie came out, along with their new Kaby Lake models. That made everything **ALOT EASIER**. In fact, before the 10.12.6 update (with the new Kaby Lake kernel support), in order to let Kaby Lake run you had to <a href="https://www.tonymacx86.com/threads/new-testing-intel-7th-generation-kaby-lake-cpus-200-series-motherboards-in-macos.219877/" target="_blank">spoof your CPU and GPU ID</a>, and some of the times it wouldn't even boot after that (like in my case .-.). Make the GPU work with full acceleration was a mess, but at the end instead of the fu**ing 7mb of virtualized nvram, I managed to get the GPU working along all its 1536 MB of memory. And then, thanks to the 10.12.6 update, I finally also managed to power the CPU at its full power.
+
+The CPU... DAMN, if **I hated it!** I mean, it's actually powerful an power-friendly, but the price was actually a bit high *IMHO*. And as I told before... It was a mess let it work in Sierra, until finally the 2017 Mac serie came out, along with their new Kaby Lake models. That made everything **ALOT EASIER**. In fact, before the 10.12.6 update (with the new Kaby Lake kernel support), in order to let Kaby Lake run you had to <a href="https://www.tonymacx86.com/threads/new-testing-intel-7th-generation-kaby-lake-cpus-200-series-motherboards-in-macos.219877/" target="_blank">spoof your CPU and GPU ID</a>, and some of the times it wouldn't even boot after that (like in my case .-.). Make the GPU work with full acceleration was a mess, but at the end instead of the fu$!ing 7mb of virtualized nvram, I managed to get the GPU working along all its 1536 MB of memory. And then, thanks to the 10.12.6 update, I finally also managed to power the CPU at its full power.
 
 ![java-javascript](/img/in-post/post-js-version/Info.png)
 
@@ -59,7 +60,7 @@ You could find my <a href="https://github.com/ivancristina/ivancristina.github.i
 It may vary by your motherboard.
 
 * **Step 1:** Load Optimised Default
-* **Step 2:** IN BIOS Tab
+* **Step 2:** In BIOS Tab
 	Windows 8/10 Features = Other OS
 	Storage Boot Option Control = UEFI
 * **Step 3:** Peripherals Tab
@@ -75,19 +76,19 @@ It may vary by your motherboard.
 
 You need to download some files to get things work. These files are necessary for the entire session of the Mac OS installation.
 
-##### 3.1. Bootloader:
+##### 3.1. Bootloader
 
 Latest version of <a href="https://sourceforge.net/projects/cloverefiboot/" target="_blank">Clover Bootloader</a>. This Bootloader let you boot both MacOS, Windows and Linux distros, all in one and with a customizable interface.
 
-##### 3.2. Utilities:
+##### 3.2. Utilities
 
 They're apps or scripts that will help you with the initialization, installation and configuration of Hackintosh. Download the latest version according to your macOS version
 * <a href="http://mackie100projects.altervista.org/download-clover-configurator/" target="_blank">Clover Configurator</a>. If you encounter the **7mb bug** use the Classic version instead of the Vibrant. This apps let you configure your bootloader settings with a fancy UI, instead than in command line (available also)
 * <a href="https://www.tonymacx86.com/resources/categories/tonymacx86-downloads.3" target="_blank">UniBeast, MultiBeast and KextBeast</a>.
 Those apps respectively let you create a bootable USB, configure your Hackintosh machine and install some primary drivers in **post-installation**
-* <a href="https://github.com/toleda/audio_CloverHDMI/blob/master/audio_cloverHDMI-130.command.zip?raw=true" target="_blank">Toleda's audio_cloverHDMI-130.command</a>. This script basically allows you to enable in a few clicks the **HD630 onboard audio**.
+* <a href="https://github.com/toleda/" target="_blank">Toleda</a>'s <a href="https://github.com/toleda/audio_CloverHDMI/blob/master/audio_cloverHDMI-130.command.zip?raw=true" target="_blank">audio_cloverHDMI-130.command</a>. This script basically allows you to enable in a few clicks the **HD630 onboard audio**.
 
-##### 3.3. Kexts:
+##### 3.3. Kexts
 
 Kexts are basically drivers, which let you use your devices in a *plug&play-like* way.
 
@@ -123,7 +124,7 @@ Other kexts you'll need later: *(in post installation, with MultiBeast)*
 
 ***If the below guide didn't work for you then try <a href="https://www.tonymacx86.com/threads/updated-for-multibeast-9-2-1-and-sierra-10-12-6-sierra-on-200-series-with-kabylake-processor.218494/page-12#post-1586314" target="_blank">this one instead</a>***
 
-1. Open Disk Utilities –> Select USB and Erase using **Mac OSX Extended Journaled** –> **GUID Partition Map** –> **Erase**
+1. Open Disk Utilities –> Select USB and Erase using **Mac OS extended (journaled)** –> **GUID Partition Map** –> **Erase**
 2. Then open Unibeast –> Choose USB –> Then Select **UEFI** –> After that select Sierra
 3. Open USB’s EFI partition –> EFI/Clover –> Open config.plist Using Clover Configurator
 4. Make the necessaries edits (not needed in our case)
@@ -135,7 +136,7 @@ In case you have a build equal or very similar to mine, rename the existing **co
 ##### 4.4. USB ports tweaking
 > *Not needed with my config.plist*
 
-*After Creating Bootable USB, you should do some tweaks on the USB if your motherboard has no USB 2.0 Port. If you have USB 2.0, then the below steps is not needed, although I reccomend you to follow these steps anyway*
+*After Creating Bootable USB, you should do some tweaks on the USB if your motherboard has USB 3.0+ Port. If you have just USB 2.0, then the below steps is not needed, although I reccomend you to follow these steps anyway*
 
 Add these configurations in config.plist using Clover Configurator. ***(Patches already applied in my config.plist)***
 
@@ -177,22 +178,22 @@ Move **USBInjectAll.kext** & **XHCI-200-series-injector.kext** to USB’s EFI pa
 1. Turn on the computer
 2. Press the hotkey **Canc** to choose boot device *(it may differ on your motherboard)*
 3. Select USB
-4. At Clover boot screen, select **Boot Mac OS X from USB**
+4. At Clover boot screen, select **Boot MacOS from USB**
 5. When you arrive at the Installer, choose a language.
 6. In the top menu bar select Utilities and open **Disk Utility**
 7. Highlight your target drive for the Sierra installation in the left column.
-8. Click Erase button
-9. **Name:** type Sierra (You can rename it later)
-10. **Format:** choose OS X Extended (Journaled)
-11. **For Scheme:** Choose GUID Partition Map
+8. Click *Erase* button
+9. **Name:** type *Sierra* (You can rename it later)
+10. **Format:** choose *Mac OS extended (journaled)*
+11. **For Scheme:** Choose *GUID Partition Map*
 12. Click **Erase**
-13. Close Disk Utility
-14. Highlight your target drive for the Sierra installation then click continue.
-15. After the first restart Press the hotkey Canc to choose boot device
+13. Close *Disk Utility*
+14. Highlight your target drive for the Sierra installation then click *Continue*.
+15. After the first restart press the hotkey *Canc* to choose boot device
 16. Select USB
-17. At Clover boot screen, Choose MacOS X **from the HDD** you installed.
+17. At Clover boot screen, scegli **Boot MacOS from the HDD** you installed.
 
-***If you don’t know how to install then follow the steps in the <a href="https://www.tonymacx86.com/threads/unibeast-install-macos-sierra-on-any-supported-intel-based-pc.200564/" target="_blank">Installation Guide</a>***
+***If you don’t know how to install MacOS then follow the steps in the <a href="https://www.tonymacx86.com/threads/unibeast-install-macos-sierra-on-any-supported-intel-based-pc.200564/" target="_blank">Installation Guide</a>***
 
 ## 5. Post-Installation
 
@@ -209,7 +210,7 @@ After the successful installation, you must install necessary kext and patches t
 
 *If you have different codec then select the codec that you want. Codec version can be found on the specification of your Motherboard*
 
-*There are two methods to get Audio Work. This is the First Method If this not works For you then Try method Two in “Post Installation Using Clover Configurator/Audio” Section.*
+*There are two methods to get Audio Work. This is the First Method. If it doesn't work for you then try the method Two in “Post Installation Using Clover Configurator/Audio” Section.*
 
 
 * **4th Step** = Drivers –> Network –> Check **IntelMausiEthernet v2.3** *(I also install RealtekRTL8111 v2.2.1)*
@@ -221,7 +222,7 @@ After the successful installation, you must install necessary kext and patches t
 * **6th Step** = Bootloader –> Check **Clover + Emulated NVRAM**
 ![java-javascript](/img/in-post/post-js-version/CloverBootloader.png)
 
-***Note: After installing Multibeast don’t forget update clover to the latest version, you can find the link above.***
+***Note: After installing Multibeast don’t forget update clover to the latest version. You can do it via the Clover Configurator app or via the link above.***
 
 * **7th Step** = Customize –> Graphics Configuration –> Select on **Intel HD 6xx**
 ![java-javascript](/img/in-post/post-js-version/Graphics.png)
@@ -234,7 +235,7 @@ After the successful installation, you must install necessary kext and patches t
 
 ##### 5.2.1. Basic Configuration
 
-* Open Clover Configurator Then mount EFI Partition if not mounted (Multibeast will automatically mount the EFI partition)
+* Open Clover Configurator, then mount EFI Partition if not mounted (Multibeast will automatically mount the EFI partition)
 * Fix Random Restart problem when system shutdown by Selecting **FixShutdown_0004** under ACPI –> Fixes
 ![java-javascript](/img/in-post/post-js-version/Shutdown.png)
 
@@ -258,7 +259,7 @@ Replace: 49475055
 ```
 ![java-javascript](/img/in-post/post-js-version/IGPU.png)
 
-* Add Custom BootFlag **shikigva=1** In Boot –> Custom Flags
+* Add the bootflag **shikigva=1** in Boot –> Custom Flags
 ![java-javascript](/img/in-post/post-js-version/shikigva.png)
 
 * Copy **Shiki.kext** and **AppleALC.kext** and paste them in to **EFI drive/EFI/Clover/kexts/Other**.
@@ -268,7 +269,7 @@ Replace: 49475055
 
 Open Clover Configurator if not open.
 
-* Make sure that **Lilu.kext** and **AppleALC.kext** ( If you use the above step then AppleALC will already be in the **kexts/Other** folder) are installed if not install these Kexts.
+* Make sure that **Lilu.kext** and **AppleALC.kext** (if you use the above step then AppleALC will already be in the **kexts/Other** folder) are installed. If not install them.
 * Add patches in Clover Configurator
 
 **Add patches in DSDT if not present.**
@@ -284,7 +285,7 @@ Replace: 48444546
 
 **Change Audio ID to 1 or 2 if not.**
 
-In the latest version of **AppleALC.kext**, audio ID 1 or 2 or 11 is fully supported for ALC1220 and ALCS 1220A codecs.
+In the latest version of **AppleALC.kext**, audio ID 1 or 2 or 11 is fully supported for ALC1220 and ALC1220A codecs.
 
 Devices –> Audio –> Change it to **1** or **2** or **11**
 ![java-javascript](/img/in-post/post-js-version/AudioInjection.png)
@@ -298,14 +299,14 @@ We need to change the SMBIOS to iMac 18.1 or 18.2 or 18.3 because these are the 
 
 For the perfect configuration of SMBIOS head over to <a href="http://www.everymac.com/systems/by_year/macs-released-in-2017.html" target="_blank">this link</a> and choose SMBIOS that matches your processor.
 
-In my case, I changed the SMBIOS to 18.2 (cause it's the SMBIOS of the i5-75000 powered iMac).
+In my case, I changed the SMBIOS to 18.2 (cause it's the SMBIOS of the i5-7500 powered iMac).
 ![java-javascript](/img/in-post/post-js-version/SMBIOS.png)
 
 ##### 5.4. USB Power Management
 
 Those who looking for the proper USB Power management go to the <a href="https://www.tonymacx86.com/threads/guide-usb-power-property-injection-for-sierra-and-later.222266/" target="_blank">USB power property injection for Sierra (and later) Guide</a> by RehabMan.
 
-Also, don’t forget to add patches in Kernal and Kext Patches –> Kext To Patch
+Also, don’t forget to add patches in Kernel and Kext Patches –> Kext To Patch
 
 ```html
 Name: com.apple.driver.usb.AppleUSBXHCIPCI
@@ -328,7 +329,7 @@ As you may have seen I didn't apply the first patch, because I didn't need it.
 
 ## 6. Geekbench Scores
 
-The results are very nice, considering we're talking about an Os running on non-natively supported hardware.
+The results are very nice, considering we're talking about an OS running on non-natively supported hardware.
 ![java-javascript](/img/in-post/post-js-version/Device.png)
 ![java-javascript](/img/in-post/post-js-version/Score.png)
 ![java-javascript](/img/in-post/post-js-version/SCComparison.png)
@@ -339,7 +340,7 @@ The results are very nice, considering we're talking about an Os running on non-
 ### 7. Frequently Asked Questions
 
 * **Question:** After the installation macOS won’t boot from the HDD drive. It only boots from the USB!
-	**Answer:** In this case first of all you need to boot using USB. After you reached the desktop copy the entire EFI folder from USB to your Hackintosh. Then replace the one in the HDD’s EFI folder with that one you just copied
+	**Answer:** In this case first of all you need to boot using USB. After you reached the desktop copy the entire EFI folder from USB to your Hackintosh. Then replace the one in the HDD’s EFI folder with that one you just copied.
 * **Question:** How to enable NVIDIA Graphics card?
 	**Answer:** Now NVIDIA releases the new web drivers for Pascal Graphics card. To get NVIDIA card work you need to download NVIDIA FixUP or simply select the NVIDIA Web option from the New Multibeast.
 * **Question:** Will this guide work with all the motherboards?
@@ -347,7 +348,7 @@ The results are very nice, considering we're talking about an Os running on non-
 
 ### 8. Updating to the latest Version
 
-Apple releases the updates in every one or two months. After using this steps, you can easily update it through your Mac App Store. Sometimes some error could occur. That's why I raccomend you to keep a backup of your EFI folder and the most important file in another partition. Anyway if that happens let me know in the comment box.
+Apple releases the updates in every one or two months. After using this steps, you can easily update it through your Mac App Store. Sometimes some error could occur. That's why I raccomend you to keep a backup of your EFI folder and the most important file in another partition. Anyway if that happens let me know in the comment box or contact me to my mail, which you can find in the About page.
 
 Graphics issue. After the update, if you can’t boot into desktop then disable **Inject Intel** from the Clover **Boot/Options/Graphics Injector/Untick inject-intel**. After you reach in desktop, Install **Lilu.kext** and **IntelGraphicsFixup.kext** into **Library/Extension**. If this didn’t help then follow the Graphics section from this guide. If your kexts are already installed, then you will not have any issues with the upgrade.
 
