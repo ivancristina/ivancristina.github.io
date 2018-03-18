@@ -16,13 +16,39 @@
 				<false/>
 				<key>FiX_WAK_200000</key>
 				<false/>
-				<key>FixShutdown_0004</key>
+				<key>FixHeaders</key>
+				<true/>
+				<key>FixShutdown</key>
 				<true/>
 			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
 			<key>Patches</key>
 			<array>
+				<dict>
+					<key>Comment</key>
+					<string>10.8+-Rename-GFX02IGPU</string>
+					<key>Find</key>
+					<data>R0ZYMA==</data>
+					<key>Replace</key>
+					<data>SUdQVQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>10.11+-Rename-HDAS2HDEF</string>
+					<key>Find</key>
+					<data>SERBUw==</data>
+					<key>Replace</key>
+					<data>SERFRg==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>10.11+-Rename-HECI2IMEI</string>
+					<key>Find</key>
+					<data>SEVDSQ==</data>
+					<key>Replace</key>
+					<data>SU1FSQ==</data>
+				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change EHC1 to EH01</string>
@@ -97,6 +123,19 @@
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
+		<key>DropTables</key>
+		<array>
+			<dict>
+				<key>Signature</key>
+				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>MATS</string>
+			</dict>
+		</array>
+		<key>HaltEnabler</key>
+		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -113,9 +152,9 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 shikigva=1</string>
+		<string>nv_disable=1 shikigva=1 dart=0</string>
 		<key>DefaultVolume</key>
-		<string>macOS</string>
+		<string>Mac</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Log</key>
@@ -129,6 +168,78 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>Arbitrary</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>10.8+-Intel-IGPU-HDMI-HDA</string>
+				<key>PciAddr</key>
+				<string>00:02.00</string>
+				<key>CustomProperties</key>
+				<array>
+					<dict>
+						<key>Key</key>
+						<string>hda-gfx</string>
+						<key>Value</key>
+						<string>onboard-1</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.12.6-Intel-HDA-Desktop</string>
+				<key>PciAddr</key>
+				<string>00:1F.03</string>
+				<key>CustomProperties</key>
+				<array>
+					<dict>
+						<key>Key</key>
+						<string>hda-gfx</string>
+						<key>Value</key>
+						<string>onboard-1</string>
+					</dict>
+					<dict>
+						<key>Key</key>
+						<string>layout-id</string>
+						<key>Value</key>
+						<integer>1</integer>
+					</dict>
+					<dict>
+						<key>Key</key>
+						<string>PinConfigurations</string>
+						<key>Value</key>
+						<data></data>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.12.6-Intel-HDA-NUC</string>
+				<key>PciAddr</key>
+				<string>00:1F.03</string>
+				<key>CustomProperties</key>
+				<array>
+					<dict>
+						<key>Key</key>
+						<string>hda-gfx</string>
+						<key>Value</key>
+						<string>onboard-1</string>
+					</dict>
+					<dict>
+						<key>Key</key>
+						<string>layout-id</string>
+						<key>Value</key>
+						<integer>1</integer>
+					</dict>
+					<dict>
+						<key>Key</key>
+						<string>PinConfigurations</string>
+						<key>Value</key>
+						<data></data>
+					</dict>
+				</array>
+			</dict>
+		</array>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
@@ -167,11 +278,78 @@
 	</array>
 	<key>GUI</key>
 	<dict>
-		<key>Hide</key>
-		<array>
-			<string>Windows</string>
-			<string>\EFI\BOOT\BOOTX64.EFI</string>
-		</array>
+		<key>Custom</key>
+		<dict>
+			<key>Entries</key>
+			<array>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Hidden</key>
+					<true/>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\BOOT\BOOTX64.EFI</string>
+					<key>Title</key>
+					<string>Windows</string>
+					<key>Type</key>
+					<string>Windows</string>
+					<key>Volume</key>
+					<string>3913F440-BC1E-414C-A926-7719BDC137B1</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
+					<key>Title</key>
+					<string>Windows 10</string>
+					<key>Type</key>
+					<string>Windows</string>
+					<key>Volume</key>
+					<string>3913F440-BC1E-414C-A926-7719BDC137B1</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Hidden</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
+					<key>InjectKexts</key>
+					<true/>
+					<key>NoCaches</key>
+					<false/>
+					<key>Path</key>
+					<string>\System\Library\CoreServices\boot.efi</string>
+					<key>Title</key>
+					<string>Mac</string>
+					<key>Type</key>
+					<string>OSX</string>
+					<key>Volume</key>
+					<string>D2390C60-9117-4CEA-AC93-33B486EDDF86</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\ubuntu\grubx64.efi</string>
+					<key>Title</key>
+					<string>Ubuntu 17.10</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Volume</key>
+					<string>598B3F0C-78F8-49D8-818A-AE12A8E883E0</string>
+				</dict>
+			</array>
+		</dict>
 		<key>Language</key>
 		<string>en:0</string>
 		<key>Mouse</key>
@@ -184,9 +362,9 @@
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
-			<true/>
+			<false/>
 			<key>Legacy</key>
-			<string>First</string>
+			<false/>
 			<key>Linux</key>
 			<false/>
 			<key>Tool</key>
@@ -195,10 +373,12 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>embedded</string>
+		<string>BeautyX</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
+		<key>ig-platform-id</key>
+		<string>59120000</string>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -208,8 +388,6 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>ig-platform-id</key>
-		<string>0x59120000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -221,28 +399,96 @@
 		<true/>
 		<key>KernelCpu</key>
 		<false/>
-		<key>KernelHaswellE</key>
-		<false/>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
 		<true/>
+		<key>KernelXCPM</key>
+		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>t2-10.12.6-KBL-5912000-Port_0x5-DP2HDM</string>
+				<string>10.12.6-KBL-5912000-Port_0x5-DP2HDM</string>
+				<key>Find</key>
+				<data>AQUJAAAEAACHAQAA</data>
+				<key>Name</key>
+				<string>AppleIntelKBLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>AQUJAAAIAACHAQAA</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.12.6-KBL-5912000-Port_0x6-DP2HDM</string>
+				<key>Find</key>
+				<data>AgQKAAAEAACHAQAA</data>
+				<key>Name</key>
+				<string>AppleIntelKBLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>AgQKAAAIAACHAQAA</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.12.6-KBL-5912000-Port_0x7-DP2HDM</string>
+				<key>Find</key>
+				<data>AwYKAAAEAACHAQAA</data>
+				<key>Name</key>
+				<string>AppleIntelKBLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>AwYKAAAIAACHAQAA</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>t1-10.12-10.13-AppleHDA-Realtek-ALC...(cloverALC-all_codecs)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				AQUJAAAEAACHAQAA
+				ihnUEQ==
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
-				<string>AppleIntelKBLGraphicsFramebuffer</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
-				AQUJAAAIAACHAQAA
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>t1-10.12-10.13-AppleHDA-Realtek-ALC1220</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				ixnUEQ==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				IBLsEA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>t1-AppleHDA-Resources-xml&gt;zml-(cloverALC-all_codecs)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				eG1sLnps
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				em1sLnps
 				</data>
 			</dict>
 			<dict>
@@ -254,6 +500,8 @@
 				<data>
 				RXh0ZXJuYWw=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
@@ -270,59 +518,13 @@
 				<data>
 				g710////EA==
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>AppleUSBXHCIPCI</string>
 				<key>Replace</key>
 				<data>
 				g710////Gw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.12-AppleHDA/Realtek ALC...</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				ihnUEQ==
-				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.12-AppleHDA/Realtek ALC1220</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				ixnUEQ==
-				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				IBLsEA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>AppleHDA/Resources/xml&gt;zml</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				eG1sLnps
-				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				em1sLnps
 				</data>
 			</dict>
 		</array>
@@ -332,7 +534,7 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x67</string>
+		<string>0x3FF</string>
 		<key>ROM</key>
 		<string>UseMacAddr0</string>
 	</dict>
