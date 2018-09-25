@@ -6,14 +6,11 @@ header-img: "img/about-bg.jpg"
 multilingual: true
 ---
 
-<!-- Multi-Lingual -->
-{% if page.multilingual %}
 <!-- Language Selector -->
 <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> Italiano </option>
     <option value="1"> English </option>
 </select>
-{% endif %}
 
 <!-- Italian Version -->
 <div class="it post-container">
@@ -26,6 +23,7 @@ multilingual: true
 	{% capture about_en %}{% include about/en.md %}{% endcapture %}
 	{{ about_en | markdownify }}
 </div>
+
 
 {% if site.disqus_username %}
 <!-- disqus start -->
@@ -42,6 +40,7 @@ multilingual: true
     var disqus_shortname = "{{site.disqus_username}}";
     var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
     var disqus_url = "{{site.url}}{{page.url}}";
+
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';

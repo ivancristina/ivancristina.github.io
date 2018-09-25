@@ -8,10 +8,13 @@ keyword: "ivan, ivanc, ivancristina, IvanCristina, @ivancristina"
 url: "https://ivancristina.github.io/" # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-
+# Publish posts or collection documents with a future date.
+future: true
 
 # SNS settings
 RSS: false
+#weibo_username:     ivancristina
+#zhihu_username:     ivancristina
 github_username:    ivancristina
 twitter_username:   ivan_cristin
 instagram_username: ivancristina5
@@ -19,6 +22,7 @@ telegram_username:  IvanCristina
 xda_username:       IvanCristina
 xda_member_id:      6243385
 #facebook_username: ivancristina
+linkedin_username:  ivan-cristina-368489168
 
 
 
@@ -48,6 +52,12 @@ gems:
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
 
 
@@ -56,6 +66,8 @@ disqus_username: ivancristina-github-io
 
 # Netease settings
 netease_comment: false
+
+
 
 # Analytics settings
 # Google Analytics
@@ -79,7 +91,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
-service-worker: false
+service-worker: true
 
 
 
@@ -107,7 +119,3 @@ friends: [
         href: "#"
     }
 ]
-
-
-#Markdown
-encoding: utf-8

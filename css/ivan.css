@@ -15,9 +15,11 @@
     padding-right: 5%;
   }
 }
+/*! Ivan was here */
 .roundrect {
 border-radius: 10px;
 }
+/*! End */
 .sidebar-container {
   color: #bfbfbf;
   font-size: 14px;
@@ -308,6 +310,254 @@ button.paper-button {
   margin: 16px;
   border-radius: 2px;
 }
+.highlight,
+pre.highlight {
+  background: #282c34;
+  color: #abb2bf;
+}
+.highlight pre {
+  background: #282c34;
+}
+.highlight .hll {
+  background: #282c34;
+}
+.highlight .c {
+  color: #5c6370;
+  font-style: italic;
+}
+.highlight .err {
+  color: #960050;
+  background-color: #1e0010;
+}
+.highlight .k {
+  color: #c678dd;
+}
+.highlight .l {
+  color: #98c379;
+}
+.highlight .n {
+  color: #abb2bf;
+}
+.highlight .o {
+  color: #abb2bf;
+}
+.highlight .p {
+  color: #abb2bf;
+}
+.highlight .cm {
+  color: #5c6370;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #5c6370;
+  font-style: italic;
+}
+.highlight .c1 {
+  color: #5c6370;
+  font-style: italic;
+}
+.highlight .cs {
+  color: #5c6370;
+  font-style: italic;
+}
+.highlight .ge {
+  font-style: italic;
+}
+.highlight .gs {
+  font-weight: 700;
+}
+.highlight .kc {
+  color: #c678dd;
+}
+.highlight .kd {
+  color: #c678dd;
+}
+.highlight .kn {
+  color: #c678dd;
+}
+.highlight .kp {
+  color: #c678dd;
+}
+.highlight .kr {
+  color: #c678dd;
+}
+.highlight .kt {
+  color: #c678dd;
+}
+.highlight .ld {
+  color: #98c379;
+}
+.highlight .m {
+  color: #d19a66;
+}
+.highlight .s {
+  color: #98c379;
+}
+.highlight .na {
+  color: #d19a66;
+}
+.highlight .nb {
+  color: #e5c07b;
+}
+.highlight .nc {
+  color: #e5c07b;
+}
+.highlight .no {
+  color: #e5c07b;
+}
+.highlight .nd {
+  color: #e5c07b;
+}
+.highlight .ni {
+  color: #e5c07b;
+}
+.highlight .ne {
+  color: #e5c07b;
+}
+.highlight .nf {
+  color: #abb2bf;
+}
+.highlight .nl {
+  color: #e5c07b;
+}
+.highlight .nn {
+  color: #abb2bf;
+}
+.highlight .nx {
+  color: #abb2bf;
+}
+.highlight .py {
+  color: #e5c07b;
+}
+.highlight .nt {
+  color: #e06c75;
+}
+.highlight .nv {
+  color: #e5c07b;
+}
+.highlight .ow {
+  font-weight: 700;
+}
+.highlight .w {
+  color: #f8f8f2;
+}
+.highlight .mf {
+  color: #d19a66;
+}
+.highlight .mh {
+  color: #d19a66;
+}
+.highlight .mi {
+  color: #d19a66;
+}
+.highlight .mo {
+  color: #d19a66;
+}
+.highlight .sb {
+  color: #98c379;
+}
+.highlight .sc {
+  color: #98c379;
+}
+.highlight .sd {
+  color: #98c379;
+}
+.highlight .s2 {
+  color: #98c379;
+}
+.highlight .se {
+  color: #98c379;
+}
+.highlight .sh {
+  color: #98c379;
+}
+.highlight .si {
+  color: #98c379;
+}
+.highlight .sx {
+  color: #98c379;
+}
+.highlight .sr {
+  color: #56b6c2;
+}
+.highlight .s1 {
+  color: #98c379;
+}
+.highlight .ss {
+  color: #56b6c2;
+}
+.highlight .bp {
+  color: #e5c07b;
+}
+.highlight .vc {
+  color: #e5c07b;
+}
+.highlight .vg {
+  color: #e5c07b;
+}
+.highlight .vi {
+  color: #e06c75;
+}
+.highlight .il {
+  color: #d19a66;
+}
+.highlight .gu {
+  color: #75715e;
+}
+.highlight .gd {
+  color: #f92672;
+}
+.highlight .gi {
+  color: #a6e22e;
+}
+.highlighter-rouge .highlight {
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+.highlighter-rouge .highlight pre {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  word-wrap: normal;
+}
+.highlighter-rouge .highlight .table-responsive {
+  margin: 0px;
+  border: 0px;
+}
+.highlighter-rouge .highlight .table {
+  margin: 0px;
+  table-layout: fixed;
+}
+.highlighter-rouge .highlight table > tbody > tr > td {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.highlighter-rouge .highlight table > tbody > tr > td > pre {
+  padding: 14px;
+}
+.highlighter-rouge .highlight td.rouge-gutter {
+  width: 56px;
+}
+.highlighter-rouge .highlight .lineno {
+  text-align: right;
+  border-radius: 0px;
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .highlighter-rouge .highlight {
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0px;
+  }
+  .highlighter-rouge .highlight td.rouge-gutter {
+    width: 46px;
+  }
+}
 body {
   /* Hux learn from
      *     TypeIsBeautiful,
@@ -355,7 +605,7 @@ a img:focus {
   cursor: zoom-in;
 }
 article {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 blockquote {
   color: gray;
@@ -389,9 +639,11 @@ select.sel-lang {
   min-height: 28px;
   font-size: 14px;
 }
-.table th,
-.table td {
-  border: 1px solid #eee !important;
+table.table > tbody th,
+table.table > thead th,
+table.table > tbody td,
+table.table > thead td {
+  border: 1px solid #eee;
 }
 hr.small {
   max-width: 100px;
@@ -915,10 +1167,10 @@ footer .copyright a:focus {
   vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
-  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
-  -moz-transition: top 0.3s ease,opacity 0.3s ease;
-  -ms-transition: top 0.3s ease,opacity 0.3s ease;
-  transition: top 0.3s ease,opacity 0.3s ease;
+  -webkit-transition: top 0.3s ease, opacity 0.3s ease;
+  -moz-transition: top 0.3s ease, opacity 0.3s ease;
+  -ms-transition: top 0.3s ease, opacity 0.3s ease;
+  transition: top 0.3s ease, opacity 0.3s ease;
 }
 .floating-label-form-group::not(:first-child) {
   padding-left: 14px;
@@ -1025,21 +1277,34 @@ img::-moz-selection {
   background: transparent;
 }
 /* Hux add tags support */
+.d-none {
+  display: none !important;
+}
 .tags {
   margin-bottom: -5px;
+}
+.tags.tags-sup a,
+.tags.tags-sup .tag {
+  padding: 0 10px 0 12px;
 }
 .tags a,
 .tags .tag {
   display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 999em;
-  padding: 0 10px;
+  padding: 0 10px 0 10px;
   color: #ffffff;
   line-height: 24px;
   font-size: 12px;
   text-decoration: none;
   margin: 0 1px;
   margin-bottom: 6px;
+  cursor: pointer;
+}
+.tags a > sup,
+.tags .tag > sup {
+  margin-left: -2px;
+  font-weight: 700;
 }
 .tags a:hover,
 .tags .tag:hover,
@@ -1069,18 +1334,36 @@ img::-moz-selection {
 }
 #tag_cloud a,
 #tag_cloud .tag {
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
   font-size: 14px;
   border: none;
   line-height: 28px;
   margin: 0 2px;
   margin-bottom: 8px;
-  background: #D6D6D6;
+  background: #f3f5f5;
 }
 #tag_cloud a:hover,
 #tag_cloud .tag:hover,
 #tag_cloud a:active,
 #tag_cloud .tag:active {
   background-color: #0085a1 !important;
+}
+#tag_cloud a.focus,
+#tag_cloud .tag.focus {
+  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px, rgba(0, 0, 0, 0.239216) 0 1px 4px;
+}
+#tag_cloud a.tag-button--all,
+#tag_cloud .tag.tag-button--all {
+  font-weight: 700;
+  color: #0085a1!important;
+}
+#tag_cloud a.tag-button--all:hover,
+#tag_cloud .tag.tag-button--all:hover,
+#tag_cloud a.tag-button--all:active,
+#tag_cloud .tag.tag-button--all:active {
+  background-color: #e4e4e4 !important;
 }
 @media only screen and (min-width: 768px) {
   #tag_cloud {
@@ -1111,7 +1394,10 @@ img::-moz-selection {
     line-height: 2 !important;
   }
 }
-.mini-post .tag-text {
+.mini-post-list {
+  margin: 20px 0 15px 0;
+}
+.mini-post-list .tag-text {
   font-weight: 200;
   /* Hux learn from
      *     TypeIsBeautiful,
@@ -1120,18 +1406,18 @@ img::-moz-selection {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
 }
-.mini-post .post-preview {
+.mini-post-list .post-preview {
   position: relative;
 }
-.mini-post .post-preview > a .post-title {
+.mini-post-list .post-preview > a .post-title {
   font-size: 16px;
   font-weight: 500;
   margin-top: 20px;
 }
-.mini-post .post-preview > a .post-subtitle {
-  font-size: 12px;
+.mini-post-list .post-preview > a .post-subtitle {
+  font-size: 13px;
 }
-.mini-post .post-preview > .post-meta {
+.mini-post-list .post-preview > .post-meta {
   position: absolute;
   right: 5px;
   bottom: 0px;
@@ -1140,17 +1426,17 @@ img::-moz-selection {
   line-height: 12px;
 }
 @media only screen and (min-width: 768px) {
-  .mini-post .post-preview {
+  .mini-post-list .post-preview {
     margin-left: 20px;
   }
-  .mini-post .post-preview > a > .post-title {
+  .mini-post-list .post-preview > a > .post-title {
     font-size: 18px;
     line-height: 1.3;
   }
-  .mini-post .post-preview > a > .post-subtitle {
+  .mini-post-list .post-preview > a > .post-subtitle {
     font-size: 14px;
   }
-  .omini-post .post-preview .post-meta {
+  .mini-post-list .post-preview .post-meta {
     font-size: 18px;
   }
 }
