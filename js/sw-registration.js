@@ -1,7 +1,7 @@
 /* ===========================================================
  * sw-registration.js
  * ===========================================================
- * Ivan's Git 2017 @ivancristina
+ * Ivan's Git 2018 @ivancristina
  * Copyright 2016 @huxpro
  * Licensed under Apache 2.0
  * Register service worker.

@@ -32,7 +32,7 @@ header-img: "img/tag-bg.jpg"
 
             <!-- 标签列表 -->
 			{% for tag in site.tags %}
-			<div class="one-tag-list">
+			<div class="mini-post-list">
 			  	<span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">
                     <span class="tag-text">{{ tag[0] }}</span>
                 </span>
@@ -56,8 +56,8 @@ header-img: "img/tag-bg.jpg"
 				</div>
 				<hr>
 				{% endfor %}
-			</div>
 			{% endfor %}
+			</div>
 
 		</div>
 	</div>
