@@ -145,12 +145,30 @@ body, html {
 }
 
 /** Venders Logo **/
+.i-pdf:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/PDF.png") 50% 50% no-repeat;
+	background-size: 25px;
+}
+
 .i-seas:before {
 	content: "";
 	display: block;
 	width: 40px;
 	height: 40px;
 	background: url("../images/SEAS.png") 50% 50% no-repeat;
+	background-size: 30px;
+}
+
+.i-ryanair:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/PDF.png") 50% 50% no-repeat;
 	background-size: 30px;
 }
 
@@ -360,7 +378,7 @@ img.icon{
 	border-radius: 3px;
 	background: white;
 	border: 1px solid #D5D6D8;
-	margin: 4px 0px;
+	margin: 4px 0px 0px 5px;	
 }
 
 .cbp_tmlabel ul li.skill span.link:hover,
