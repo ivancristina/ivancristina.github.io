@@ -15,7 +15,7 @@ Tento miseramente di fare qualcosa nella vita, e qualche volta qualcosa funziona
 
 ##### Progetti
 
-- [Hackintosh][1] · Intel Core iX, HD Graphics 5/6xx, Nvidia GTX 9/10xx - 2017
+- [Hackintosh][1] · Intel Core iX-6/7xxx, HD Graphics 5/6xx, Nvidia GTX 9/10xx - 2017
 - [JactiveLTEam](https://jactivelteam.github.io/) · S4 Active (GT-I9525) - 2017
 - [Come compilare una ROM](https://ivancristina.github.io/HowToBuild/) · Generale, S4 Active (GT-I9525) - 2016
 - [LineageOS](https://forum.xda-developers.com/galaxy-s4-active/development/7-1-1-optimized-cyanogenmod-14-1-t3528753) · S4 Active (GT-I9525) - 2016
