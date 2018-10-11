@@ -1,5 +1,5 @@
 /*!
- * Ivan's Git v1.0.0 (http://ivancristina.github.io)
+ * Ivan's Git v1.0.0 (http://ivancristina.it)
  * based on Hux Blog v1.7.0 (http://huxpro.github.io)
  * Copyright 2018 Hux <huxpro@gmail.com>
  */
