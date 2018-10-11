@@ -53,10 +53,11 @@ Nel nostro caso Adafruit consiglia di usare valori *unsigned* poiché non lavora
 Quando ad una di queste definizioni è assegnato il valore `wait` è come se stiamo congelando quella variabile, non assegnandogli nessun valore.
 
 ## Lo sketch
+<center><a href="https://raw.githubusercontent.com/ivancristina/ivancristina.github.io/master/resources/config.plist"><img src="/img/in-post/post-js-version/Arduino Folder.png" alt="Download" width="40%" height="40%"></a>
 
-Ho diviso lo sketch in diversi cicli, in modo da commentare i vari cicli rapidamente in fase di dimostrazione per mostrare uno solo di essi. Puoi scaricare una copia dello sketch cliccando sull'icona qui sotto.
+<i>Clicca il tasto destro e "<b>Scarica file collegato</b>" sull'icona qui sopra per scaricare lo sketch</i></center>
 
-<center><a href="https://raw.githubusercontent.com/ivancristina/ivancristina.github.io/master/resources/config.plist"><img src="/img/in-post/post-js-version/Arduino Folder.png" alt="Download"></center></a>
+Ho diviso lo sketch in diversi cicli, in modo da commentare i vari cicli rapidamente in fase di dimostrazione per mostrare uno solo di essi.
 
 ``` xml
 #include <Adafruit_NeoPixel.h>
