@@ -54,7 +54,9 @@ Quando ad una di queste definizioni è assegnato il valore `wait` è come se sti
 
 ## Lo sketch
 
-Ho diviso lo sketch in diversi cicli, in modo da commentare i vari cicli rapidamente in fase di dimostrazione per mostrare uno solo di essi.
+Ho diviso lo sketch in diversi cicli, in modo da commentare i vari cicli rapidamente in fase di dimostrazione per mostrare uno solo di essi. Puoi scaricare una copia dello sketch cliccando sull'icona qui sotto.
+
+<center><a href="https://raw.githubusercontent.com/ivancristina/ivancristina.github.io/master/resources/config.plist"><img src="/img/in-post/post-js-version/Arduino Folder.png" alt="Download"></center></a>
 
 ``` xml
 #include <Adafruit_NeoPixel.h>
