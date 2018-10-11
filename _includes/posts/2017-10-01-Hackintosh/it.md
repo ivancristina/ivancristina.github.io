@@ -54,7 +54,7 @@ Le seguenti patches (necessarie su 10.12.5 o antecedente per far funzionare CPU 
 	</array>
 ```
 
-Puoi trovare il mio <a href="https://github.com/ivancristina/ivancristina.it/raw/master/resources/config.plist" target="_blank">config.plist completo qui</a>.
+Puoi trovare il mio <a href="https://github.com/ivancristina/ivancristina.github.io/raw/master/resources/config.plist" target="_blank">config.plist completo qui</a>.
 
 ## 2. Configurazioni BIOS
 Potrebbero variare in base alla scheda madre.

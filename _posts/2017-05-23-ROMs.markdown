@@ -31,6 +31,6 @@ Thanks to all these superguys you can now enjoy our builds, located at <a href="
 
 ## Wanna build?
 
-No problem! I made a <a href="https://ivancristina.github.io/HowToBuildivancristina.itbproof guide about how to compile LOS/based 14.1 ROMs</a> for our friend the S4 Active. You cannot make mistakes, every single step is guided, so even a noob like me shouldn't go wrong. (Yeah, I said shouldn't, cause the compiling world is a thunderstorm of errors of every genre, from wrong local_manifests to ninja/jack errors)
+No problem! I made a <a href="https://ivancristina.github.io/HowToBuild/ivancristina.github.io">noobproof guide about how to compile LOS/based 14.1 ROMs</a> for our friend the S4 Active. You cannot make mistakes, every single step is guided, so even a noob like me shouldn't go wrong. (Yeah, I said shouldn't, cause the compiling world is a thunderstorm of errors of every genre, from wrong local_manifests to ninja/jack errors)
 
 So... have a nice day and happy building!

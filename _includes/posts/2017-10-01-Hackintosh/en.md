@@ -54,7 +54,7 @@ The following patches (needed in 10.12.5 or before in order to let the CPU and I
 	</array>
 ```
 
-You could find my <a href="https://github.com/ivancristina/ivancristina.it/raw/master/resources/config.plist" target="_blank">complete config.plist here</a>.
+You could find my <a href="https://github.com/ivancristina/ivancristina.github.io/raw/master/resources/config.plist" target="_blank">complete config.plist here</a>.
 
 ## 2. BIOS Configuration
 It may vary by your motherboard.
