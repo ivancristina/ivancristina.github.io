@@ -4,8 +4,8 @@ SEOTitle: Ivan | Git
 header-img: img/home-bg.jpg
 email: ivancristina5@gmail.com
 description: "Private Pilot Student, nerd. Build ROMs on free time"
-keyword: "ivan, ivanc, ivancristina, IvanCristina, @ivancristina"
-url: "https://ivancristina.github.io/" # your host, for absolute URL
+keyword: "ivan, ivanc, ivancristina, IvanCristina, @ivancristina, Ivan Cristina"
+url: "https://ivancristina.it/" # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -71,8 +71,8 @@ netease_comment: false
 
 # Analytics settings
 # Google Analytics
-ga_track_id: 'UA-99985915-1'            # Format: UA-xxxxxx-xx
-ga_domain: ivancristina.github.io
+ga_track_id: 'UA-99985915-2'            # Format: UA-xxxxxx-xx
+ga_domain: ivancristina.it
 
 
 
