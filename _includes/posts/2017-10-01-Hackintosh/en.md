@@ -26,7 +26,7 @@ About the Motherboard, **totally worth it**. H serie because I didn't need the Z
 
 The CPU... DAMN, if **I hated it!** I mean, it's actually powerful an power-friendly, but the price was actually a bit high *IMHO*. And as I told before... It was a mess let it work in Sierra, until finally the 2017 Mac serie came out, along with their new Kaby Lake models. That made everything **ALOT EASIER**. In fact, before the 10.12.6 update (with the new Kaby Lake kernel support), in order to let Kaby Lake run you had to <a href="https://www.tonymacx86.com/threads/new-testing-intel-7th-generation-kaby-lake-cpus-200-series-motherboards-in-macos.219877/" target="_blank">spoof your CPU and GPU ID</a>, and some of the times it wouldn't even boot after that (like in my case .-.). Make the GPU work with full acceleration was a mess, but at the end instead of the fu$!ing 7mb of virtualized nvram, I managed to get the GPU working along all its 1536 MB of memory. And then, thanks to the 10.12.6 update, I finally also managed to power the CPU at its full power.
 
-![java-javascript](/img/in-post/post-js-version/Info.png)
+![java-javascript](/img/in-post/Info.png)
 
 The following patches (needed in 10.12.5 or before in order to let the CPU and Integrated Graphics work) are indeed no more needed on Sierra 10.12.6 or in any version of the new Apple macOS version, <a href="https://www.tonymacx86.com/threads/macos-high-sierra-is-now-available-on-the-mac-app-store.231773/" target="_blank">High Sierra!</a> *(what a huge fantasy, though...)*
 
@@ -150,7 +150,7 @@ Find: 83bd74ff ffff10
 Replace: 83bd74ff ffff1b
 Comment: Increase port limit
 ```
-![java-javascript](/img/in-post/post-js-version/PortLimit.png)
+![java-javascript](/img/in-post/PortLimit.png)
 
 **Rename EHC to EH0**
 
@@ -168,8 +168,8 @@ Comment: change EHC2 to EH02
 Find: 45484332
 Replace: 45483032
 ```
-![java-javascript](/img/in-post/post-js-version/EHx1.png)
-![java-javascript](/img/in-post/post-js-version/EHx2.png)
+![java-javascript](/img/in-post/EHx1.png)
+![java-javascript](/img/in-post/EHx2.png)
 
 Move **USBInjectAll.kext** & **XHCI-200-series-injector.kext** to USB’s EFI partition **/EFI/Clover/kexts/Other**.
 
@@ -203,10 +203,10 @@ After the successful installation, you must install necessary kext and patches t
 
 * **1st Step** = Copy all the downloaded files to the desktop.
 * **2nd Step** = Open Multibeast –> Quick Start –> **UEFI Boot Mode**
-![java-javascript](/img/in-post/post-js-version/UEFI.png)
+![java-javascript](/img/in-post/UEFI.png)
 
 * **3rd Step** = Drivers –> Audio –> Check both **ALC1220** and **100/200 Series Audio**. *(I also select the 5.1 Output as I have it built onboard)*
-![java-javascript](/img/in-post/post-js-version/Audio.png)
+![java-javascript](/img/in-post/Audio.png)
 
 *If you have different codec then select the codec that you want. Codec version can be found on the specification of your Motherboard*
 
@@ -214,21 +214,21 @@ After the successful installation, you must install necessary kext and patches t
 
 
 * **4th Step** = Drivers –> Network –> Check **IntelMausiEthernet v2.3** *(I also install RealtekRTL8111 v2.2.1)*
-![java-javascript](/img/in-post/post-js-version/Network.png)
+![java-javascript](/img/in-post/Network.png)
 
 * **5th Step** = Drivers –> USB –> Check **Increase Max Port Limit 200 Series**
-![java-javascript](/img/in-post/post-js-version/PortLimit.png)
+![java-javascript](/img/in-post/PortLimit.png)
 
 * **6th Step** = Bootloader –> Check **Clover + Emulated NVRAM**
-![java-javascript](/img/in-post/post-js-version/CloverBootloader.png)
+![java-javascript](/img/in-post/CloverBootloader.png)
 
 ***Note: After installing Multibeast don’t forget update clover to the latest version. You can do it via the Clover Configurator app or via the link above.***
 
 * **7th Step** = Customize –> Graphics Configuration –> Select on **Intel HD 6xx**
-![java-javascript](/img/in-post/post-js-version/Graphics.png)
+![java-javascript](/img/in-post/Graphics.png)
 
 * **8th Step** = Final Build Configuration Build –> ***Install***
-![java-javascript](/img/in-post/post-js-version/MultiBeast.png)
+![java-javascript](/img/in-post/MultiBeast.png)
 
 #### 5.2. Post Installation Using Clover Configurator
 > *Not needed with my config.plist*
@@ -237,10 +237,10 @@ After the successful installation, you must install necessary kext and patches t
 
 * Open Clover Configurator, then mount EFI Partition if not mounted (Multibeast will automatically mount the EFI partition)
 * Fix Random Restart problem when system shutdown by Selecting **FixShutdown_0004** under ACPI –> Fixes
-![java-javascript](/img/in-post/post-js-version/Shutdown.png)
+![java-javascript](/img/in-post/Shutdown.png)
 
 * **XMPDetection=Yes** (If your RAM clock speed is higher than 2133MHz, like in my case)
-![java-javascript](/img/in-post/post-js-version/XMP.png)
+![java-javascript](/img/in-post/XMP.png)
 
 ***Don’t Close Clover Configurator. Add all entries from the below steps or else you should open the Clover Configurator for every step.***
 
@@ -257,13 +257,13 @@ Comment: change GFX0 to IGPU
 Find: 47465830
 Replace: 49475055
 ```
-![java-javascript](/img/in-post/post-js-version/IGPU.png)
+![java-javascript](/img/in-post/IGPU.png)
 
 * Add the bootflag **shikigva=1** in Boot –> Custom Flags
-![java-javascript](/img/in-post/post-js-version/shikigva.png)
+![java-javascript](/img/in-post/shikigva.png)
 
 * Copy **Shiki.kext** and **AppleALC.kext** and paste them in to **EFI drive/EFI/Clover/kexts/Other**.
-![java-javascript](/img/in-post/post-js-version/kextsOther.png)
+![java-javascript](/img/in-post/kextsOther.png)
 
 ##### 5.2.3. Second Audio Method
 
@@ -281,17 +281,17 @@ Comment: change HDAS to HDEF
 Find: 48444153
 Replace: 48444546
 ```
-![java-javascript](/img/in-post/post-js-version/HDxx.png)
+![java-javascript](/img/in-post/HDxx.png)
 
 **Change Audio ID to 1 or 2 if not.**
 
 In the latest version of **AppleALC.kext**, audio ID 1 or 2 or 11 is fully supported for ALC1220 and ALC1220A codecs.
 
 Devices –> Audio –> Change it to **1** or **2** or **11**
-![java-javascript](/img/in-post/post-js-version/AudioInjection.png)
+![java-javascript](/img/in-post/AudioInjection.png)
 
 Run **audio_cloverHDMI-130.command** to get HDMI Audio working if you want. If this method of HDMI Audio didn’t work for you then follow the <a href="https://www.tonymacx86.com/threads/quick-fix-200-series-kaby-lake-audio-onboard-and-or-hd-6x0-hdmi.221618/" target="_blank">toleda guide on how to enable HDMI Audio</a>.
-![java-javascript](/img/in-post/post-js-version/toledaHDMI.png)
+![java-javascript](/img/in-post/toledaHDMI.png)
 
 #### 5.3. SMBIOS
 
@@ -300,7 +300,7 @@ We need to change the SMBIOS to iMac 18.1 or 18.2 or 18.3 because these are the 
 For the perfect configuration of SMBIOS head over to <a href="http://www.everymac.com/systems/by_year/macs-released-in-2017.html" target="_blank">this link</a> and choose SMBIOS that matches your processor.
 
 In my case, I changed the SMBIOS to 18.2 (cause it's the SMBIOS of the i5-7500 powered iMac).
-![java-javascript](/img/in-post/post-js-version/SMBIOS.png)
+![java-javascript](/img/in-post/SMBIOS.png)
 
 ##### 5.4. USB Power Management
 
@@ -320,7 +320,7 @@ Find: 837d8c10
 Replace: 837d8c1b
 Comment: Change 15 port limit to 24 in XHCI kext
 ```
-![java-javascript](/img/in-post/post-js-version/AppleUSBXHCIPCI.png)
+![java-javascript](/img/in-post/AppleUSBXHCIPCI.png)
 
 As you may have seen I didn't apply the first patch, because I didn't need it.
 
@@ -330,12 +330,12 @@ As you may have seen I didn't apply the first patch, because I didn't need it.
 ## 6. Geekbench Scores
 
 The results are very nice, considering we're talking about an OS running on non-natively supported hardware.
-![java-javascript](/img/in-post/post-js-version/Device.png)
-![java-javascript](/img/in-post/post-js-version/Score.png)
-![java-javascript](/img/in-post/post-js-version/SCComparison.png)
-![java-javascript](/img/in-post/post-js-version/MCComparison.png)
-![java-javascript](/img/in-post/post-js-version/OpenCL.png)
-![java-javascript](/img/in-post/post-js-version/OpenCLComparison.png)
+![java-javascript](/img/in-post/Device.png)
+![java-javascript](/img/in-post/Score.png)
+![java-javascript](/img/in-post/SCComparison.png)
+![java-javascript](/img/in-post/MCComparison.png)
+![java-javascript](/img/in-post/OpenCL.png)
+![java-javascript](/img/in-post/OpenCLComparison.png)
 
 ### 7. Frequently Asked Questions
 
@@ -354,7 +354,7 @@ Graphics issue. After the update, if you can’t boot into desktop then disable 
 
 Make sure that the Audio is working because these two is the main part will have an issue after updating. If you had any trouble with the audio, then follow the steps from this Guide.
 
-![java-javascript](/img/in-post/post-js-version/HighSierra.png)
+![java-javascript](/img/in-post/HighSierra.png)
 
 ### 9. Thanks to
 

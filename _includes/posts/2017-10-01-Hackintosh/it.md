@@ -26,7 +26,7 @@ Per quanto concerne la scheda madre, **assolutamente degna di nota**. Serie H pe
 
 La CPU... DANNAZIONE, se **l'ho odiata!** Voglio dire, è efficiente energeticamente ed abbastanza prestante, ma il prezzo era un po' troppo alto per il prodotto *IMHO*. E come ho detto prima... È stata davvero un'ammazzata farla funzionare su Sierra, fino all'arrivo della nuova serie Mac 2017, assieme ai suoi nuovi modelli Kaby Lake. Ciò rese tutto  **MOLTO PIÙ SEMPLICE**. Infatti, prima dell'update a 10.12.6 (con relativo supporto kernel ai modelli Kaby Lake), per fare funzionare Hackintosh su un Kaby Lake era necessario effettuare uno <a href="https://www.tonymacx86.com/threads/new-testing-intel-7th-generation-kaby-lake-cpus-200-series-motherboards-in-macos.219877/" target="_blank">spoofing di CPU e GPU ID</a>, ed a volte nemmeno questo risolveva molto (come nel mio caso .-.). Far funzionare la GPU con la piena accelerazione è stato un casino, ma alla fine a posto dei fo$!uti 7mb di nvram virtualizzata, sono riuscito a far andare la GPU con tutti i suoi 1536 MB di memoria. E solo dopo, grazie all'update 10.12.6, sono anche riuscito a far funzionare la CPU alla massima potenza.
 
-![java-javascript](/img/in-post/post-js-version/Info.png)
+![java-javascript](/img/in-post/Info.png)
 
 Le seguenti patches (necessarie su 10.12.5 o antecedente per far funzionare CPU e Grafica Integrata) non sono infatti più necessarie su Sierra 10.12.6 o in ogni versione della nuova versione di Apple macOS, <a href="https://www.tonymacx86.com/threads/macos-high-sierra-is-now-available-on-the-mac-app-store.231773/" target="_blank">High Sierra!</a> *(che fantasia, però...)*
 
@@ -150,7 +150,7 @@ Find: 83bd74ff ffff10
 Replace: 83bd74ff ffff1b
 Comment: Increase port limit
 ```
-![java-javascript](/img/in-post/post-js-version/PortLimit.png)
+![java-javascript](/img/in-post/PortLimit.png)
 
 **Rinominare EHC a EH0**
 
@@ -168,8 +168,8 @@ Comment: change EHC2 to EH02
 Find: 45484332
 Replace: 45483032
 ```
-![java-javascript](/img/in-post/post-js-version/EHx1.png)
-![java-javascript](/img/in-post/post-js-version/EHx2.png)
+![java-javascript](/img/in-post/EHx1.png)
+![java-javascript](/img/in-post/EHx2.png)
 
 Sposta **USBInjectAll.kext** e **XHCI-200-series-injector.kext** nella partizione EFI della USB, in **/EFI/Clover/kexts/Other**.
 
@@ -203,10 +203,10 @@ Dopo un'installazione riuscita, hai bisogno di installare i kexts e le patches n
 
 * **1° Step** = Copia tutti i file scaricati sulla Scrivania.
 * **2° Step** = Apri Multibeast –> Quick Start –> **UEFI Boot Mode**
-![java-javascript](/img/in-post/post-js-version/UEFI.png)
+![java-javascript](/img/in-post/UEFI.png)
 
 * **3° Step** = Drivers –> Audio –> Seleziona sia **ALC1220** che **100/200 Series Audio**. *(Io ho abilitato anche l'Output a 5.1 canali, dato che lo ho integrato)*
-![java-javascript](/img/in-post/post-js-version/Audio.png)
+![java-javascript](/img/in-post/Audio.png)
 
 *Se hai un codec audio diverso seleziona quello che ti interessa. La versione del codec è specificata tra le componenti della scheda madre*
 
@@ -214,21 +214,21 @@ Dopo un'installazione riuscita, hai bisogno di installare i kexts e le patches n
 
 
 * **4° Step** = Drivers –> Network –> Seleziona **IntelMausiEthernet v2.3** *(Io ho installato anche il RealtekRTL8111 v2.2.1)*
-![java-javascript](/img/in-post/post-js-version/Network.png)
+![java-javascript](/img/in-post/Network.png)
 
 * **5° Step** = Drivers –> USB –> Seleziona **Increase Max Port Limit 200 Series**
-![java-javascript](/img/in-post/post-js-version/PortLimit.png)
+![java-javascript](/img/in-post/PortLimit.png)
 
 * **6° Step** = Bootloader –> Seleziona **Clover + Emulated NVRAM**
-![java-javascript](/img/in-post/post-js-version/CloverBootloader.png)
+![java-javascript](/img/in-post/CloverBootloader.png)
 
 ***Nota: Dopo aver terminato con Multibeast non dimenticare di aggiornare Clover Bootloader all'ultima versione. Puoi farlo tramite l'app Clover Configurator o tramite il link sopra.***
 
 * **7° Step** = Customize –> Graphics Configuration –> Seleziona **Intel HD 6xx**
-![java-javascript](/img/in-post/post-js-version/Graphics.png)
+![java-javascript](/img/in-post/Graphics.png)
 
 * **8° Step** = Final Build Configuration Build –> ***Install***
-![java-javascript](/img/in-post/post-js-version/MultiBeast.png)
+![java-javascript](/img/in-post/MultiBeast.png)
 
 #### 5.2. Post Installazione con Clover Configurator
 > *Non necessario se usi il mio config.plist*
@@ -237,10 +237,10 @@ Dopo un'installazione riuscita, hai bisogno di installare i kexts e le patches n
 
 * Apri Clover Configurator, quindi monta la Partizione EFI se non lo è già (Multibeast dovrebbe montarla automaticamente)
 * Risolvi il bug del riavvio casuale in fase di spegnimento tramite la spunta **FixShutdown_0004** sotto ACPI –> Fixes
-![java-javascript](/img/in-post/post-js-version/Shutdown.png)
+![java-javascript](/img/in-post/Shutdown.png)
 
 * **XMPDetection=Yes** (Se la tua RAM ha un clock maggiore di 2133MHz, come nel mio caso)
-![java-javascript](/img/in-post/post-js-version/XMP.png)
+![java-javascript](/img/in-post/XMP.png)
 
 ***Non chiudere Clover Configurator. Aggiungi tutte le entries dai passi sotto prima o dovrai riaprire Clover Configurator ad ogni step.***
 
@@ -257,13 +257,13 @@ Comment: change GFX0 to IGPU
 Find: 47465830
 Replace: 49475055
 ```
-![java-javascript](/img/in-post/post-js-version/IGPU.png)
+![java-javascript](/img/in-post/IGPU.png)
 
 * Aggiungi la bootflag **shikigva=1** in Boot –> Custom Flags
-![java-javascript](/img/in-post/post-js-version/shikigva.png)
+![java-javascript](/img/in-post/shikigva.png)
 
 * Copia **Shiki.kext** e **AppleALC.kext** ed incollali in **EFI drive/EFI/Clover/kexts/Other**.
-![java-javascript](/img/in-post/post-js-version/kextsOther.png)
+![java-javascript](/img/in-post/kextsOther.png)
 
 ##### 5.2.3. Secondo Metodo Audio
 
@@ -281,17 +281,17 @@ Comment: change HDAS to HDEF
 Find: 48444153
 Replace: 48444546
 ```
-![java-javascript](/img/in-post/post-js-version/HDxx.png)
+![java-javascript](/img/in-post/HDxx.png)
 
 **Cambia l'Audio ID a 1 o 2 se non diverso.**
 
 Nell'ultima versione di **AppleALC.kext**, gli audio ID 1, 2 o 11 sono pienamente supportati dai codecs ALC1220 e ALC1220A.
 
 Devices –> Audio –> Cambialo in **1** o **2** o **11**
-![java-javascript](/img/in-post/post-js-version/AudioInjection.png)
+![java-javascript](/img/in-post/AudioInjection.png)
 
 Esegui **audio_cloverHDMI-130.command** in modo da far funzionare l'HDMI Audio se lo necessiti. Se questo metodo non funziona segui la <a href="https://www.tonymacx86.com/threads/quick-fix-200-series-kaby-lake-audio-onboard-and-or-hd-6x0-hdmi.221618/" target="_blank">guida di Toleda sull'HDMI Audio</a>.
-![java-javascript](/img/in-post/post-js-version/toledaHDMI.png)
+![java-javascript](/img/in-post/toledaHDMI.png)
 
 #### 5.3. SMBIOS
 
@@ -300,7 +300,7 @@ Abbiamo bisogno di cambiare il nostro SMBIOS ad iMac 18.1 o 18.2 o 18.3 poiché 
 Per la perfetta configurazione SMBIOS dai un'occhiata a <a href="http://www.everymac.com/systems/by_year/macs-released-in-2017.html" target="_blank">questo link</a> e segli l'SMBIOS che più si addice al tuo processore.
 
 Nel mio caso, ho cambiato il mio SMBIOS a 18.2 (perché è l'SMBIOS del Mac con i5-7500).
-![java-javascript](/img/in-post/post-js-version/SMBIOS.png)
+![java-javascript](/img/in-post/SMBIOS.png)
 
 ##### 5.4. Gestione Energetica USB
 
@@ -320,7 +320,7 @@ Find: 837d8c10
 Replace: 837d8c1b
 Comment: Change 15 port limit to 24 in XHCI kext
 ```
-![java-javascript](/img/in-post/post-js-version/AppleUSBXHCIPCI.png)
+![java-javascript](/img/in-post/AppleUSBXHCIPCI.png)
 
 Come potresti aver notato non ho applicato la prima patch, perché non ne avevo bisogno.
 
@@ -330,12 +330,12 @@ Come potresti aver notato non ho applicato la prima patch, perché non ne avevo 
 ## 6. Punteggi Geekbench
 
 I risultati sono davvero buoni, considerato il fatto che stiamo parlando di un un OS in esecuzione su hardware non nativamente supportato.
-![java-javascript](/img/in-post/post-js-version/Device.png)
-![java-javascript](/img/in-post/post-js-version/Score.png)
-![java-javascript](/img/in-post/post-js-version/SCComparison.png)
-![java-javascript](/img/in-post/post-js-version/MCComparison.png)
-![java-javascript](/img/in-post/post-js-version/OpenCL.png)
-![java-javascript](/img/in-post/post-js-version/OpenCLComparison.png)
+![java-javascript](/img/in-post/Device.png)
+![java-javascript](/img/in-post/Score.png)
+![java-javascript](/img/in-post/SCComparison.png)
+![java-javascript](/img/in-post/MCComparison.png)
+![java-javascript](/img/in-post/OpenCL.png)
+![java-javascript](/img/in-post/OpenCLComparison.png)
 
 ### 7. Domande Frequenti
 
@@ -354,7 +354,7 @@ Problemi Grafici? Dopo l'aggiornamento se non riesci più ad avviare prova disab
 
 Assicurati che l'audio funzioni perché il secondo metodo potrebbe essere affetto da eventuali aggiornamenti. Se hai problemi audio, segui nuovamente i relativi step nella guida sopra.
 
-![java-javascript](/img/in-post/post-js-version/HighSierra.png)
+![java-javascript](/img/in-post/HighSierra.png)
 
 ### 9. Ringraziamenti
 

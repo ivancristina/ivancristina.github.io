@@ -14,7 +14,7 @@ tags:
 
 # Hey there.
 
-![java-javascript](/img/in-post/post-js-version/Team.png)
+![java-javascript](/img/in-post/Team.png)
 
 Since the very end of December 2016, I started to build ROMs for the S4 Active (GT-I9295 or jactivelte). It was difficult at the beginning, but when you're into it... Well, it's still complicated, but at least now I understand something like the 1% of what I effectively do during the process.
 
