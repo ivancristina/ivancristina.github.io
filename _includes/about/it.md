@@ -6,7 +6,7 @@
 
 Hey, sono **Ivan Cristina**, "programmatore", designer e mantenuto nullafacente. Se stai visitando questo sito, o ti sei perduto nei meandri del web, o sei un persona molto triste.
 
-Frequento l'ITAER "Arturo Ferrarin" di Catania, e precisamente faccio parte della 5ªC. Studio inoltre presso L'Aeroclub di Catania, in veste di Private Pilot Student.
+Diplomato come Perito in Trasporti e Logistica specializzato in campo Aeronautico presso l'ITAER "Arturo Ferrarin" di Catania. Studio inoltre presso l'Aeroclub di Catania, in veste di Private Pilot Student.
 
 Ogni tanto lavoro a qualcosa. Puoi vedere qualche progetto inutile, incompiuto o fallito nel mio [Github](https://github.com/ivancristina/).
 
@@ -15,13 +15,13 @@ Tento miseramente di fare qualcosa nella vita, e qualche volta qualcosa funziona
 
 ##### Progetti
 
-- [Hackintosh][1] · Intel Core iX-6/7xxx, HD Graphics 5/6xx, Nvidia GTX 9/10xx - 2017
+- [App Website][1] · Web template per applicazioni iOS - 2018
+- [Hackintosh][2] · Intel Core iX-6/7xxx, HD Graphics 5/6xx, Nvidia GTX 9/10xx - 2017
 - [JactiveLTEam](https://jactivelteam.github.io/) · S4 Active (GT-I9525) - 2017
 - [Come compilare una ROM](https://ivancristina.github.io/HowToBuild/) · Generale, S4 Active (GT-I9525) - 2016
 - [LineageOS](https://forum.xda-developers.com/galaxy-s4-active/development/7-1-1-optimized-cyanogenmod-14-1-t3528753) · S4 Active (GT-I9525) - 2016
 - [Resurrection Remix OS](https://forum.xda-developers.com/galaxy-s4-active/development/7-1-1-rr-5-8-0-t3541969) · S4 Active (GT-I9525) - 2016
 
 
-
-[1]: //ivancristina.github.io/2017/10/01/Hackintosh/
-
+[1]: //ivancristina.github.io/app_site/
+[2]: //ivancristina.github.io/2017/10/01/Hackintosh/
