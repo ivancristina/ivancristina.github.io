@@ -49,13 +49,13 @@ On Saturday we visited Noto and Syracuse, were we went around the local gardens,
 
 After three hours of lessons, Saturday the guys had the possibility to try our school Simulator.
 <center><video class="roundrect" width="100%" height="100%" controls>
-  <source src="/vid/ALSIM.mp4" type="video/mp4">
+  <source src="https://github.com/ivancristina/web_resources/raw/master/vid/ALSIM.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video></center>
 
 Then we managed to play an off-ball match, which unfortunately was won by the Serbs. Here we realized how strong Serbs are in sports. Well, by our side, they’ll never have **"o sole, o core, o mare"**. To console us, a great buffet ended the school day. After that, we moved to the shopping centre “Centro Sicilia”, and after hours of shopping and laughs, we came back home.
 <center><video class="roundrect" width="75%" height="75%" controls>
-  <source src="/vid/Centro.mp4" type="video/mp4">
+  <source src="https://github.com/ivancristina/web_resources/raw/master/vid/Centro.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video></center>
 
@@ -130,13 +130,13 @@ Always inside the park there is also the Military Museum, founded in 1878. It ha
 Another stage was the Nikola Tesla Museum, and the name itself explains everything you could expect there. What I didn’t expect was an AMD sponsored server, though.
 
 <center><video class="roundrect" width="100%" height="100%" controls>
-  <source src="/vid/Tesla.mp4" type="video/mp4">
+  <source src="https://github.com/ivancristina/web_resources/raw/master/vid/Tesla.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video></center>
 
 There was also a landscaped garden with some mechanical dinosaurs.
 <center><video class="roundrect" width="100%" height="100%" controls>
-  <source src="/vid/Dinosaurs.mp4" type="video/mp4">
+  <source src="https://github.com/ivancristina/web_resources/raw/master/vid/Dinosaurs.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video></center>
 
@@ -147,7 +147,7 @@ The day after we visited the Viminacium, a Roman military camp of the old provin
 
 The next day we visited the zoo. I actually saw for the first time a lot of animals, like the wolves, the seal and the monkeys. I took so many photos I will not attach anyone, because I can’t choose. But let me attach a video, I think it’s worth it.
 <center><video class="roundrect" width="100%" height="100%" controls>
-  <source src="/vid/Zoo.mp4" type="video/mp4">
+  <source src="https://github.com/ivancristina/web_resources/raw/master/vid/Zoo.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video></center>
 
@@ -155,7 +155,7 @@ But that day, the 8th April 2017 wasn’t a day like another: it was Alberto’s
 
 Later, thanks to an adult who granted for us and assisted us, we managed to go to the polygon.
 <center><video class="roundrect" width="100%" height="100%" controls>
-  <source src="/vid/Polygon.mp4" type="video/mp4">
+  <source src="https://github.com/ivancristina/web_resources/raw/master/vid/Polygon.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video></center>
 And believe it or not, that bullet ended into my shoes. Dunno how, but now it’s at my house.
@@ -166,7 +166,7 @@ The end for our trip was near, indeed the last day, the 9th April, we went to th
 Here, we greeted our new families for the last time, and with a lot of sadness and the eyes full of tears, we went back home.
 <img class="roundrect" src="/img/in-post/Bye.jpg">
 <center><video class="roundrect" width="100%" height="100%" controls>
-  <source src="/vid/Land.mp4" type="video/mp4">
+  <source src="https://github.com/ivancristina/web_resources/raw/master/vid/Land.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video></center>
 
