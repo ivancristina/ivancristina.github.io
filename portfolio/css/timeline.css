@@ -172,6 +172,24 @@ body, html {
 	background-size: 25px;
 }
 
+.i-google:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/Google.png") 50% 50% no-repeat;
+	background-size: 25px;
+}
+
+.i-iab:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/iab.png") 50% 50% no-repeat;
+	background-size: 30px;
+}
+
 .i-ferrarin:before {
 	content: "";
 	display: block;
