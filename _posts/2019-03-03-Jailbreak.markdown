@@ -66,7 +66,10 @@ Once you're done, go back to Settings → General → Profiles and Trust your ow
 
 ## Jailbreaking
 
-You will see a giant button called **Jailbreak**. Once you're ready, click it. Once you click it, you end up restarting or respringing: I'll talk about it later.
+Whenever you open unc0ver go to the *Settings* tab and make sure that you have the default configurations. As for the time I'm writing, these are the default ones.
+![alt text](/img/in-post/JB/unc0ver Settings.png "Leave everything as it is")
+
+Ok, now go back to the home screen of unc0ver. You will see a giant button called **Jailbreak**. Once you're ready, click it. Once you click it, you end up restarting or respringing: I'll talk about it later.
 ![alt text](/img/in-post/JB/unc0ver.png "Press the Jailbreak button")
 
 Click it now. The device will run the exploit and if that's successful it will reach the first stage, the **snapshot renaming"**. Now, press *OK* and the device will restart.
@@ -92,7 +95,6 @@ Now it's time to set up Cydia. First of all open it up and you will see this wel
 ![alt text](/img/in-post/JB/Cydia.png "Welcome")
 
 Go into the *Sources* tab on the bottom, and you will see this screen.
-![alt text](/img/in-post/JB/Cydia Sources.png "Sources tab")
 
 Those are the **repositories**, where all the **tweaks** are stored and distributed from. Most of the tweaks are free, but some are paid. ***DO NOT PIRATE THEM***, for various reasons. First of all, because developers spend their time offering us these wonderful customizations which we would never have and supporting them paying some of their tweaks is the less we could do. Secondly, because pirated tweaks could lead to **bootloops**, forcing you to restoring your iDevice, losing both the jailbreak and ***all*** **your data**. Always download them from the official repo (usually they are *BigBoss*, *Chariz* or *Dynastic*). If you are not sure about the repo of the tweak you're searching for, Google "`name of your tweak here` repo". You'll surely find it.
 ![alt text](/img/in-post/JB/Cydia Sources.png "Sources tab")
@@ -101,10 +103,10 @@ Whenever you *Refresh* the sources a red banner will appear. By doing that you'l
 ![alt text](/img/in-post/JB/Cydia Necessary Update.png "Perform a complete update")
 
 But how to add a repo? That's super easy. Most of the repos now have specific button, prompting to add the repo, but it could also happen that you should manually add it. In that case press the *Edit* button on top-right, then *Add* and pasting the URL of the repo and finally *Add source*. In this case I'll add the `http://tigisoftware.com/cydia`, the repo of **Filza**. We'll talk about it later.
-![alt text](/img/in-post/JB/Cydia Add Sources.png "Add the source")
+![alt text](/img/in-post/JB/Cydia Sources Add.png "Add the source")
 
 If you want to delete a repo, simply press *Edit* and then delete it with the red button next to it.
-![alt text](/img/in-post/JB/Cydia Source Remove.png "Remove source by this way")
+![alt text](/img/in-post/JB/Cydia Sources Remove.png "Remove source in this way")
 
 ### Installing tweaks
 
@@ -120,7 +122,7 @@ You'll se a **verbose** output of what's happening.
 ![alt text](/img/in-post/JB/Cydia Filza Installation.png "Verbose output")
 
 Once you'll read *Restart SpringBoard* just press it. After a respring you'll see your new tweaks or your new apps!
-![alt text](/img/in-post/JB/Cydia Restart Springboard.png "Press Restart SpringBoard")
+![alt text](/img/in-post/JB/Cydia Restart SpingBoard.png "Press Restart SpringBoard")
 
 And now you should see Filza installed!
 ![alt text](/img/in-post/JB/Filza Icon.png "Here it is")
