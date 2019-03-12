@@ -14,12 +14,12 @@ Per eseguire il jailbreak hai bisogno di pochi ma importanti requisiti:
 * Accesso a internet
 * Tempo, pazienza e conoscenze informatiche basilari
 
-## Preparations
+## Preparazione
 
 * Prima di tutto ricorda che (nonostante sia davvero stabile) questa è una **versione beta**, usala con cautela o aspetta per la versione finale se sei troppo inesperto
-* Assicurati che su Impostazioni → Generali → Spazio Libero non ci sia alcun **aggionrnamento OTA** (apparirà come *iOS 12.x*): in caso ce ne sia uno, eliminalo prima di inizia il processo di jailbreaking
+* Assicurati che su Impostazioni → Generali → Spazio Libero non ci sia alcun **aggiornamento OTA** (apparirà come *iOS 12.x*): in caso ce ne sia uno, eliminalo prima di inizia il processo di jailbreaking
 ![alt text](/img/in-post/JB/iStorage.png "Check for the OTA in here")
-* In modo da bloccare definitivamente gli aggionrnamenti OTA installa il *profilo tvOS* [clicccando](https://raw.githubusercontent.com/Jwhite077/NOOTA/master/tvOS_12_Beta_Profile.mobileconfig). Il tuo dispositivo richiederà il tuo codice di sblocco ed in seguito si riavvierà. Appena hai riavviato, gli aggionrnamenti spariranno fin quando non rimuoverai il profilo. Nella schermata "aggionrnamenti di sistema" otterrai infatti questo errore
+* In modo da bloccare definitivamente gli aggiornamenti OTA installa il *profilo tvOS* [clicccando](https://raw.githubusercontent.com/Jwhite077/NOOTA/master/tvOS_12_Beta_Profile.mobileconfig). Il tuo dispositivo richiederà il tuo codice di sblocco ed in seguito si riavvierà. Appena hai riavviato, gli aggiornamenti spariranno fin quando non rimuoverai il profilo. Nella schermata "aggiornamenti di sistema" otterrai infatti questo errore
 ![alt text](/img/in-post/JB/tvOS.png "Install the tvOS profile")
 * Se hai già usato **rootlessJB** su iOS 12, disinstallalo cliccando sul tasto “Uninstall” all'interno del tool
 
@@ -41,81 +41,82 @@ L'app sarà ormai verificata e potrai aprirla.
 
 ## Jailbreaking
 
-Whenever you open unc0ver go to the *Settings* tab and make sure that you have the default configurations. As for the time I'm writing, these are the default ones.
+Una volta aperto unc0ver vai nella tab *Settings* ed assicurati di avere le configurazioni di default. Nel momento in cui sto scrivendo il post, sono queste.
 ![alt text](/img/in-post/JB/unc0ver Settings.png "Leave everything as it is")
 
-Ok, now go back to the home screen of unc0ver. You will see a giant button called **Jailbreak**. Once you're ready, click it. Once you click it, you end up restarting or respringing: I'll talk about it later.
+Ok, ora torna alla home screen di unc0ver. Vedrai un grande bottone con su scritto **Jailbreak**. Quando sei pronto, cliccaci su. Ogni volta che lo farai, il processo terminerà con un riavvio o un respring: ne parlerò in seguito.
 ![alt text](/img/in-post/JB/unc0ver.png "Press the Jailbreak button")
 
-Click it now. The device will run the exploit and if that's successful it will reach the first stage, the **snapshot renaming"**. Now, press *OK* and the device will restart.
+Adesso, cliccalo. Il dispositivo eseguirà l'exploit e se questo andrà a buon fine avrai raggiunto il primo di tre passaggi, lo **snapshot renaming"**. Premi *OK* ed il dispositivo si riavvierà.
 ![alt text](/img/in-post/JB/Snapshot Rename.png "First step done")
 
-It could happen that reached the step **2/38** the device could *panic* because the exploit fails and the device will automatically reboot. Don't mind, that's normal, you just have to retry.
+Potrebbe succedere che allo step **2/38** il dispositivo potrebbe andare in *panic* poiché l'exploit potrebbe fallire ed il dispositivo si riavvierà automaticamente. Non ti preoccupare, può succedere, aspetta che il dispositivo si riavvii, quindi riprova.
 ![alt text](/img/in-post/JB/unc0ver Exploit.png "The device could panic at step 2/38")
 
-Once again, open unc0ver and click the Jailbreak button once again. If everything goes well, you will reach the **bootstrap extraction** stage. Press OK and reboot again.
+Di nuovo, apri unc0ver e clicca il pulsante Jailbreak. Se tutto va bene, eseguirai la **bootstrap extraction**. Premi OK ed attendi il riavvio.
 ![alt text](/img/in-post/JB/Bootstrap Extracted.png "First step done")
 
-That should be the last time: press Jailbreak again. At a certain point the device will **respring**: the screen will go black and will dim, at the center of the screen there should be a rotating circle (as when the device shutdown). Wait for it to finish and you should finally see **Cydia**!
+Ora dovrebbe essere l'ultima volta: premi il pulsante Jailbreak. Ad un certo punto il device eseguirà un **respring**: lo schermo diventerà nero e diminuirà la luminosità, al centro dello schermo apparirà una rotella che gira (come quando il dispositivo si spegne). Attendi che finisca e potrai finalmente vedere installata **Cydia**!
 ![alt text](/img/in-post/JB/Cydia Icon.png "Cydia appeared")
 
-Now the jailbreak is activated, but remember that this is a ***semi-unthetered*** jailbreak. That means that whenever you turn off your device you will re-enter in jailed mode. But that's not a big deal: open unc0ver, press the *Jailbreak* button and after a respring you will reactivate your jailbreak.
+Ora il jailbreak è attivato, ma ricorda che questo è jailbreak è ***semi-unthetered***. Ciò significa che ogni qualvolta riavvierai il device, questo tornerà in modalità jailed. Ma non è un grosso problema: apri unc0ver, premi il pulsante *Jailbreak* e dopo un respring il dispositivo si riavvierà nuovamente.
 
-Remember to update even the unc0ver app itself from Ignition or download and resign the new IPA via Impactor in order to always have the most stable experience! Once updated, open the app and press the *Re-Jailbreak* button.
+Ricorda di aggiornare l'app di unc0ver dal gruppo Telegram ogni tanto, in modo da avere l'esperienza più stabile possibile! Quando avrai aggiornato l'app, premi il pulsante *Re-Jailbreak*.
 ![alt text](/img/in-post/JB/unc0ver ReJailbreak.png "Press the Re-Jailbreak button")
 
-## Setup Cydia
+## Configurare Cydia
 
-Now it's time to set up Cydia. First of all open it up and you will see this welcome screen.
+Ora è tempo di configurare Cydia. Prima di tutto aprila e verrai accolto dalla schermata di benvenuto.
 ![alt text](/img/in-post/JB/Cydia.png "Welcome")
 
-Go into the *Sources* tab on the bottom, and you will see this screen.
-
-Those are the **repositories**, where all the **tweaks** are stored and distributed from. Most of the tweaks are free, but some are paid. ***DO NOT PIRATE THEM***, for various reasons. First of all, because developers spend their time offering us these wonderful customizations which we would never have and supporting them paying some of their tweaks is the less we could do. Secondly, because pirated tweaks could lead to **bootloops**, forcing you to restoring your iDevice, losing both the jailbreak and ***all*** **your data**. Always download them from the official repo (usually they are *BigBoss*, *Chariz* or *Dynastic*). If you are not sure about the repo of the tweak you're searching for, Google "`name of your tweak here` repo". You'll surely find it.
+vai nella sezione *Sorgenti* in basso, e vedrai questa schermata.
 ![alt text](/img/in-post/JB/Cydia Sources.png "Sources tab")
 
-Whenever you *Refresh* the sources a red banner will appear. By doing that you'll reload the *index* of every repo and if there are updates, they will show up. It's usually better to update your tweaks in order to improve their stability. If any *Essential update* will show up, please do a *Complete update*. Those packages are updated from the maintainer of your jailbreak and makes your jailbreak more stable.
+Quelle che vedi sono le **repositories**, dove tutti i **tweaks** sono contenuti e da dove vengono distribuiti. La maggior parte dei tweaks sono gratuiti, ma alcuni sono a pagamento. ***NON PIRATARLI***, per diverse ragioni. Prima di tutto, perché gli sviluppatori impiegano molto del loro tempo per offrirci questi ottimi lavori, che probabilmente non avremmo mai senza supportarli ripagandoli almeno del tempo impiegato nello scriverli. Secondo, perché i tweak piratati possono in alcuni casi portare a **bootloops**, forzandovi a ripristinare il vostro dispositivo, perdendo così sia il jailbreak che ***tutti*** **i vostri dati**. Scaricali sempre i tweak dalle loro repo ufficiali (solitamente sono *BigBoss*, *Chariz* o *Dynastic*). Se non sei certo della repo del tweak che stai cercando, cerca su Google "`nome del tweak qui` repo". La troverai sicuramente.
+
+Ogni qualvolta premerai *Aggiorna* le sorgenti si aggiorneranno ed un pallino rosso apparirà. Facendo così aggiornerai l'*indice* delle sorgenti e nel caso in cui ci siano aggiornamenti dei tweak disponibili, questi appariranno. Solitamente è meglio aggiornare i tuoi tweak in modo da migliorarne la stabilità. Se qualunque *Aggiornamento indispensabile* apparirà, performa un *Aggiornamento completo*. Questi pacchetti sono aggiornati dal maintainer del tuo jailbreak in modo da renderlo più stabile.
 ![alt text](/img/in-post/JB/Cydia Necessary Update.png "Perform a complete update")
 
-But how to add a repo? That's super easy. Most of the repos now have specific button, prompting to add the repo, but it could also happen that you should manually add it. In that case press the *Edit* button on top-right, then *Add* and pasting the URL of the repo and finally *Add source*. In this case I'll add the `http://tigisoftware.com/cydia`, the repo of **Filza**. We'll talk about it later.
+Ma come aggiungere una repo? È molto semplice. La maggior parte delle repo hanno un pulsante specifico nel loro sito web che apre una finestra per aggiungere automaticamente la repo, ma potrebbe succedere che tu debba aggiungerla manualmente. In quel caso premi il tasto *Modifica* in alto a destra, quindi *Aggiungi* e copia l'URL della repo, quindi *Aggiungi sorgente*. In questo caso aggiungerò `http://tigisoftware.com/cydia`, la repo di **Filza**. Ne parleremo in seguito.
 ![alt text](/img/in-post/JB/Cydia Sources Add.png "Add the source")
 
-If you want to delete a repo, simply press *Edit* and then delete it with the red button next to it.
+Se vuoi cancellare una repo, semplicemnte premi *Modifica*, quindi rimuovila con il tasto rosso al suo fianco.
 ![alt text](/img/in-post/JB/Cydia Sources Remove.png "Remove source in this way")
 
-### Installing tweaks
+### Installare i tweaks
 
-Here comes the fun part: installing tweaks. Tweaks are packages which customize your system, just by adding customizations or even adding apps. In this example we'll install a famous jailbroken app called **Filza**. It's a package manager with ***root*** priviledges. If you are unexpirienced don't use it, but it's always good having it.
+Ora arriva la parte divertente: installare i tweaks. I tweaks sono pacchetti che personalizzano il tuo sistema, aggiungendo funzioni o addirittura anche apps. In questo esempio installeremo una famosa app jailbroken chiamata **Filza**. È un gestore file con privilegi ***root***. Se sei inesperto non usarla, ma è sempre meglio averla installata.
 
-In Cydia, refresh the sources, then go to the *Search* tab and write your package name. There will be more than one result, in this case pick the **64bit** version (since you are running unc0ver, you must be 64bit).
+In Cydia, aggiorna le sorgenti, quindi vai su *Cerca* e digita il nome del pacchetto che ti interessa. Ci sarà più di un risultato, in questo caso seleziona la versione **64bit** (considerato il fatto che stai usando unc0ver, il tuo hardware deve essere a 64bit).
 ![alt text](/img/in-post/JB/Cydia Search Filza.png "Search for the packages here")
 
-A popup window will show up. If you want to install something else *Continue Queuing*, otherwise just *Confirm*.
+Una finestra popupsi aprirà. Se vuoi installare altro premi *Continua a mettere in coda*, altrimenti *Conferma*.
 ![alt text](/img/in-post/JB/Cydia Installation Confirm.png "Press confirm to install")
 
-You'll se a **verbose** output of what's happening.
+Vedrai un **verbose** output di quello che sta succedendo.
 ![alt text](/img/in-post/JB/Cydia Filza Installation.png "Verbose output")
 
-Once you'll read *Restart SpringBoard* just press it. After a respring you'll see your new tweaks or your new apps!
+Quando leggerai *Riavvia SpringBoard* premilo. Dopo un respring vedrai in azione i tuoi nuovi tweak o le app!
 ![alt text](/img/in-post/JB/Cydia Restart SpingBoard.png "Press Restart SpringBoard")
 
-And now you should see Filza installed!
+Ed ora infatti dovresti vedere Filza installato.
 ![alt text](/img/in-post/JB/Filza Icon.png "Here it is")
 
-If you want to remove a tweak you installed, go to the *Installed* tab, open the tweak you want to remove, click *Edit* and then *Remove*. Even in this case you can queue more actions.
+Se vuoi rimuovere un tweak che hai installato, vai nella sezione *Installato*, apri il tweak che vuoi rimuovere, clicca su *Modifica* e quindi *Rimuovi*. Anche in questo caso puoi mettere in coda altri processi.
 ![alt text](/img/in-post/JB/Cydia Installed.png "This is the Installed tab")
 
-As I said tweaks can also customize various aspects of iOS, in this case you can see the settings before and after installing the tweak **System Info**.
+Come ho detto i tweak possono modificare vari aspetti di iOS, in questo caso puoi vedere le impostazioni di sistema prima e dopo l'installazione del tweak **System Info**.
 ![alt text](/img/in-post/JB/iOS Info.png "Before")
 ![alt text](/img/in-post/JB/iOS Info Tweak.png "After")
 
-As I said, periodically check for updates by refreshing the sources. If there are some updates, they will show up in the *Changes* section.
+Infine, controlla periodicamente gli aggiornamenti aggiornando le sorgenti. Se ce ne saranno, verranno mostrati nella sezione *Novità*.
 ![alt text](/img/in-post/JB/Cydia Changes.png "Updates will show up here")
 
-### The End
+### Fine
 
-You are now ready to ~~mess~~ play with your device.
+Adesso sei pronto a ~~distruggere~~ sperimentare con il tuo dispositivo.
 
-You can find my socials in the footer of this web page, in case you want to follow me or need urgent help.
+Puoi trovare i miei social in fondo alla pagina, in caso tu voglia seguirmi o abbia bisogno di aiuto urgente. Se hai qualche domanda, ricorda che puoi sempre chiedere aiuto nel gruppo **Jailbreak Italia**.
 
-> Happy Jailbreaking!
+> Buon Jailbreak!
+> Ivan

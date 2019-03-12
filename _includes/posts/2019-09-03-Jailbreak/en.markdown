@@ -82,24 +82,24 @@ Now it's time to set up Cydia. First of all open it up and you will see this wel
 ![alt text](/img/in-post/JB/Cydia.png "Welcome")
 
 Go into the *Sources* tab on the bottom, and you will see this screen.
-
-Those are the **repositories**, where all the **tweaks** are stored and distributed from. Most of the tweaks are free, but some are paid. ***DO NOT PIRATE THEM***, for various reasons. First of all, because developers spend their time offering us these wonderful customizations which we would never have and supporting them paying some of their tweaks is the less we could do. Secondly, because pirated tweaks could lead to **bootloops**, forcing you to restoring your iDevice, losing both the jailbreak and ***all*** **your data**. Always download them from the official repo (usually they are *BigBoss*, *Chariz* or *Dynastic*). If you are not sure about the repo of the tweak you're searching for, Google "`name of your tweak here` repo". You'll surely find it.
 ![alt text](/img/in-post/JB/Cydia Sources.png "Sources tab")
 
-Whenever you *Refresh* the sources a red banner will appear. By doing that you'll reload the *index* of every repo and if there are updates, they will show up. It's usually better to update your tweaks in order to improve their stability. If any *Essential update* will show up, please do a *Complete update*. Those packages are updated from the maintainer of your jailbreak and makes your jailbreak more stable.
+Those are the **repositories**, where all the **tweaks** are stored and distributed from. Most of the tweaks are free, but some are paid. ***DO NOT PIRATE THEM***, for various reasons. First of all, because developers spend their time offering us these wonderful customizations which we would never have and supporting them paying some of their tweaks is the less we could do. Secondly, because pirated tweaks could lead to **bootloops**, forcing you to restoring your iDevice, losing both the jailbreak and ***all*** **your data**. Always download them from the official repo (usually they are *BigBoss*, *Chariz* or *Dynastic*). If you are not sure about the repo of the tweak you're searching for, Google "`name of your tweak here` repo". You'll surely find it.
+
+Whenever you *Refresh* the sources a red banner will appear. By doing that you'll reload the *index* of every repo and if there are updates, they will show up. It's usually better to update your tweaks in order to improve their stability. If any *Essential update* will show up, please perform a *Complete update*. Those packages are updated from the maintainer of your jailbreak and makes your jailbreak more stable.
 ![alt text](/img/in-post/JB/Cydia Necessary Update.png "Perform a complete update")
 
-But how to add a repo? That's super easy. Most of the repos now have specific button, prompting to add the repo, but it could also happen that you should manually add it. In that case press the *Edit* button on top-right, then *Add* and pasting the URL of the repo and finally *Add source*. In this case I'll add the `http://tigisoftware.com/cydia`, the repo of **Filza**. We'll talk about it later.
+But how to add a repo? That's super easy. Most of the repos now have specific button in their website, prompting to add the repo, but it could also happen that you should manually add it. In that case press the *Edit* button on top-right, then *Add* and pasting the URL of the repo and finally *Add source*. In this case I'll add `http://tigisoftware.com/cydia`, the repo of **Filza**. We'll talk about it later.
 ![alt text](/img/in-post/JB/Cydia Sources Add.png "Add the source")
 
-If you want to delete a repo, simply press *Edit* and then delete it with the red button next to it.
+If you want to delete a repo, simply press *Edit* and then remove it with the red button next to it.
 ![alt text](/img/in-post/JB/Cydia Sources Remove.png "Remove source in this way")
 
 ### Installing tweaks
 
-Here comes the fun part: installing tweaks. Tweaks are packages which customize your system, just by adding customizations or even adding apps. In this example we'll install a famous jailbroken app called **Filza**. It's a package manager with ***root*** priviledges. If you are unexpirienced don't use it, but it's always good having it.
+Here comes the fun part: installing tweaks. Tweaks are packages which customize your system, by adding functionalities or even adding apps. In this example we'll install a famous jailbroken app called **Filza**. It's a file manager with ***root*** priviledges. If you are unexpirienced don't use it, but it's always good having it.
 
-In Cydia, refresh the sources, then go to the *Search* tab and write your package name. There will be more than one result, in this case pick the **64bit** version (since you are running unc0ver, you must be 64bit).
+In Cydia, refresh the sources, then go to the *Search* tab and write your package name. There will be more than one result, in this case pick the **64bit** version (since you are running unc0ver, you must be on 64bit hardware).
 ![alt text](/img/in-post/JB/Cydia Search Filza.png "Search for the packages here")
 
 A popup window will show up. If you want to install something else *Continue Queuing*, otherwise just *Confirm*.
@@ -108,10 +108,10 @@ A popup window will show up. If you want to install something else *Continue Que
 You'll se a **verbose** output of what's happening.
 ![alt text](/img/in-post/JB/Cydia Filza Installation.png "Verbose output")
 
-Once you'll read *Restart SpringBoard* just press it. After a respring you'll see your new tweaks or your new apps!
+Once you'll read *Restart SpringBoard* just press it. After a respring you'll see your new tweaks or your new apps in action!
 ![alt text](/img/in-post/JB/Cydia Restart SpingBoard.png "Press Restart SpringBoard")
 
-And now you should see Filza installed!
+And now, indeed, you should see Filza installed.
 ![alt text](/img/in-post/JB/Filza Icon.png "Here it is")
 
 If you want to remove a tweak you installed, go to the *Installed* tab, open the tweak you want to remove, click *Edit* and then *Remove*. Even in this case you can queue more actions.
@@ -121,7 +121,7 @@ As I said tweaks can also customize various aspects of iOS, in this case you can
 ![alt text](/img/in-post/JB/iOS Info.png "Before")
 ![alt text](/img/in-post/JB/iOS Info Tweak.png "After")
 
-As I said, periodically check for updates by refreshing the sources. If there are some updates, they will show up in the *Changes* section.
+Lastly, periodically check for updates by refreshing the sources. If there are some updates, they will show up in the *Changes* section.
 ![alt text](/img/in-post/JB/Cydia Changes.png "Updates will show up here")
 
 ### The End
@@ -131,3 +131,4 @@ You are now ready to ~~mess~~ play with your device.
 You can find my socials in the footer of this web page, in case you want to follow me or need urgent help.
 
 > Happy Jailbreaking!
+> Ivan
