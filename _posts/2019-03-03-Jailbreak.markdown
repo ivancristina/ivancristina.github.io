@@ -17,12 +17,12 @@ tags:
 
 <!-- Italian Version -->
 <div class="it post-container">
-    {% capture about_it %}{% include posts/2019-03-03-Jailbreak/it.md %}{% endcapture %}
+    {% capture about_it %}{% include posts/2019-09-03-Jailbreak/it.md %}{% endcapture %}
     {{ about_it | markdownify }}
 </div>
 
 <!-- English Version -->
 <div class="en post-container">
-    {% capture about_en %}{% include posts/2019-03-03-Jailbreak/en.md %}{% endcapture %}
+    {% capture about_en %}{% include posts/2019-09-03-Jailbreak/en.md %}{% endcapture %}
     {{ about_en | markdownify }}
 </div>
