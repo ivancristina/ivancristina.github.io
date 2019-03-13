@@ -20,18 +20,18 @@ In questo semplice progetto le componenti sono fondamentalmente 2: un clone **Ar
 * **macOS** (<a href="http://wch.cn/downloads/file/178.html">**.zip**</a>, contiene un file **.pkg** da installare)
 * **Android** (<a href="http://wch.cn/downloads/file/195.html">**.zip**</a>, da scompattare)
 
-![alt text](/img/in-post/WCH.png "Lista Download")
+![alt text](/img/Arduino/WCH.png "Lista Download")
 Lavorando in macOS, ho dovuto installare un semplice **.pkg** all’interno dello zip e riavviare, su Windows la procedura è simile, su Ubuntu ho invece dovuto installare prima **gcc** e **make** (tramite comando ``` sudo apt install gcc make```) per poi posizionarmi sulla cartella tramite comando `cd POSIZIONE_CARTELLA` e quindi compilare e caricare i driver col comando `make load` (o `make` per compilare e basta).
 
 Fatto ciò, la scheda viene finalmente riconosciuta come un normale Arduino Uno (cambia solo il nome della porta seriale, in alcuni casi, come in macOS in cui prende il nome di `/dev/cu.wchusbserial1460`).
-![alt text](/img/in-post/SerialeCrop.png "Porta Seriale")
+![alt text](/img/Arduino/SerialeCrop.png "Porta Seriale")
 
 ## Librerie
 
 Il seguente progetto utilizza librerie non standard, create da Adafruit, rilasciate su Github dalla stessa, e da non molto pubblicate anche tra le librerie scaricabili tramite l’IDE di Arduino.
 
 Una volta installate, basta includere la libreria nel progetto con `#include <Adafruit_NeoPixel.h>`, per poi continuare con il resto dello sketch.
-![alt text](/img/in-post/Github.png "Repo Github")
+![alt text](/img/Arduino/Github.png "Repo Github")
 
 ### Variabili unsigned
 
@@ -53,7 +53,7 @@ Nel nostro caso Adafruit consiglia di usare valori *unsigned* poiché non lavora
 Quando ad una di queste definizioni è assegnato il valore `wait` è come se stiamo congelando quella variabile, non assegnandogli nessun valore.
 
 ## Lo sketch
-<center><a href="https://raw.githubusercontent.com/ivancristina/ivancristina.github.io/master/resources/config.plist"><img src="/img/in-post/Arduino Folder.png" alt="Download" width="40%" height="40%"></a>
+<center><a href="https://raw.githubusercontent.com/ivancristina/ivancristina.github.io/master/resources/config.plist"><img src="/img/Arduino/Arduino Folder.png" alt="Download" width="40%" height="40%"></a>
 
 <i>Clicca il tasto destro e "<b>Scarica file collegato</b>" sull'icona qui sopra per scaricare lo sketch</i></center>
 
@@ -213,21 +213,21 @@ Quest’ultimo è il ciclo più complesso. Ritroviamo infatti un sottociclo per 
 Ho ricreato lo schema in **Fritzing**, sia dal punto di vista grafico che puramente circuitale.
 
 Non essendo il componente tra quelli standard di Fritzing ho dovuto cercarlo. Fortunatamente, come riportato dalla stessa Adafruit, *“Adafruit Industries is a Friend of Fritzing”*.
-![alt text](/img/in-post/Ring_schem.png "Schematica")
+![alt text](/img/Arduino/Ring_schem.png "Schematica")
 
 Ho quindi scaricato dalla cartella `parts` del **master tree** della <a href="https://github.com/adafruit/Fritzing-Library/tree/master/parts">repo Frtizing-Library di Adafruit</a> il file <a href="https://github.com/adafruit/Fritzing-Library/raw/master/parts/Adafruit%2024%20NeoPixel%20Ring.fzpz">**Adafruit 24 NeoPixel Ring.fzpz**</a>.
 
 Una volta importato, l’ho aggiunto al mio **bin** ed ho costruito lo schema in sé.
 
 Il costruttore consiglia in realtà di aggiungere un capacitare da **1000 µF** (quindi da **1 mF**) tra Arduino ed il primo LED (a cui viene applicata la tensione) in modo da ridurre il rischio di burnout del NeoPixel, o in alternativa una resistenza da **300 - 500 Ω**. Inoltre, lo stesso consiglia di minimizzare la distanza tra Arduino e la strip (probabilmente per ridurre problemi di dispersione). Ed infine consiglia di connettere la **GND** per prima, se possibile.
-![alt text](/img/in-post/Ring_bb.png "BreadBoard")
+![alt text](/img/Arduino/Ring_bb.png "BreadBoard")
 
 Sopra viene rappresentato quindi in maniera semplicistica il migliore assemblaggio del progetto, riassumendo:
 * Pin **GND** dell’Adafruit NeoPixel → Uno dei pin **GND** di Arduino
 * Pin **5V** dell’Adafruit NeoPixel → Resistenza da **300-500 Ω** (*330* in questo caso)→ Pin **5V** di Arduino
 * Pin **IN** dell’Adafruit NeoPixel → Pin Digitale **PWM** (*6* in questo caso) di Arduino
 
-![alt text](/img/in-post/Finale.png "Finale")
+![alt text](/img/Arduino/Finale.png "Finale")
 
 ### Programmi utilizzati
 * [**Arduino IDE**](arduino.cc) e [**Textmate**](macromates.com) per la compilazione;
