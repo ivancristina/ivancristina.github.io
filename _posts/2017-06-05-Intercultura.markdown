@@ -11,23 +11,22 @@ tags:
     - Intercultura
 ---
 
-
 <center><h1>A wonderful experience</h1>
 
 <img src="/img/Intercultura/Handshake.png"></center>
 
 An unforgettable trip, a lot of laughs, many new friends.
-The are no other ways to talk about the Italy-Serbia cultural exchange, made possible thanks to <a href="http://www.intercultura.it" target="_blank">Intercultura</a>.
+The are no other ways to talk about the Italy-Serbia cultural exchange, made possible thanks to [Intercultura](http://www.intercultura.it).
 
 But let's make a step back.
 
 ## The arrangements
 
-The first contacts between the schools started one year ago, during the School Year 2015/2016. Much was the excitement, both among students and teachers. After a lot of preparatives, the schools (the <a href="https://www.itaerferrarin.gov.it/pasw4/" target="_blank">Aeronautical Technical Institute "Arturo Ferrarin"</a> of Catania and the Belgrade <a href="http://www.vakademija.edu.rs/?lang=en" target="_blank">Vazduhoplovna Akademija</a>) finally managed to get ready and fix the dates. And that's where the story begins.
+The first contacts between the schools started one year ago, during the School Year 2015/2016. Much was the excitement, both among students and teachers. After a lot of preparatives, the schools (the [Aeronautical Technical Institute "Arturo Ferrarin"](https://www.itaerferrarin.gov.it/pasw4/) of Catania and the Belgrade [Vazduhoplovna Akademija](http://www.vakademija.edu.rs/?lang=en)) finally managed to get ready and fix the dates. And that's where the story begins.
 
 # Italy!
 
-So the day finally arrived. The night of the 5th March 2017, 22 Serbian guys arrived in Italy, and there, at the <a href="http://www.aeroporto.catania.it/?lang=en" target="_blank">Fontanarossa Airport</a> of Catania, other 23 Italian guys, with both the Italian and Serbian flags, were eagerly awaiting them. After hours of waiting, they finally got out from the arrival terminal. Then screams of joy, applauses, hugs and kisses. It was just the beginning of the trip.
+So the day finally arrived. The night of the 5th March 2017, 22 Serbian guys arrived in Italy, and there, at the [Fontanarossa Airport](http://www.aeroporto.catania.it/?lang=en) of Catania, other 23 Italian guys, with both the Italian and Serbian flags, were eagerly awaiting them. After hours of waiting, they finally got out from the arrival terminal. Then screams of joy, applauses, hugs and kisses. It was just the beginning of the trip.
 
 They gifted us lots of things, starting from the Rakija (a typical liquor), to clothes, gadgets, food and so on and so on.
 
@@ -36,7 +35,7 @@ Just the time for the presentations, some little snacks (we are Italians by-the-
 At midday we were again on our way, and after a daylong guided trip around Catania, we finally returned home, just like the following days.
 <img class="roundrect" src="/img/Intercultura/Visit.jpg">
 
-On Wednesday, after an hour of lesson at school (which allowed the guys to realize the differences between our school systems), we went to the <a href="http://www.aeroclubcatania.com" target="_blank">Catania Aeroclub</a>, and thanks to the teachers, the Aeroclub staff and the pilot Stefano Mirulla, we had the chance to board the Aeroclub’s aircrafts and talk directly to the pilots (and of course taking photos with them, teachers included). Once we finished, the bus brought us to a trip to Acicastello and Acireale, and then back home.
+On Wednesday, after an hour of lesson at school (which allowed the guys to realize the differences between our school systems), we went to the [Catania Aeroclub](http://www.aeroclubcatania.com), and thanks to the teachers, the Aeroclub staff and the pilot Stefano Mirulla, we had the chance to board the Aeroclub’s aircrafts and talk directly to the pilots (and of course taking photos with them, teachers included). Once we finished, the bus brought us to a trip to Acicastello and Acireale, and then back home.
 <img class="roundrect" src="/img/Intercultura/Aeroclub.jpg">
 
 On Thursday we first visited the Mount Etna, and after some slips and snowball wars we also had the possibility to visit Taormina, where recently the G7 took place.
@@ -48,12 +47,14 @@ Indeed in those days there were the very first preparatives for the event. Anywa
 On Saturday we visited Noto and Syracuse, were we went around the local gardens, the Theatre of Siracusa, the Dionigi’s Ear (Orecchio di Dionisio) and even the little jetty.
 
 After three hours of lessons, Saturday the guys had the possibility to try our school Simulator.
+
 <center><video class="roundrect" width="100%" height="100%" controls>
   <source src="https://github.com/ivancristina/web_resources/raw/master/vid/ALSIM.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video></center>
 
-Then we managed to play an off-ball match, which unfortunately was won by the Serbs. Here we realized how strong Serbs are in sports. Well, by our side, they’ll never have **"o sole, o core, o mare"**. To console us, a great buffet ended the school day. After that, we moved to the shopping centre “Centro Sicilia”, and after hours of shopping and laughs, we came back home.
+Then we managed to play an off-ball match, which unfortunately was won by the Serbs. Here we realized how strong Serbs are in sports. Well, by our side, they’ll never have "**o sole, o core, o mare**". To console us, a great buffet ended the school day. After that, we moved to the shopping centre “Centro Sicilia”, and after hours of shopping and laughs, we came back home.
+
 <center><video class="roundrect" width="75%" height="75%" controls>
   <source src="https://github.com/ivancristina/web_resources/raw/master/vid/Centro.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -77,8 +78,7 @@ After a sleepless night (‘cause of the excitement) we woke up in the early mor
 First plane, an Alitalia Catania Fontanarossa - Roma Fiumicino. Nice flight, but long waiting. Three hours. Thankfully there were my friends. And briscola cards.
 <img class="roundrect" src="/img/Intercultura/Roma.jpg">
 
-And now the last step. While boarding to the Alitalia’s Roma - Belgrade flight, there was a general excitement. So after a two hour flight, the afternoon of the 2nd April 2017 we finally touched the runway of the Belgrade airport <a href="http://www.beg.aero/en/home" target="_blank">Nikola Tesla</a>'s Runway.
-
+And now the last step. While boarding to the Alitalia’s Roma - Belgrade flight, there was a general excitement. So after a two hour flight, the afternoon of the 2nd April 2017 we finally touched the runway of the Belgrade airport [Nikola Tesla](http://www.beg.aero/en/home)'s Runway.
 
 # Serbia's turn
 
@@ -88,6 +88,7 @@ Right before leaving the plane, our Italian charm let us socialize with the pilo
 Once got out from the finger, the first thing we faced (of course), was a beautiful Airport, clean and tidy. Thanks to the Wi-Fi Airport (Serbia’s full of free Wi-Fi APs) we also had the possibility to call our families. Italy’s got a lot to learn from this side.
 
 Passed the airport checks, we finally saw our friends again. Our mates, each one of them with his/her partner’s name written on the t-shirt (both in cyrillic and latin), welcomed us, some with traditional food and clothes too. It was beautiful, like seeing them for the first time.
+
 <!-- <img class="roundrect" src="/img/Intercultura/SerbiaWelcome.jpg"> -->
 
 So after the greetings, we went to our pair’s house. On my way to the house, I saw how much green there is Serbia. It somehow remembered me the Sicilian camps. The clean and fresh air, the weather not different from ours. Personally, I found a great family, clean, tidy, kind and polite, and just like me did all my Italian mates. We were really lucky.
@@ -107,7 +108,7 @@ Then, after a short trip by bus (which allowed us to see the Sava river and also
 <img class="roundrect" src="/img/Intercultura/Split.jpg">
 <img class="roundrect" src="/img/Intercultura/Carpitano.jpg">
 
-The next step was the <a href="http://www.aeronauticalmuseum.com/index.php?jez=eng" target="_blank">Muzej Vazduhoplovstva</a>, located right next to the Airport, a museum rich of history and a lot of dismissed planes, starting from the Sarić N°1, passing for the Hurricane Mk.IV, the Spitfire Mk.Vc or the MiG 21 to end with the F-16C. You could also take a <a href="http://www.aeronauticalmuseum.com/postavka_donja.php?jez=eng&id=1" target="_blank">virtual tour here</a>, in order to see all the 29 aeroplanes. (There are a lot more, though)
+The next step was the [>Muzej Vazduhoplovstva](http://www.aeronauticalmuseum.com/index.php?jez=eng), located right next to the Airport, a museum rich of history and a lot of dismissed planes, starting from the Sarić N°1, passing for the Hurricane Mk.IV, the Spitfire Mk.Vc or the MiG 21 to end with the F-16C. You could also take a [virtual tour here](http://www.aeronauticalmuseum.com/postavka_donja.php?jez=eng&id=1), in order to see all the 29 aeroplanes. (There are a lot more, though)
 <img class="roundrect" src="/img/Intercultura/Museum.jpg">
 <img class="roundrect" src="/img/Intercultura/Guide.jpg">
 <img class="roundrect" src="/img/Intercultura/Spitfire.jpg">
@@ -135,6 +136,7 @@ Your browser does not support the video tag.
 </video></center>
 
 There was also a landscaped garden with some mechanical dinosaurs.
+
 <center><video class="roundrect" width="100%" height="100%" controls>
   <source src="https://github.com/ivancristina/web_resources/raw/master/vid/Dinosaurs.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -146,6 +148,7 @@ The day after we visited the Viminacium, a Roman military camp of the old provin
 <img class="roundrect" src="/img/Intercultura/Vika.jpg">
 
 The next day we visited the zoo. I actually saw for the first time a lot of animals, like the wolves, the seal and the monkeys. I took so many photos I will not attach anyone, because I can’t choose. But let me attach a video, I think it’s worth it.
+
 <center><video class="roundrect" width="100%" height="100%" controls>
   <source src="https://github.com/ivancristina/web_resources/raw/master/vid/Zoo.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -154,6 +157,7 @@ Your browser does not support the video tag.
 But that day, the 8th April 2017 wasn’t a day like another: it was Alberto’s 18th birthday. So thanks to Nikola’s mother we ate 2 different (and very good) cakes. But of course it wasn’t enough, indeed the night before we celebrated all together at a local pub.
 
 Later, thanks to an adult who granted for us and assisted us, we managed to go to the polygon.
+
 <center><video class="roundrect" width="100%" height="100%" controls>
   <source src="https://github.com/ivancristina/web_resources/raw/master/vid/Polygon.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -165,6 +169,7 @@ The end for our trip was near, indeed the last day, the 9th April, we went to th
 
 Here, we greeted our new families for the last time, and with a lot of sadness and the eyes full of tears, we went back home.
 <img class="roundrect" src="/img/Intercultura/Bye.jpg">
+
 <center><video class="roundrect" width="100%" height="100%" controls>
   <source src="https://github.com/ivancristina/web_resources/raw/master/vid/Land.mp4" type="video/mp4">
 Your browser does not support the video tag.

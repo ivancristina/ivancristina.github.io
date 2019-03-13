@@ -12,16 +12,15 @@ tags:
 ---
 
 > "Of all the sites on all the web, I had to click onto his."
-> *- Homer Simpson*
-
+> _- Homer Simpson_
 
 ## Well. I did it
 
 After hours of nerding, I finally managed to get this crap working. Dunno completely why, but I did.
-Huge thanks to <a href="https://github.com/Huxpro">Hux</a> for his incredibly well-made base. Without him I'd probably still trying to mess with html syntax.
+Huge thanks to [Hux](https://github.com/Huxpro) for his incredibly well-made base. Without him I'd probably still trying to mess with html syntax.
 Anyway, I don't think there's a lot more to say, so hope you all the best my friend, cause if you're here there's something wrong in you.
 
----
+* * *
 
 # Content
 

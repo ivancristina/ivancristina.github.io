@@ -13,15 +13,15 @@ tags:
     - Neopixel
 ---
 
-
 In questo semplice progetto le componenti sono fondamentalmente 2: un clone **Arduino Uno Rev. 3** ed un clone **Adafruit NeoPixel Ring** a 24 LEDs. Sebbene il secondo sia identico sotto ogni punto di vista all’originale, la board in questione presenta invece una sola differenza: il modulo di comunicazione seriale (USB to Serial): parliamo infatti di un CH340G, prodotto dalla casa cinese WCH, molto più economico del FT232RL montato sull’originale. Sono stato quindi costretto a scaricare i driver dal sito WCH. Questi si presentano in varie sezioni:
-* **Windows** (<a href="http://wch.cn/downloads/file/5.html">**.zip**</a> ed <a href="http://wch.cn/downloads/file/65.html">**.exe**</a>, da installare)
-* **Linux** (<a href="http://wch.cn/downloads/file/177.html">**.zip**</a>, da compilare)
-* **macOS** (<a href="http://wch.cn/downloads/file/178.html">**.zip**</a>, contiene un file **.pkg** da installare)
-* **Android** (<a href="http://wch.cn/downloads/file/195.html">**.zip**</a>, da scompattare)
+
+-   **Windows** (<a href="http://wch.cn/downloads/file/5.html">**.zip**</a> ed <a href="http://wch.cn/downloads/file/65.html">**.exe**</a>, da installare)
+-   **Linux** (<a href="http://wch.cn/downloads/file/177.html">**.zip**</a>, da compilare)
+-   **macOS** (<a href="http://wch.cn/downloads/file/178.html">**.zip**</a>, contiene un file **.pkg** da installare)
+-   **Android** (<a href="http://wch.cn/downloads/file/195.html">**.zip**</a>, da scompattare)
 
 ![alt text](/img/Arduino/WCH.png "Lista Download")
-Lavorando in macOS, ho dovuto installare un semplice **.pkg** all’interno dello zip e riavviare, su Windows la procedura è simile, su Ubuntu ho invece dovuto installare prima **gcc** e **make** (tramite comando ``` sudo apt install gcc make```) per poi posizionarmi sulla cartella tramite comando `cd POSIZIONE_CARTELLA` e quindi compilare e caricare i driver col comando `make load` (o `make` per compilare e basta).
+Lavorando in macOS, ho dovuto installare un semplice **.pkg** all’interno dello zip e riavviare, su Windows la procedura è simile, su Ubuntu ho invece dovuto installare prima **gcc** e **make** (tramite comando `sudo apt install gcc make`) per poi posizionarmi sulla cartella tramite comando `cd POSIZIONE_CARTELLA` e quindi compilare e caricare i driver col comando `make load` (o `make` per compilare e basta).
 
 Fatto ciò, la scheda viene finalmente riconosciuta come un normale Arduino Uno (cambia solo il nome della porta seriale, in alcuni casi, come in macOS in cui prende il nome di `/dev/cu.wchusbserial1460`).
 ![alt text](/img/Arduino/SerialeCrop.png "Porta Seriale")
@@ -39,53 +39,61 @@ Lo sketch in sé è molto più semplice di quanto possa sembrare. L’unica cosa
 
 In particolare, diverse volte nello sketch compaiono le variabili `uint8_t`, `uint16_t` e `uint32_t`. Questi valori sono rispettivamente delle variabili unsigned **char** (equivalente ad un byte), **unsigned short** e **unsigned int**. Per cui:
 
-* `uint8_t = 2^8 = 256`				*Unsigned char*
-* `uint16_t = 2^16 = 65536`			*Unsigned short*
-* `uint32_t = 4294967296`			*Unsigned int*
-* `uint64_t = 18446744073709551616`	*Unsigned long long (Non compare nello sketch)*
+-   `uint8_t = 2^8 = 256`				_Unsigned char_
+-   `uint16_t = 2^16 = 65536`			_Unsigned short_
+-   `uint32_t = 4294967296`			_Unsigned int_
+-   `uint64_t = 18446744073709551616`	_Unsigned long long (Non compare nello sketch)_
 
 Difatti, scrivere `uint32_t` è come scrivere `unsigned int` nello stesso IDE. Ma qual è la differenza tra tra una variabile e la stessa variabile non firmata (**unsigned**)?
 
-Prendiamo di nuovo come esempio **int**. Essendo una variabile a 32 bit il range di valori *integer* occupabili va da −2,147,483,648 a 2,147,483,647. Difatti questa variabile prende il nome di **int** o **signed int** (**int firmata**). Per quanto riguarda **unsigned int** lo stesso valore a 32 bit viene considerato solo in valori positivi, per cui in un range da 0 a 4,294,967,295.
+Prendiamo di nuovo come esempio **int**. Essendo una variabile a 32 bit il range di valori _integer_ occupabili va da −2,147,483,648 a 2,147,483,647. Difatti questa variabile prende il nome di **int** o **signed int** (**int firmata**). Per quanto riguarda **unsigned int** lo stesso valore a 32 bit viene considerato solo in valori positivi, per cui in un range da 0 a 4,294,967,295.
 
-Nel nostro caso Adafruit consiglia di usare valori *unsigned* poiché non lavorando in campo di valori negativi (un pin non può assumere un valore negativo) allora è bene sfruttare al massimo il campo degli *integer* soltanto con valori positivi, e quindi variabili positive (ovvero **non** firmate).
+Nel nostro caso Adafruit consiglia di usare valori _unsigned_ poiché non lavorando in campo di valori negativi (un pin non può assumere un valore negativo) allora è bene sfruttare al massimo il campo degli _integer_ soltanto con valori positivi, e quindi variabili positive (ovvero **non** firmate).
 
 Quando ad una di queste definizioni è assegnato il valore `wait` è come se stiamo congelando quella variabile, non assegnandogli nessun valore.
 
 ## Lo sketch
+
 <center><a href="https://raw.githubusercontent.com/ivancristina/ivancristina.github.io/master/resources/config.plist"><img src="/img/Arduino/Arduino Folder.png" alt="Download" width="40%" height="40%"></a>
 
 <i>Clicca il tasto destro e "<b>Scarica file collegato</b>" sull'icona qui sopra per scaricare lo sketch</i></center>
 
 Ho diviso lo sketch in diversi cicli, in modo da commentare i vari cicli rapidamente in fase di dimostrazione per mostrare uno solo di essi.
 
-``` xml
+```xml
 #include <Adafruit_NeoPixel.h>
 ```
-*Per prima cosa includo le librerie, come detto prima*
-``` c
+
+_Per prima cosa includo le librerie, come detto prima_
+
+```c
 #define PIN 6
 ```
-*Definisce il termine PIN come valore 6*
-``` cpp
+
+_Definisce il termine PIN come valore 6_
+
+```cpp
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(24, PIN, NEO_GRB + NEO_KHZ800);
 ```
 
-Nella parentesi il primo parametro rappresenta il *numero di pixel* nell'anello strip, il secondo il numero del *pin Arduino* (qualunque **PWM** va bene - in questo caso è il **6**). Il terzo valore invece sono le *flags* del tipo del pixel. Dato che noi abbiamo una strip **GRB** con *bitstream a 800 KHz*, il codice sarà come sopra.
-* `NEO_KHZ800` = bitstream a 800 KHz (la maggior parte dei prodotti NeoPixel, tra cui i LED WS2812)
-* `NEO_KHZ400` = bitstream a 400 KHz (pixel FLORA classic 'v1' (non v2), driver dei LED WS2811)
-* `NEO_GRB` = Pixel collegati per bitstream di tipo GRB (la maggior parte dei prodotti *NeoPixel*)
-* `NEO_RGB` = Pixel collegati per bitstream di tipo RGB (pixel FLORA v1, non v2)
-* `NEO_RGBW` = Pixel collegati per bitstream di tipo RGBW (prodotti NeoPixel RGBW)
+Nella parentesi il primo parametro rappresenta il _numero di pixel_ nell'anello strip, il secondo il numero del _pin Arduino_ (qualunque **PWM** va bene - in questo caso è il **6**). Il terzo valore invece sono le _flags_ del tipo del pixel. Dato che noi abbiamo una strip **GRB** con _bitstream a 800 KHz_, il codice sarà come sopra.
 
-``` cpp
+-   `NEO_KHZ800` = bitstream a 800 KHz (la maggior parte dei prodotti NeoPixel, tra cui i LED WS2812)
+-   `NEO_KHZ400` = bitstream a 400 KHz (pixel FLORA classic 'v1' (non v2), driver dei LED WS2811)
+-   `NEO_GRB` = Pixel collegati per bitstream di tipo GRB (la maggior parte dei prodotti _NeoPixel_)
+-   `NEO_RGB` = Pixel collegati per bitstream di tipo RGB (pixel FLORA v1, non v2)
+-   `NEO_RGBW` = Pixel collegati per bitstream di tipo RGBW (prodotti NeoPixel RGBW)
+
+```cpp
 void setup() {
 	strip.begin();
 	strip.show();
 }
 ```
+
 `strip.begin()` inizializza la strip in sé, mentre `strip.show()` spegne tutti i LEDs (la funzione show viene applicata a nulla, per cui i pixel sono spenti)
-``` cpp
+
+```cpp
 void loop() {
 	cerchio();
 	corsa();
@@ -94,8 +102,10 @@ void loop() {
 	corsa_arcobaleno(50);
 }
 ```
+
 Applica i vari cicli, definiti in seguito tramite i vari cicli `void`. Il valore tra parentesi indica il numero di ripetizioni dello stesso ciclo
-``` cpp
+
+```cpp
 void assegna_colore(uint32_t c, uint8_t wait) {
 	for(uint16_t i=0; i<strip.numPixels(); i++) {
 		strip.setPixelColor(i, c);
@@ -104,10 +114,12 @@ void assegna_colore(uint32_t c, uint8_t wait) {
 	}
 }
 ```
+
 Quella sopra è la prima delle due funzioni principali, accende tutti i pixel uno dietro l'altro con un determinato colore. Per quanto detto sopra, possiamo vedere una dichiarazione per `c` di tipo **unsigned int**, e **unsigned char** in pausa (`wait`).
 
 Il valore `c` sta ad indicare il colore, il valore `i` il numero del pixel (che in questo anello va da 0 a 24).
-``` cpp
+
+```cpp
 void funzione_corsa(uint32_t c, uint8_t wait) {
 	for (int j=0; j<10; j++) {	// 10 cicli di inseguimento
 		for (int q=0; q < 3; q++) {
@@ -125,8 +137,10 @@ void funzione_corsa(uint32_t c, uint8_t wait) {
 	}
 }
 ```
-Ho chiamato così la seconda funzione principale perché non sapevo che altro nome darle. Le luci si accendono in modo alternato (detto stile *“theater-chase”*), accendendo un un LED, spegnendo quello successivo, accendendo quello dopo ancora, per poi ricominciare il ciclo `for`. Il valore `q` permette appunto questo intervallo di un LED spento, poiché va aggiunto al valore di `i`. Il colore `c` viene quindi assegnato al LED ed il ciclo ricomincia.
-``` cpp
+
+Ho chiamato così la seconda funzione principale perché non sapevo che altro nome darle. Le luci si accendono in modo alternato (detto stile _“theater-chase”_), accendendo un un LED, spegnendo quello successivo, accendendo quello dopo ancora, per poi ricominciare il ciclo `for`. Il valore `q` permette appunto questo intervallo di un LED spento, poiché va aggiunto al valore di `i`. Il colore `c` viene quindi assegnato al LED ed il ciclo ricomincia.
+
+```cpp
 void cerchio() {
 	assegna_colore(strip.Color(255, 0, 0), 50); // Rosso
 	assegna_colore(strip.Color(0, 255, 0), 50); // Verde
@@ -134,18 +148,22 @@ void cerchio() {
 	assegna_colore(strip.Color(255, 255, 255), 50); // Bianco
 }
 ```
-Questa funzione mostra un accensione in senso orario, impostando il colore tramite la prima funzione principale e la funzione standard `strip.color(R, G, B), t`. In questo caso i valori sono byte o char, che vanno da 0 a 255, o meglio **unsigned char**. Questo particolare tipo di assegnazione di colori prende il nome di **HEX**. Posso quindi impostare i colori come in qualunque diodo RGB, nonostante la strip sia GRB. La `t` indica la durata della funzione (una sorta di *delay*).
-``` cpp
+
+Questa funzione mostra un accensione in senso orario, impostando il colore tramite la prima funzione principale e la funzione standard `strip.color(R, G, B), t`. In questo caso i valori sono byte o char, che vanno da 0 a 255, o meglio **unsigned char**. Questo particolare tipo di assegnazione di colori prende il nome di **HEX**. Posso quindi impostare i colori come in qualunque diodo RGB, nonostante la strip sia GRB. La `t` indica la durata della funzione (una sorta di _delay_).
+
+```cpp
 void corsa() {
 	funzione_corsa(strip.Color(127, 127, 127), 50); // Grigio
 	funzione_corsa(strip.Color(127, 0, 0), 50); // Rosso
 	funzione_corsa(strip.Color(0, 0, 127), 50); // Blu
 }
 ```
-Ricrea l'effetto "*chase*", ovvero la rincorsa dei pixel. Non è altro che una pura applicazione della seconda funzione principale, applicando anche qui valori RGB-delay tramite la funzione `strip.Color`.
+
+Ricrea l'effetto "_chase_", ovvero la rincorsa dei pixel. Non è altro che una pura applicazione della seconda funzione principale, applicando anche qui valori RGB-delay tramite la funzione `strip.Color`.
 
 I cicli successivi sono invece leggermente più complessi. Applicano le funzioni ed i cicli sopra descritti assieme ad ulteriori cicli `for`. Ho poi definito un valore e ciclo `Ruota`, e tramite questo ciclo viene definita la posizione del LED sul ring in un determinato istante e viene assegnata la valore `RuotaPos`.
-``` cpp
+
+```cpp
 uint32_t Ruota(byte RuotaPos) {
 	RuotaPos = 255 - RuotaPos;
 	if(RuotaPos < 85) {
@@ -159,8 +177,10 @@ uint32_t Ruota(byte RuotaPos) {
 	return strip.Color(RuotaPos * 3, 255 - RuotaPos * 3, 0);
 }
 ```
+
 Viene appunto inizializzato un **unsigned int** `Ruota` e definito ad un **unsigned char** (o **byte**) la posizione. Il codice sopra è copiato dal sito Adafruit, poiché specifico per il funzionamento dell’anello.
-``` cpp
+
+```cpp
 void colori(uint8_t wait) {
 	uint16_t i, j;
 
@@ -173,8 +193,10 @@ void colori(uint8_t wait) {
 	}
 }
 ```
+
 Qui appunto applichiamo un colore dinamico indistintamente a tutti i LEDs. Questo poi cambia tramite `j` e viene applicato tramite `i`. La variabile `j` una volta arrivata a **256** (poiché limite massimo dei valori HEX) si interrompe e ricomincia. I colori sono una transazione **R** - **G** - **B**, per poi ricominciare con **R**.
-``` cpp
+
+```cpp
 void arcobaleno(uint8_t wait) {
 	uint16_t i, j;
 
@@ -187,8 +209,10 @@ void arcobaleno(uint8_t wait) {
 	}
 }
 ```
+
 Leggermente diversa dal ciclo colori. Viene infatti applicato questo ciclo, ma in un sottociclo `for`, che si sposta alla `RuotaPos` successiva, cambia colore e quindi ricomincia. Ho infatti utilizzato l’**unsigned int** `Ruota` in modo da poter definire la posizione `i`, moltiplicarla per 256, divederla per il numero di LEDs, per poi infine sommarla a `j`. Tramite `strip.show()` i pixel si spengono ed il ciclo ricomincia.
-``` cpp
+
+```cpp
 void corsa_arcobaleno(uint8_t wait) {
 	for (int j=0; j < 256; j++) {	// ciclo di 256 colori a ruota
 		for (int q=0; q < 3; q++) {
@@ -206,13 +230,14 @@ void corsa_arcobaleno(uint8_t wait) {
 	}
 }
 ```
-Quest’ultimo è il ciclo più complesso. Ritroviamo infatti un sottociclo per il valore `q` tramite cui otteniamo il **theater-chase**, e all’interno di esso un ulteriore sotticiclo for che quindi somma il valore di `i` a *3*, somma nel sottociclo successivo `i` a `q` e tramite la funzione `Ruota` assegna il colore.
+
+Quest’ultimo è il ciclo più complesso. Ritroviamo infatti un sottociclo per il valore `q` tramite cui otteniamo il **theater-chase**, e all’interno di esso un ulteriore sotticiclo for che quindi somma il valore di `i` a _3_, somma nel sottociclo successivo `i` a `q` e tramite la funzione `Ruota` assegna il colore.
 
 ## Lo schema
 
 Ho ricreato lo schema in **Fritzing**, sia dal punto di vista grafico che puramente circuitale.
 
-Non essendo il componente tra quelli standard di Fritzing ho dovuto cercarlo. Fortunatamente, come riportato dalla stessa Adafruit, *“Adafruit Industries is a Friend of Fritzing”*.
+Non essendo il componente tra quelli standard di Fritzing ho dovuto cercarlo. Fortunatamente, come riportato dalla stessa Adafruit, _“Adafruit Industries is a Friend of Fritzing”_.
 ![alt text](/img/Arduino/Ring_schem.png "Schematica")
 
 Ho quindi scaricato dalla cartella `parts` del **master tree** della <a href="https://github.com/adafruit/Fritzing-Library/tree/master/parts">repo Frtizing-Library di Adafruit</a> il file <a href="https://github.com/adafruit/Fritzing-Library/raw/master/parts/Adafruit%2024%20NeoPixel%20Ring.fzpz">**Adafruit 24 NeoPixel Ring.fzpz**</a>.
@@ -223,14 +248,16 @@ Il costruttore consiglia in realtà di aggiungere un capacitare da **1000 µF** 
 ![alt text](/img/Arduino/Ring_bb.png "BreadBoard")
 
 Sopra viene rappresentato quindi in maniera semplicistica il migliore assemblaggio del progetto, riassumendo:
-* Pin **GND** dell’Adafruit NeoPixel → Uno dei pin **GND** di Arduino
-* Pin **5V** dell’Adafruit NeoPixel → Resistenza da **300-500 Ω** (*330* in questo caso)→ Pin **5V** di Arduino
-* Pin **IN** dell’Adafruit NeoPixel → Pin Digitale **PWM** (*6* in questo caso) di Arduino
+
+-   Pin **GND** dell’Adafruit NeoPixel → Uno dei pin **GND** di Arduino
+-   Pin **5V** dell’Adafruit NeoPixel → Resistenza da **300-500 Ω** (_330_ in questo caso)→ Pin **5V** di Arduino
+-   Pin **IN** dell’Adafruit NeoPixel → Pin Digitale **PWM** (_6_ in questo caso) di Arduino
 
 ![alt text](/img/Arduino/Finale.png "Finale")
 
 ### Programmi utilizzati
-* [**Arduino IDE**](arduino.cc) e [**Textmate**](macromates.com) per la compilazione;
-* [**Fritzing**](fritzing.org) per la ricostruzione dello schema;
-* [**Pages**](https://www.apple.com/it/pages/) per la stesura della relazione;
-* [**Github Pages**](https://pages.github.com/) e [**Jekyll**](https://jekyllrb.com/) per il sito web.
+
+-   [**Arduino IDE**](arduino.cc) e [**Textmate**](macromates.com) per la compilazione;
+-   [**Fritzing**](fritzing.org) per la ricostruzione dello schema;
+-   [**Pages**](https://www.apple.com/it/pages/) per la stesura della relazione;
+-   [**Github Pages**](https://pages.github.com/) e [**Jekyll**](https://jekyllrb.com/) per il sito web.
