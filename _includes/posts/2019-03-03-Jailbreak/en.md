@@ -29,7 +29,7 @@ There are two ways to install unc0ver. Installing that from your PC or just inst
 
 #### Without PC
 
-There are several 3rd party stores, but the most known are **Ignition** and **TweakBox*. I really prefer Ignition over TweakBox, so I'll use it for this example. Visit the [Ignition](https://app.ignition.fun/), choose between **Web View** or **App Download**. As for now, stick with Web View, you could download the app later. Go into the Jailbreak session and download the latest version of **unc0ver** jailbreak. It could be called unc0ver *-new beta* or just unc0ver. Download the latest one - as for the time I'm writing it's *-new beta*.
+There are several 3rd party stores, but the most known are **Ignition** and **TweakBox**. I really prefer Ignition over TweakBox, so I'll use it for this example. Visit the [Ignition](https://app.ignition.fun/), choose between **Web View** or **App Download**. As for now, stick with Web View, you could download the app later. Go into the Jailbreak session and download the latest version of **unc0ver** jailbreak. It could be called unc0ver *-new beta* or just unc0ver. Download the latest one - as for the time I'm writing it's *-new beta*.
 
 Install it with the *Get* button, and click install at the popup that will open. Don't open directly unc0ver, go to Settings → General → Profiles, click on the one under tvOS (it could have a different name from the screenshot) and then click *Trust*.
 ![alt text](/img/Jailbreak/Profiles.png "Trust the profile")
