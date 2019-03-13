@@ -20,8 +20,8 @@
 //   NEO_RGBW    Pixel collegati per bitstream di tipo RGBW (prodotti NeoPixel RGBW)
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(24, PIN, NEO_GRB + NEO_KHZ800);
 
-// IMPORTANTE: Per ridurre il rischio di burnout del NeoPixel, è consigliabile aggiungere un 
-// capacitore da 1000 uF ed una resistenza da 300 - 500 Ohm, minimizzare la distanza tra Arduino e 
+// IMPORTANTE: Per ridurre il rischio di burnout del NeoPixel, è consigliabile aggiungere un
+// capacitore da 1000 uF ed una resistenza da 300 - 500 Ohm, minimizzare la distanza tra Arduino e
 // la strip. Inoltre connettere la GND prima, se possibile.
 
 void setup() {
