@@ -2,16 +2,16 @@
 
 # Introduzione
 
-Ecco una guida completa su come eseguire il jailbreak da iOS **11** fino a **12.1.2**. Tutte le versioni intermedie sono compatibili, tranne in alcune configurazioni.
+Ecco una guida completa su come eseguire il jailbreak da iOS **11** fino a **12.4**. Tutte le versioni intermedie sono compatibili, tranne **12.3.x** ed alcune configurazioni. Questo perché l'exploit *sock_puppet* di Ned Williamson - precedentemente patchato da Apple su 12.3 e 12.3.1 - è stranamente tornato funzionante su 12.4 senza alcuna spiegazione.
 Questa guida è specifica a queste versioni di iOS. Tutte le versioni precedenti sono jailbreakable, ma le versioni successive devono ancora essere exploitate.
-Al momento, i device con Apple **A12** (iPhone XS, XS Max, XR and iPad Pro 2018) sono **parzialmente** exploitabili a causa di alcune protezioni di sicurezza di Apple come la _PAC_, o _Pointer Autenthication_. Se vuoi saperne di più, scriverò un post più specifico in futuro. Ma se sei qui per questa guida, probabilmente rimarrai qui.
+Al momento, i device con Apple **A12** (iPhone XS, XS Max, XR and iPad Pro 2018) sono **parzialmente** exploitabili a causa di alcune protezioni di sicurezza di Apple come la _PAC_, o _Pointer Autenthication_. Se vuoi saperne di più, probabilmente scriverò un post più specifico in futuro. Ma se sei qui per questa guida, probabilmente rimarrai qui.
 
 ### Requisiti
 
 Per eseguire il jailbreak hai bisogno di pochi ma importanti requisiti:
 
 -   Un Apple **iPhone** (5S o successivo), **iPad** (Air/Mini 2 o successivo) or **iPod** (6 generazione o seguente)
--   Una versione di iOS successiva a **11**, ma inferiore a **12.1.2** - **_è fondamentale_**
+-   Una versione di iOS successiva a **11**, ma inferiore a **12.4** che non sia **12.3.x** - **_è fondamentale_**
 -   Accesso a internet
 -   Tempo, pazienza e conoscenze informatiche basilari
 
