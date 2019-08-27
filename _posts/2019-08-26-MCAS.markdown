@@ -48,7 +48,6 @@ To compete with Airbus, Boeing thought to update their narrow-body plane, the 73
 In this photo you can see a 737 on the left and an A320 on the right. Notice how the 737 is lower to the groundthan the A320. So while Airbus was capable of sliding a larger engine under the wing of the NEO, Boeing had to find a solution. A few months later, Boeing's solution was to move up the engine on the wing, so that it would be slightly higher and it would fit on their 737s.
 
 ![](/img/MCAS/CFM56%20vs%20LEAP.png)
-
 > Source: Boeing 737 MAX Brochure
 
 You can actually see that the top of the engine is above the wing. Boeing called this model the 737 MAX. And just like Airbus with the A320, Boeing said their new plane was so similar to its predecessor that pilots would only need minimal additional training. The 737 MAX became the hottest selling plane on the market. And it helped Boeing keep up with AirBus. Except, moving the engine up on the 737 had a side effect.
@@ -60,13 +59,11 @@ When in full thrust, like during takeoff, the AOA (angle of attack) was too high
 They called it the *Maneuvering Characteristics Augmentation System*, or **MCAS**. But because Boeing was selling the 737 MAX as pretty much the same plane as the 737, they didn't highlight the new MCAS system. Sometimes the only training the pilots received was a **two-hour iPad course**, and then straight to the cockpit for the first time. But the the MCAS software was mentioned nowhere. In 2018, several American pilots reported that the 737 MAX was "suddenly nosing down."
 
 ![](/img/MCAS/MCAS.png)
-
 > Source: The Air Current
 
 October 29, 2018: **Lion Air 610** took off from Jakarta.  In the flight report, which shows the plane's altitude over time, you can see that the plane was in full thrust during takeoff. But at a certain point, the nose of the plane kept lurching downward. The pilots couldn't figure out why this was happening.
 
-![](/img/MCAS/Graph%20610.jpeg)
-
+![](/img/MCAS/Graph%20610.jpg)
 > Source: FlightRadar24
 
 Neither the captain nor the first officer could find a solution, so they continued to fight with the MCAS. The plane struggled to gain altitude. Reports show it was likely because the computer was getting incorrect sensor data, pushing the plane toward the earth below. 12 minutes after takeoff, the plane crashed into the Java Sea.
@@ -117,6 +114,4 @@ Criminal is whoever contributed this story to reach *Swiss cheese*’s other sid
 
 But hey, they said they solved with a “software updated”. Given how ridiculous Boeing has been, the update terms should include “Hey, at least we checked this  revision. Hopefully”.
 
-My deepest condolences to the families of all the people who uselessly died because of this clowns’ greed.
-
-<img src="/img/MCAS/Rose.png" width="50%" height="50%">
+My deepest condolences to the families of all the people who uselessly died because of these clowns’ greed.

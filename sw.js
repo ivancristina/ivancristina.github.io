@@ -20,7 +20,7 @@ const PRECACHE_LIST = [
   "./js/ivan.min.js",
   "./js/snackbar.js",
   "./img/icon_wechat.png",
-  "./img/avatar-hux.jpg",
+  "./img/avatar-ivan.jpg",
   "./img/home-bg.jpg",
   "./img/404-bg.jpg",
   "./css/ivan.min.css",
