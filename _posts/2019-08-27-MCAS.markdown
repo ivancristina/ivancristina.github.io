@@ -21,7 +21,7 @@ Every mass media is recently talking about the **Boeing 737 Max** and how bad it
 
 ![](/img/MCAS/Wreckage.jpeg)
 
-This is what’s left of the **Ethiopian Airlines Flight 302**, crashed the 10<sup>th</sup> of March 2019 in a field of Bishoftu, Ethiopia, bringing with it all the 157 lives of the boarded passengers and flight crew members.
+This is what’s left of the **Ethiopian Airlines Flight 302**, crashed the 10th of March 2019 in a field of Bishoftu, Ethiopia, bringing with it all the 157 lives of the boarded passengers and flight crew members.
 
 Just a few months earlier the **Lion Air 610** crashed in Indonesia killing 189 people. These flights share something in common: both of them were operating the the **Boeing 737 MAX 8**.
 
@@ -40,9 +40,9 @@ To compete with Airbus, Boeing thought to update their narrow-body plane, the 73
 ![](/img/MCAS/Nose comparison.png)
 ![](/img/MCAS/MAX vs NEO.png)
 
-> **1<sup>st</sup> photo:** 737 on the left, A320 on the right
+> **1st photo:** 737 on the left, A320 on the right
 >
-> **2<sup>nd</sup> photo:** 737 up, A320 on the bottom
+> **2nd photo:** 737 up, A320 on the bottom
 
 In this photo you can see a 737 on the left and an A320 on the right. Notice how the 737 is lower to the groundthan the A320. So while Airbus was capable of sliding a larger engine under the wing of the NEO, Boeing had to find a solution. A few months later, Boeing's solution was to move up the engine on the wing, so that it would be slightly higher and it would fit on their 737s.
 
