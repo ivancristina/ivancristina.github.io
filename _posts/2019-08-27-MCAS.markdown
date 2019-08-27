@@ -13,4 +13,106 @@ tags:
     - MAX
 ---
 
-Let's try. Again.
+I used to be a Boeing fan and I still love some of the things that differentiate them from the rivals, especially the command’s tactile feedback that is slowly disappearing with the new generations and the incredible reliability that they were able to boast, but recently my opinion is slowly changing after some of their terrible business decisions.
+
+Every mass media is recently talking about the **Boeing 737 Max** and how bad it was designed. Nothing good can come out from people talking about stuff they know nothing about, but in this case, for as ignorant and false some of the media accusations are, one of them I can just absolutely agree with: releasing this model was a **criminal** act from Boeing and here’s why. But let’s start from the beginning.
+
+## The crashes
+
+![alt text](</img/MCAS/Wreckage.jpeg> "Wreckage of the Ethiopian 302")
+
+This is what’s left of the **Ethiopian Airlines Flight 302**, crashed the 10th of March 2019 in a field of Bishoftu, Ethiopia, bringing with it all the 157 lives of the boarded passengers and flight crew members.
+
+Just a few months earlier the **Lion Air 610** crashed in Indonesia killing 189 people. These flights share something in common: both of them were operating the the **Boeing 737 MAX 8**.
+
+### The problem(s)
+
+Everything has been caused by an engine related problem, but there's nothing actually wrong with this engine. The **CFM LEAP-1**, successor of the CFM56 used in the 737-800 and the Airbus A320 CEO, is the same variant used in the direct competitor A320 NEO. And it looks extremely efficient and reliable: that’s the indirect root of the problem.
+
+Due to those last two factors, aircraft manufacturers raced to put them on their new planes. Airbus and Boeing are the world’s biggest aircraft manufacturers, and they have a fierce rivalry. If one of them can offer a better plane, Airlines would buy them to replace their fleet, and the other one will lose a lot of money. And  that's what happened after the 2010 Airbus announcement an update of their most popular model, the A320, operating in many domestic flights. You've probably been on one.
+
+This big update included the introduction of a *New Engine Option* (**NEO**), way more powerful, yet 15% more fuel efficient then its precedessor, used in the *Classic Engine Option* (**CEO**). And even with this big upgrade, the plane didn’t change that much. This is a very important condition too. When planes receive huge updates, like the 737 from the *Classic* to the *NG* serie, pilots need  additional training, new simulators, new certifications. If you think about it, a pilot in training cannot fly but is still paid and new simulators cost millions of dollars. Plus, certifications are expensive too, and they take time. And time **is** money for flight companies.
+
+Allowing the pilots to be able to fly the NEO with little additional training and small updates in the flight simulators would save airlines a lot of money. This was a problem for Boeing.
+
+To compete with Airbus, Boeing thought to update their narrow-body plane, the 737. But there was one issue.
+
+![alt text](</img/MCAS/Nose comparison.png> "Nose comparison between 737 and A320")
+![alt text](</img/MCAS/MAX vs NEO.png> "Comparison between the MAX and NEO fuselage")
+
+> **1st photo:** 737 on the left, A320 on the right
+>
+> **2nd photo:** 737 up, A320 on the bottom
+
+In this photo you can see a 737 on the left and an A320 on the right. Notice how the 737 is lower to the groundthan the A320. So while Airbus was capable of sliding a larger engine under the wing of the NEO, Boeing had to find a solution. A few months later, Boeing's solution was to move up the engine on the wing, so that it would be slightly higher and it would fit on their 737s.
+
+![alt text](</img/MCAS/CFM56 vs LEAP.png> "Notice the difference between the CFM56 and the LEAP inlet")
+> Source: Boeing 737 MAX Brochure
+
+You can actually see that the top of the engine is above the wing. Boeing called this model the 737 MAX. And just like Airbus with the A320, Boeing said their new plane was so similar to its predecessor that pilots would only need minimal additional training. The 737 MAX became the hottest selling plane on the market. And it helped Boeing keep up with AirBus. Except, moving the engine up on the 737 had a side effect.
+
+When in full thrust, like during takeoff, the AOA (angle of attack) was too high due to the position of the engine, and that could lead to a stall. But these planes were supposed to behave exactly like the old ones, so Boeing had to find a workaround. They built a software that automatically pushed the nose downward if the the plane with assumed a dangerous pitch angle.
+
+### The “solution”
+
+They called it the *Maneuvering Characteristics Augmentation System*, or **MCAS**. But because Boeing was selling the 737 MAX as pretty much the same plane as the 737, they didn't highlight the new MCAS system. Sometimes the only training the pilots received was a **two-hour iPad course**, and then straight to the cockpit for the first time. But the the MCAS software was mentioned nowhere. In 2018, several American pilots reported that the 737 MAX was "suddenly nosing down."
+
+![alt text](</img/MCAS/MCAS.png> "How the MCAS works")
+> Source: The Air Current
+
+October 29, 2018: **Lion Air 610** took off from Jakarta.  In the flight report, which shows the plane's altitude over time, you can see that the plane was in full thrust during takeoff. But at a certain point, the nose of the plane kept lurching downward. The pilots couldn't figure out why this was happening.
+
+![alt text](</img/MCAS/Graph 610.jpg> "Altitude/speed graph")
+> Source: FlightRadar24
+
+Neither the captain nor the first officer could find a solution, so they continued to fight with the MCAS. The plane struggled to gain altitude. Reports show it was likely because the computer was getting incorrect sensor data, pushing the plane toward the earth below. 12 minutes after takeoff, the plane crashed into the Java Sea.
+
+In the Ethiopia crash, the report shows that the pilots were actually able to disable the MCAS, but it was too late to overcome the malfunctioning MCAS sensors.
+
+### The consequences
+
+For now, nearly every 737 MAX 8 in service has been grounded. And the Federal Aviation Administration is facing scrutiny over how they rushed this plane through certification. Boeing's response has been to apply a software update and make the MCAS "less aggressive," while also saying they'll increase pilot training on how to turn it off.
+
+Airlines lost millions of dollars due to the grounding of the 737 MAX, and Boeing will have to repay them. Boeing lost credibility, and they will pay for it. But most importantly, **346 people** lost their life, and Boeing will never be able to take them back.
+
+In 2019, in a world where technology is not anyone an help of our life, but a **part of it**, a world where reaching Mars and explore the universe beyond every limit we thought we had, there’s still the possibility to look at the sky and watch a plane falling down because of a **software bug**.
+
+### The possible - real - solutions
+
+Well, there were many ways to prevent this to happen. Most obvious solution would have been not releasing a plane far from being ready and find some **proper** solutions - and probably coming out with a plane even more efficient then the counterpart. But nah, not companies’ approach for sure.
+
+Updating once again a ‘60s model was a wrong idea at the root and they knew it, yet they still did it. They could have just design a new single aisle, future-proof and more efficient version of the 787 and make it the best possible competitor in the domestic flight area, but no matter the final result, that would have cost them too much money in terms of design, waiting, training costs etc...
+
+Ok, what else then? Well, they could have make the MCAS less aggressive. Yes, because when MCAS triggers, all the Boeing recovery procedures simply **don’t work** anymore, and the Ethiopian pilots experienced that. MCAS goes ON for 10 seconds and then OFF for 5, during whose you can **partially** recover, but not always. MCAS also disables the manual trim, so the only solution is electric trimming during those 5 seconds. And if you’re wondering - no, Boeing did not allow pilots to turn off the MCAS. Basically, they transformed their planes in a Russian roulette.
+
+They could have at least ship a functional and **well** tested system. And if you think that the AOA disagree light was not perfectly working and - hold yourself - **sold separately**, this just borders on the ridiculous.
+
+But what I still don’t understand is why they did not increase the height of the nose gear in the Max 8? You could think that too many changes would have meant a lot of training for the pilots, due to the significant changes to the aerodynamic profile. But no, the 737 Max 10 has a 9.5″ taller telescopic gear, not to suit the bigger engines but to stop the tail from hitting the ground on takeoff because the fuselage is so much longer. But software was faster to developer and even way cheaper. Well, at least those were the plans, given the billions of dollars that these stupid decisions costed them.
+
+## Who to blame
+
+Ah... the list is very, very long. More then an article, this is a rant, so here you are.
+
+Culprit is **Southwest**, forcing Boeing not to update “that much” a ‘60s airplane project because too stingy to let their pilot train on something “different”, and now threatening Boeing not to update their fleet with the aircrafts they indirectly caused two crashes.
+
+Culprits are even all the other airlines, always putting money in front of adopting new safety features because it would be cheaper letting one or two flights crash and blame someone else for them.
+
+Culprit is the Trump organisation for keeping Boeing alive after what they did (but hey, this is no news).
+
+Culprit is Boeing for using an underpaid Indian software development team for the MCAS.
+
+Culprit is Boeing for blatantly lying keeping hidden a feature to the pilots that brought hundreds of passengers with them.
+
+Criminal is Boeing for pushing an economic race with their rivals when still unprepared, forgetting about the value of those hundreds of lives.
+
+Criminal is FAA for blindly certifying that monstrosity because ~~they’re Boeing bitches~~ for the American pride.
+
+Criminal is everyone helping Boeing and FAA getting rid of it and not forcing them to pay for their crimes.
+
+Criminal is whoever contributed this story to reach *Swiss cheese*’s other side. Those, will never have to forget that their hands, along with many others, are dirty of 346 people’s blood.
+
+But hey, they said they solved with a “software updated”. Given how ridiculous Boeing has been, the update terms should include “Hey, at least we checked this  revision. Hopefully”.
+
+My deepest condolences to the families of all the people who uselessly died because of these clowns’ greed.
+
+<img src="/img/MCAS/Rose.png" width="30%" height="30%">
