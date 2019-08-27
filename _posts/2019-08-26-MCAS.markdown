@@ -1,10 +1,12 @@
 ---
 layout:     post
-title:      "MCAS"
-subtitle:   "A rant about the 737 MAX"
+title:      "The 737 Max flop"
+subtitle:   "A rant about Boeing and MCAS"
 date:       2019-08-26
 author:     "Ivan"
-header-img: "img/post-bg-rom.png"
+header-img: "img/post-bg-mcas.jpg"
+header-mask:  0.3
+catalog:      true
 tags:
     - 737
     - Boeing
