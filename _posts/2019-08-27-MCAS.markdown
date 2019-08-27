@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      "The 737 MAX flop"
-subtitle:   "Does this work?"
-date:       2019-04-09
+subtitle:   "A rant about MCAS"
+date:       2019-08-27
 author:     "Ivan"
 header-img: "img/post-bg-mcas.jpg"
 header-mask:  0.3
@@ -13,4 +13,4 @@ tags:
     - MAX
 ---
 
-Let's try.
+Let's try. Again.
