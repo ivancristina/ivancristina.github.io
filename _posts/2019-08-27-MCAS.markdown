@@ -13,26 +13,4 @@ tags:
     - MCAS
 ---
 
-I used to be a Boeing fan and I still love some of the things that differentiate them from the rivals, especially the command’s tactile feedback that is slowly disappearing with the new generations and the incredible reliability that they were able to boast, but recently my opinion is slowly changing after some of their terrible business decisions.
-
-Every mass media is recently talking about the **Boeing 737 Max** and how bad it was designed. Nothing good can come out from people talking about stuff they know nothing about, but in this case, for as ignorant and false some of the media accusations are, one of them I can just absolutely agree with: releasing this model was a **criminal** act from Boeing and here’s why. But let’s start from the beginning.
-
-## The crashes
-
-![alt text](</img/MCAS/Wreckage.jpeg> "Wreckage of the Ethiopian 302")
-
-This is what’s left of the **Ethiopian Airlines Flight 302**, crashed the 10th of March 2019 in a field of Bishoftu, Ethiopia, bringing with it all the 157 lives of the boarded passengers and flight crew members.
-
-Just a few months earlier the **Lion Air 610** crashed in Indonesia killing 189 people. These flights share something in common: both of them were operating the the **Boeing 737 MAX 8**.
-
-### The problem(s)
-
-Everything has been caused by an engine related problem, but there's nothing actually wrong with this engine. The **CFM LEAP-1**, successor of the CFM56 used in the 737-800 and the Airbus A320 CEO, is the same variant used in the direct competitor A320 NEO. And it looks extremely efficient and reliable: that’s the indirect root of the problem.
-
-Due to those last two factors, aircraft manufacturers raced to put them on their new planes. Airbus and Boeing are the world’s biggest aircraft manufacturers, and they have a fierce rivalry. If one of them can offer a better plane, Airlines would buy them to replace their fleet, and the other one will lose a lot of money. And  that's what happened after the 2010 Airbus announcement an update of their most popular model, the A320, operating in many domestic flights. You've probably been on one.
-
-This big update included the introduction of a *New Engine Option* (**NEO**), way more powerful, yet 15% more fuel efficient then its precedessor, used in the *Classic Engine Option* (**CEO**). And even with this big upgrade, the plane didn’t change that much. This is a very important condition too. When planes receive huge updates, like the 737 from the *Classic* to the *NG* serie, pilots need  additional training, new simulators, new certifications. If you think about it, a pilot in training cannot fly but is still paid and new simulators cost millions of dollars. Plus, certifications are expensive too, and they take time. And time **is** money for flight companies.
-
-Allowing the pilots to be able to fly the NEO with little additional training and small updates in the flight simulators would save airlines a lot of money. This was a problem for Boeing.
-
-To compete with Airbus, Boeing thought to update their narrow-body plane, the 737. But there was one issue.
+It's a war now
