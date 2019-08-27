@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "The 737 MAX flop"
-subtitle:   "A killer software bug from a killer company"
+subtitle:   "A rant about a killer software"
 date:       2019-08-27
 author:     "Ivan"
 header-img: "img/post-bg-mcas.jpg"
