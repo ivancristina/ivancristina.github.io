@@ -1,0 +1,115 @@
+---
+layout:     post
+title:      "Hey Apple, #checkm8!"
+subtitle:   "Explaining the iOS bootrom exploit"
+date:       2019-09-29
+author:     "Ivan"
+header-img: "img/post-bg-bootrom.jpg"
+header-mask:  0.3
+catalog:      true
+tags:
+    - iOS
+    - exploit
+    - jailbreak
+    - bootrom
+---
+
+If you have been interested in iOS security and you lately visited Twitter, you may have seen that the user [@axi0mX](https://twitter.com/axi0mX) released a **bootroom exploit**. Ok, we are not new to the _exploit_ word - aren't we? - but what is **bootrom**? Well, let's explain it, so you could understand how important this event is not only for the Jailbreak community, but even the entire for the entire iCommunity.
+
+> **Warning:** this entire post will be extremely complicated, to the point that I don't even ensure you it is 100% correct due to the complexity of the topic. I am quite new into iOS security, so chances are many things will be wrong. In case of any possible correction, please DM me.
+
+### Vulnerable devices
+
+Before proceeding with the explanations of how **checkm8** works, you have to know that for using it you need an **iDevice** (iPhone, iPad, iPod) running on Apple **A11** or lower chipset. No matter the software version, just the **bootrom** revision (up to 3332.0.0.1.23), and that is linked to the processor and cannot be changed. So any device equal or prior to iPhone X, 7th Gen iPad and 2nd Gen iPad Pro, Apple TV 4K, 7th Gen iPod Touch, but even Apple **Watch** 5 and **HomePod**. Yes, because they uses bootrom too.
+
+What else? Well, ehm... that's it.
+
+## The "iLayers"
+
+Some people think that their iDevice runs just a significant piece of software, and that is _i(Phone)OS_. Well, they couldn't be more wrong.
+
+The truth is that Apple has always been proud of the security of their devices, and they are completely entitled to be. The way they secured their software is an incredible work of art. One of the main ways to do it was dividing the entire software in different "layers". The lower the layer, the more secure and difficult to "penetrate" it.
+
+I'm not gonna explain what an exploit is: you just have to know it's a "workaround" to do something you could usually not, and it relies on security flaws both in the **software** or the **hardware**. In the first case Apple could patch it pushing a **software update**, the second case is instead more complicated because it needs an **hardware revision** (usually, with a new device model).
+Due to their power - especially in a world like ours - Apple and Security Companies know well how much those value. That's why (the first for patching them, the seconds for using them for their own business, like reselling them to Private and Spying agencies) **Bug Bounties** exists. In base of the power of the exploit, they get sold at a certain price. A sandbox escape could be worth $10,000, a kernel exploit $100,000-$500,000. If those numbers seem high to you, consider that the exploit that [@axi0mX](https://twitter.com/axi0mX) released for free, **checkm8**, is worth **several millions** of dollars.
+So, let's proceed.
+
+#### Higher Levels
+
+By default every iOS Application runs inside a **sandbox**: all the bundles and data run inside a box separated from the rest, so that it could not "attack" the rest of the OS since they both run on independent "areas". An exploit which allows to let you get out of it is called **sandbox escape**. It's not enough for a Jailbreak, but app-based Jailbreaks like _unc0ver_ uses them.
+
+Something similar happens with **WebKit**, a rendering and browsing engine. A WebKit exploit could allow to escape from its process' sandbox just exploiting it with a webpage (usually pwning it with **javascript**). This is what has been used on _JailbreakMe_, webpages capable of jailbreak without any app.
+
+The file system is instead split in the encrypted **User Partition** (containing, for example, the App Sandboxes), and the **OS Partition**. Usually, apart from some areas of the User Partition, the entire OS is **read-only**, which means that you cannot write anything on it, and sometimes you cannot even access to some sections which requires special permission to be even read from the user. A **rootfs remount** exploit allows the user to not only access, but even have writing permission on the entire `/` (**root**). This means being able to edit, create or delete files inside the OS itself. Let's say I wanna install an App like _Cydia_ in the file system: I couldn't do it without **root r/w**. Still, not even this is enough.
+
+The core of the OS - despite being completely independent from it - is called **Kernel**. It is loaded into a separate memory area, the `kernel space`, and runs its own processes, like running critical tasks or controlling an mapping hardware. The encrypted packet containing both kernel and its extension is called **kernelcache**.
+On the other side, processes like normal applications run on the `userspace`. Those could, anyway, request to dialogue with the kernel thanks to a **system call**, and in case they are authorized you gain access to kernel tasks. Exploiting the kernel is one of the most important requirements to runs unauthorized code, usually achieved with a **tfp0 patch**. In the XNU kernel, `task_for_pid` prevents processes to get the task port of the kernel task (process ID 0). Bypassing tfp0 allows to run any executable as root, so reading and writing in kernel's Virtual Memory region. This exploit, anyway, runs on a volatile memory. That needs the user to run the exploits every time the user reboot the device because that memory get emptied at the shutdown. Apart from it, for years that was enough to get a **semi-untethered** jailbreak.
+
+There is also the **userland**, the software running on iOS right after the kernel start. It does not affect the _boot chain of trust_, but an exploit allows an untethered jailbreak. Anyway, it could still be patched with a software update.
+
+![alt text](</img/bootrom/Layers.png> "Protection layers in iOS")
+
+#### Integrity Checks
+
+Apple constantly updated its software adding even more protection layers and integrity checks. There are endless of them, so let's list the most important ones.
+
+**AMFI** (_AppleMobileFileIntegrity_) is one of the oldest, yet most important, integrity checks. It works with a kext (_AppleMobileFileIntegrity.kext_) and a deamon (_amfid_). It hooks into the various processes, recognize `tfp-allow`, hook its Mach call and retrieve its port. Ironically, exploiting this process led to "steal" it the kernel port in various jailbreak.
+
+Back on iOS 9 Apple introduced the _Kernel Patch Protection_ (aka **KPP**). Its purpose is randomly checking the kernelcache integrity, and this hardened the kernel code injection, especially when KPP got hardware integrated on the **A10 Fusion** chip, so starting from iPhone 7, and got renamed **KTTR**. Several teams raced KPP, till the security searcher [@xerub](https://twitter.com/xerub) created a **KPPLess** method, a bypass which quickly unpatches the kernel when KPP is about to check it, so that KPP will notice no alternation, and then it repatches the kernel.
+
+`com.apple.kext.CoreTrust` is a kernel extension introduced in iOS 12. It gets delegated from **AMFI** to run additional checks against its own hard-coded (Apple) certificates and put them under **KPP** and **KTTR** control. Basically, it prevents any non-Apple binary to run. One way to fool it would be a KPP bypass (**not** KPPLess). There are other bypasses being worked on at the moment I'm writing, but no public ones.
+
+Lastly, _Pointer Authentication_ (aka **PAC**) has been introduced on **A12 Bionic** (so XS/R serie) due to its upgrade to **ARMv8.3**. It works with _Message Authentication Codes_ (**MACs**). Those blobs uses secret keys and signing/verification algorithms to provide message integrity.
+Ok, I'll provide a similar example. You know that in every new WhatsApp chat you can read that it's been protected by an _"end-to-end"_ encryption? Well, on big lines it kinda work the same way. In easy words, Apple mixed memory protection with **encryption** (like Hashing), and that is still a WIP challenge for developers.
+
+#### Lower Levels
+
+As I said, the lower the level, the more the control on the device, but also harder the exploitation methods, hence why Apple's continuously security tightening made exploiting on lower level more and more difficult. More powerful attack methods became always more rare, to the point that they publicly disappeared till yesterday. [@axi0mX](https://twitter.com/axi0mX)'s exploit is indeed the biggest event in the Jailbreak community in years, and I'm going to explain why, thanks to some other explanations.
+
+As we saw, Apple's approach is hierarchic and follows a precise chain of checks and authorizations. This is called (**Secure**) **Bootchain**, or **chain of trust**, trying to ensure that just signed/trusted code gets executed.
+The initial code (**bootrom**) decrypts the next stage (**LLB**) and verifies the integrity before it executes any code of the next stage. This continues for all stages until the execution of the kernel and applications. The idea of jailbreaking is to break this chain somewhere so that you can run unsigned software.
+
+As we said, bootroom encrypts and loads the first stage of the Bootloader called _Low Level Bootloader_ (LLB). It runs several setup routines and check the second Bootloader stage's - called **iBoot** - signature before jumping to it. iBoot is responsible of the **POST** and to select an OS to run. An exploit at this level is extremely powerful, but could still be patched with an iBoot updated (included in iOS software updates).
+
+The **bootrom** (called "**SecureROM**" by Apple) is the first significant code that runs on an iDevice. It is contained within the processor and cannot be changed (due to it being _read-only memory_). Finding exploits in the bootrom level is a big achievement since Apple won't be able to fix it without a hardware revision. And that's exactly what happened with **checkm8**, the exploit used in [ipwndfu](https://github.com/axi0mX/ipwndfu). It attacks the very first step of the Bootchain, and something like this didn't happen since the 2010. This is probably the most powerful exploit in iOS history, and even though we still have to deal with many "following restrictions", it opens the way to many offensive methods that by some days ago we considered impossible anymore.
+
+## Theoretical applications
+
+Well, on a theoretical line, this could allow us any kind of control on our device. Such applications could be:
+
+- boot to any iOS version with SHSH blobs
+- boot to any iOS version with no SHSH/APTickets, yet tethered
+- boot to any OS (Android, Linux etc.), even in a LiveCD method
+- dual-boots, multi-boots
+- jailbreak current and future iOS versions
+- theoretical super stable and battery drain-free jailbreaks
+- decrypt current and future firmwares
+- verbose and fully debuggable boot
+- tethered _Custom Firmwares_ (**CFW**) installation
+- partial iCloud bypass (Apple could detect and relock the device once connected again)
+- custom bootloader load
+- kernel tweaking, overclocking etc.
+- decrypt weak PIN protected filesystems
+- private data brute forcing
+
+### Problems
+
+Unfortunately, even though this could theoretically lead us to a complete control of the device, that's not really the case. Let's explain why.
+
+First of all, the bootrom exploit is not permanent, and that's due to its nature. Since it is on a ROM, you cannot write anything on it, so the exploit must be triggered every boot cycle, and since it relies on USB attack, you would need to carry with you a PC every time to `ipwndfu` it. If you don't do it, the device would end up booting into a cycle with clean bootrom, and if software has been alternated the chain of trust would not get satisfied and you would end up being temporary or - in same cases - even permanently stuck in a **bootloop**.
+
+And that because even though bootrom is the first step in the bootchain, this does not mean that it runs alone. There are various independent security systems in iOS and those are unfortunately something we could not easily deal with. One of them is the _Secure Enclave_'s software called **SEP OS**, and because of that even if you could load any iOS version, it must be compatible with the installed version of SEP OS.
+
+#### Possible solutions
+
+I'm no expert, but there are some solutions that came in mind, even to me. I'll sort them by difficulty.
+
+First of all - even though not a solution, but a "workaround" - instead of always bringing a laptop for booting our iDevice, we could assemble a little bundle with a battery bank powering a Raspberry running Linux, Python and **libimobiledevice**, to provide an on-the-go tethered boot. Alternatively, companies could create little dongles capable of pwning DFU with **checkm8**. Still theoretical, but absolutely not practical, it could be possible to implant that dongle inside the iDevice chassis, connected to the lightning D+ and D- lanes.
+
+A more practical solution would instead be making it "mess" with the filesystem in a semi-tethered way, so that in case of a shutdown it would not find any alterations and bootchain would be trusted.
+
+### Conclusions
+
+Well, what to say? This is definitely the beginning of a very interesting run! The "elders" in the jailbreak community - even some of those who abandoned it from a long time - seem to be interested again in it, and there are no doubts that with an always more open source approach, this could lead us to get some amazing artworks of the **IT security**!
+
+There is another side to look at, anyway. The most important problem here is our security, now. Sure, we the jailbreak community see this as an incredible gift but for the rest of the world this is not it. This exploit could lead to terribly powerful malwares, and since the exploit is open source, any ill-intentioned has now the biggest part available and public to everyone for creating malicious software. The way to use them would be quite difficult though. You should theoretically boot your phone connected to a cable containing a dongle (on its own, costing a lot of money) injecting an incredibly difficult to write exploit to your phone. As you can imagine chances are very low, but in case you want to be completely safe switch to an A12 or A13 device, like iPhone XS and 8 series. At least, until even them don't get eventually patched 🤷
