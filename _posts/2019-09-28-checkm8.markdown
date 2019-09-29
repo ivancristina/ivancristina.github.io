@@ -14,9 +14,9 @@ tags:
     - bootrom
 ---
 
-If you have been interested in iOS security and you lately visited Twitter, you may have seen that the user [@axi0mX](https://twitter.com/axi0mX) released a **bootroom exploit**. Ok, we are not new to the _exploit_ word - aren't we? - but what is **bootrom**? Well, let's explain it, so you could understand how important this event is not only for the Jailbreak community, but even the entire for the entire iCommunity.
+If you have been interested in iOS security and you lately visited Twitter, you may have seen that the user [@axi0mX](https://twitter.com/axi0mX) released a **bootroom exploit**. Ok, we are not new to the _exploit_ word - are we? - but what is **bootrom**? Well, let's explain it so you could understand how important this event is not only for the Jailbreak community, but even for the entire iCommunity.
 
-> **Warning:** this entire post will be extremely complicated, to the point that I don't even ensure you it is 100% correct due to the complexity of the topic. I am quite new into iOS security, so chances are many things will be wrong. In case of any possible correction, please DM me.
+> **Warning:** due to the complexity of the topic I cannot ensure you this post is 100% correct. I am quite new into iOS security, so chances are many things will be wrong. In case of any possible correction, please DM me.
 
 ### Vulnerable devices
 
@@ -47,13 +47,13 @@ On the other side, processes like normal applications run on the `userspace`. Th
 
 There is also the **userland**, the software running on iOS right after the kernel start. It does not affect the _boot chain of trust_, but an exploit allows an untethered jailbreak. Anyway, it could still be patched with a software update.
 
-![alt text](</img/bootrom/Layers.png> "Protection layers in iOS")
+<img src="/img/bootrom/Layers.png" width="40%" height="40%">
 
 #### Integrity Checks
 
-Apple constantly updated its software adding even more protection layers and integrity checks. There are endless of them, so let's list the most important ones.
+Apple constantly updates its software adding even more protection layers and integrity checks. There are endless of them, so let's list the most important ones.
 
-**AMFI** (_AppleMobileFileIntegrity_) is one of the oldest, yet most important, integrity checks. It works with a kext (_AppleMobileFileIntegrity.kext_) and a deamon (_amfid_). It hooks into the various processes, recognize `tfp-allow`, hook its Mach call and retrieve its port. Ironically, exploiting this process led to "steal" it the kernel port in various jailbreak.
+**AMFI** (_AppleMobileFileIntegrity_) is one of the oldest, yet most important, integrity checks. It works with a kext (_AppleMobileFileIntegrity.kext_) and a deamon (_amfid_). It hooks into the various processes, recognizes `tfp-allow`, hooks its Mach call and retrieves its port. Ironically, exploiting this process led to "steal" it the kernel port in various jailbreak.
 
 Back on iOS 9 Apple introduced the _Kernel Patch Protection_ (aka **KPP**). Its purpose is randomly checking the kernelcache integrity, and this hardened the kernel code injection, especially when KPP got hardware integrated on the **A10 Fusion** chip, so starting from iPhone 7, and got renamed **KTTR**. Several teams raced KPP, till the security searcher [@xerub](https://twitter.com/xerub) created a **KPPLess** method, a bypass which quickly unpatches the kernel when KPP is about to check it, so that KPP will notice no alternation, and then it repatches the kernel.
 
@@ -72,6 +72,8 @@ The initial code (**bootrom**) decrypts the next stage (**LLB**) and verifies th
 As we said, bootroom encrypts and loads the first stage of the Bootloader called _Low Level Bootloader_ (LLB). It runs several setup routines and check the second Bootloader stage's - called **iBoot** - signature before jumping to it. iBoot is responsible of the **POST** and to select an OS to run. An exploit at this level is extremely powerful, but could still be patched with an iBoot updated (included in iOS software updates).
 
 The **bootrom** (called "**SecureROM**" by Apple) is the first significant code that runs on an iDevice. It is contained within the processor and cannot be changed (due to it being _read-only memory_). Finding exploits in the bootrom level is a big achievement since Apple won't be able to fix it without a hardware revision. And that's exactly what happened with **checkm8**, the exploit used in [ipwndfu](https://github.com/axi0mX/ipwndfu). It attacks the very first step of the Bootchain, and something like this didn't happen since the 2010. This is probably the most powerful exploit in iOS history, and even though we still have to deal with many "following restrictions", it opens the way to many offensive methods that by some days ago we considered impossible anymore.
+
+![alt text](</img/bootrom/Bootchain.png> "Chain of trust")
 
 ## Theoretical applications
 
