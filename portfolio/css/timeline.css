@@ -118,7 +118,7 @@ body, html {
 .cbp_tmtimeline>li .cbp_tmicon {
   width: 40px;
   height: 40px;
-  font-family: 'huxico';
+  font-family: 'SF Display';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -140,27 +140,27 @@ body, html {
 
 .cbp_tmicon-phone:before {
   content: "\e004";
-  font-family: 'huxico';
+  font-family: 'SF Display';
 }
 
 .cbp_tmicon-screen:before {
   content: "\e005";
-  font-family: 'huxico';
+  font-family: 'SF Display';
 }
 
 .cbp_tmicon-html:before {
   content: "\e001";
-  font-family: 'huxico';
+  font-family: 'SF Display';
 }
 
 .cbp_tmicon-video:before {
   content: "\e002";
-  font-family: 'huxico';
+  font-family: 'SF Display';
 }
 
 .cbp_tmicon-font:before {
   content: "\e003";
-  font-family: 'huxico';
+  font-family: 'SF Display';
 }
 
 /** Venders Logo **/
@@ -189,6 +189,24 @@ body, html {
   height: 40px;
   background: url("../images/RyanAir.png") 50% 50% no-repeat;
   background-size: 25px;
+}
+
+.i-easyjet:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 40px;
+  background: url("../images/easyJet.png") 50% 50% no-repeat;
+  background-size: 60px;
+}
+
+.i-cae:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 40px;
+  background: url("../images/CAE.png") 50% 50% no-repeat;
+  background-size: 60px;
 }
 
 .i-google:before {
