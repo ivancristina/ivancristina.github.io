@@ -29,6 +29,12 @@ body, html {
 }
 
 @font-face {
+
+  font-family: "SF Display";
+  // font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+  font-weight: normal;
+  /*
   font-family: 'huxico';
   src: url('../fonts/huxico.eot');
   src: url('../fonts/huxico.eot?#iefix') format('embedded-opentype'),
@@ -37,6 +43,14 @@ body, html {
     url('../fonts/huxico.svg#huxico') format('svg');
   font-weight: normal;
   font-style: normal;
+  */
+}
+
+@font-face {
+  font-family: "SF Display";
+  // font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+  font-weight: bold;
 }
 
 /* Made with http://icomoon.io/ */
