@@ -76,6 +76,31 @@ body, html {
   font-weight: bold;
 }
 
+h1 {
+  color: #343434;
+	background-image: -webkit-linear-gradient(92deg, #343434, #858585);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
 /* Made with http://icomoon.io/ */
 .cbp_tmtimeline {
   padding: 0;
