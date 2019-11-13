@@ -1,11 +1,65 @@
-/**
- *  Timeline.css
- */
+/*
+*  Timeline.css
+*/
+
+@font-face {
+
+  font-family: "SF Display";
+  // font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+  font-weight: normal;
+  /*
+  font-family: 'huxico';
+  src: url('../fonts/huxico.eot');
+  src: url('../fonts/huxico.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/huxico.woff') format('woff'),
+  url('../fonts/huxico.ttf') format('truetype'),
+  url('../fonts/huxico.svg#huxico') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  */
+}
+
+@font-face {
+  font-family: "SF Display";
+  // font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+  font-weight: bold;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+/* Gradient
+
+  background: linear-gradient(-45deg, #d7e8fc, #fefefe, #fef5ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  }
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+*/
 
 body, html {
   font-size: 100%;
@@ -14,26 +68,6 @@ body, html {
   background: #fefefe;
   background: linear-gradient(90deg, #fefefe, #f6fbfb);
   font-family: "SF Display";
-
-/* Gradient
-
-	background: linear-gradient(-45deg, #d7e8fc, #fefefe, #fef5ff);
-  background-size: 400% 400%;
-	animation: gradientBG 15s ease infinite;
-}
-
-@keyframes gradientBG {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-*/
-
 }
 
 .main a {
@@ -51,46 +85,12 @@ body, html {
   margin: 0 auto;
 }
 
-@font-face {
-
-  font-family: "SF Display";
-  // font-weight: 400;
-  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
-  font-weight: normal;
-  /*
-  font-family: 'huxico';
-  src: url('../fonts/huxico.eot');
-  src: url('../fonts/huxico.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/huxico.woff') format('woff'),
-    url('../fonts/huxico.ttf') format('truetype'),
-    url('../fonts/huxico.svg#huxico') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  */
-}
-
-@font-face {
-  font-family: "SF Display";
-  // font-weight: 700;
-  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
-  font-weight: bold;
-}
-
 h1 {
   color: #343434;
-	background-image: -webkit-linear-gradient(92deg, #343434, #858585);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-animation: hue 10s infinite linear;
-}
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
+  background-image: -webkit-linear-gradient(92deg, #343434, #858585);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
 }
 
 h4 {
