@@ -44,21 +44,21 @@
 
 /* Gradient
 
-  background: linear-gradient(-45deg, #d7e8fc, #fefefe, #fef5ff);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  }
+background: linear-gradient(-45deg, #d7e8fc, #fefefe, #fef5ff);
+background-size: 400% 400%;
+animation: gradientBG 15s ease infinite;
+}
 
 @keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
 */
 
 body, html {
@@ -77,6 +77,98 @@ body, html {
 .main a:hover {
   /*color: #000;*/
   /*text-decoration: none;*/
+}
+
+/* iOS 13 & macOS Mojave Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body, html {
+    background: black;
+  }
+
+  a {
+    color: #1C1C1E;
+  }
+
+  a:hover {
+    color: #3785F7!important
+  }
+
+  header {
+    border-bottom: 1px solid #ebeeee48!important;
+  }
+
+  header h1 {
+    color: white;
+    background-image: -webkit-linear-gradient(92deg, white, #CBCBCB);
+  }
+
+  h2, h3, h4, h5
+  {
+    color: white;
+  }
+
+  .cbp_tmtimeline>li .cbp_tmlabel {
+    background: #1C1C1E!important;
+    color: white!important;
+    border: 1px solid #ebeeee48!important;
+  }
+
+  .cbp_tmtimeline,
+  .cbp_tmlabel, {
+    color: white!important;
+  }
+
+  .cbp_tmlabel img.album {
+    border-top: 1px solid black!important;
+    border-bottom: 1px solid black!important;
+  }
+
+  span.link {
+    background: #535353!important;
+    border: 1px solid #ebeeee48!important;
+  }
+
+  span.link:hover {
+    background: #383838!important;
+  }
+
+  span.link a {
+    color: white!important;
+  }
+
+  .cbp_tmlabel ul li.skill {
+    border-top: 1px solid #ebeeee48!important;
+  }
+
+  .cbp_tmlabel ul li.skill>span {
+    color: white!important;
+  }
+
+  .navbar-brand,
+  .nav li a {
+    color: white!important;
+  }
+
+  .navbar-custom,
+  .navbar-default,
+  .navbar-collapse {
+    background-color: black!important;
+  }
+
+  .navbar-custom.is-fixed {
+    border-color: #ebeeee48!important;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .navbar-collapse {
+      box-shadow: rgba(255,255,255,.117647) 0 1px 6px,rgba(255,255,255,.239216) 0 1px 4px !important
+    }
+  }
+
+  .shadow {
+    filter: drop-shadow(6px 6px 5px #ebeeee48)!important
+  }
+
 }
 
 .main, .container>header {
