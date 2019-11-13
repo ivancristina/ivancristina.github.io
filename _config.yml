@@ -3,9 +3,9 @@ title:                      Ivan's Git
 SEOTitle:                   Ivan | Git
 header-img:                 img/home-bg.jpg
 email:                      ivancristina5@gmail.com
-description:                "Private Pilot Student, nerd. Build ROMs on free time"
+description:                "SIM Engineer. Private Pilot Student, nerd on free time"
 keyword:                    "ivan, ivanc, ivancristina, IvanCristina, @ivancristina, Ivan Cristina"
-url:                        "https://ivancristina.it/" # your host, for absolute URL
+url:                        "https://ivancristina.github.io/" # your host, for absolute URL
 baseurl:                    ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -78,7 +78,7 @@ ga_domain:                  ivancristina.it
 
 # Sidebar settings
 sidebar:                    true                           # whether or not using Sidebar.
-sidebar-about-description:  "A 18 years old italian nerd. Not a big deal"
+sidebar-about-description:  "A 19 years old italian nerd. Not a big deal"
 sidebar-avatar:             /img/avatar-ivan.jpg    # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -100,22 +100,25 @@ page-mathjax:               false
 
 
 
-# Friends
-friends:                    [
+# Related
+related: [
     {
-        title:              "Me",
+        title:              "Github",
         href:               "https://github.com/ivancristina"
     },{
-        title:              "Bruno",
-        href:               "https://github.com/zagi988"
+        title:              "CAE",
+        href:               "https://www.cae.com"
     },{
-        title:              "Vlad",
-        href:               "https://github.com/tsvietOK"
+        title:              "SEAS",
+        href:               "https://www.seas-italy.it"
     },{
-        title:              "Viatcheslav",
-        href:               "https://github.com/olooikea"
+        title:              "RyanAir",
+        href:               "https://corporate.ryanair.com"
     },{
-        title:              "I have no others friends. I'm a sad person",
-        href:               "#"
+        title:              "easyJet",
+        href:               "https://corporate.easyjet.com"
+    },{
+        title:              "JactiveLTEam",
+        href:               "https://jactivelteam.github.io"
     }
 ]
