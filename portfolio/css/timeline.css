@@ -74,9 +74,8 @@ body, html {
   color: #0085a1;
 }
 
-.main a:hover {
-  /*color: #000;*/
-  /*text-decoration: none;*/
+a:hover {
+  text-decoration: none;
 }
 
 /* iOS 13 & macOS Mojave Dark mode support */
@@ -447,6 +446,10 @@ h5 {
   height: 40px;
   background: url("../images/Android.png") 50% 50% no-repeat;
   background-size: 25px;
+}
+
+.cae {
+  color: #245EB2
 }
 
 /******* Hux Branch *****/
