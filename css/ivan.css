@@ -77,6 +77,27 @@
     color: #3785F7!important
   }
 
+  select {
+    background: black!important;
+  }
+
+  .pager li > a {
+    color: white!important;
+    background-color: #1C1C1E!important;
+    border: 1px solid #ebeeee48!important;
+  }
+
+  .pager li > a:hover {
+    background-color: #383838!important;
+    border: 1px solid #ebeeee48!important;
+  }
+
+  #tag_cloud .tag {
+    color: white!important;
+    background: #1C1C1E!important;
+    box-shadow: rgba(255, 255, 255, 0.117647) 0 1px 6px, rgba(255, 255, 255, 0.239216) 0 1px 4px !important
+  }
+
 }
 /*! Ivan was here */
 .roundrect {
@@ -1419,7 +1440,9 @@ img::-moz-selection {
   line-height: 28px;
   margin: 0 2px;
   margin-bottom: 8px;
+  color: black;
   background: #f3f5f5;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px, rgba(0, 0, 0, 0.239216) 0 1px 4px
 }
 #tag_cloud a:hover,
 #tag_cloud .tag:hover,
