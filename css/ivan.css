@@ -15,6 +15,69 @@
     padding-right: 5%;
   }
 }
+/* iOS 13 & macOS Mojave Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body, html {
+    background: black;
+    color: white!important;
+  }
+
+  h2, h3, h4, h5
+  {
+    color: white;
+  }
+
+  hr {
+    border-top: 1px solid #ebeeee48!important;
+  }
+
+  span.link {
+    background: #535353!important;
+    border: 1px solid #ebeeee48!important;
+  }
+
+  span.link:hover {
+    background: #383838!important;
+  }
+
+  span.link a {
+    color: white!important;
+  }
+
+  .navbar-brand,
+  .nav li a {
+    color: white!important;
+  }
+
+  .navbar-custom.is-fixed {
+    border-color: #ebeeee48!important;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .navbar-collapse {
+      background-color: black!important;
+      box-shadow: rgba(255,255,255,.117647) 0 1px 6px,rgba(255,255,255,.239216) 0 1px 4px !important
+    }
+  }
+
+  .highlighter-rouge,
+  .highlight pre {
+    color: white!important;
+  }
+
+  blockquote {
+    border-left: 5px solid #ebeeee48!important
+  }
+
+  code {
+    background-color: #ebeeee48!important;
+  }
+
+  .listing-seperator {
+    color: #3785F7!important
+  }
+
+}
 /*! Ivan was here */
 .roundrect {
 border-radius: 10px;
@@ -577,7 +640,7 @@ body {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "SF Display", "SF Display", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Display", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   font-size: 16px;
   color: #404040;
