@@ -4,7 +4,7 @@ title:      "iCloud Lock Bypass"
 subtitle:   "Bypass iCloud Activation Lock with checkm8"
 date:       2019-11-12
 author:     "Ivan"
-header-img: "img/post-bg-icloud.png"
+header-img: "img/post-bg-icloud.jpg"
 header-mask:  0.3
 catalog:      true
 tags:
