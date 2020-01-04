@@ -10,7 +10,7 @@ catalog:      true
 tags:
     - iOS
     - exploit
-    - jailbreak
+    - Jailbreak
     - bootrom
 ---
 

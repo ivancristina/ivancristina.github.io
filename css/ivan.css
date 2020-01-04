@@ -51,6 +51,7 @@
 
   .navbar-custom.is-fixed {
     border-color: #ebeeee48!important;
+    background-color: black!important;
   }
 
   @media only screen and (max-width: 767px) {
@@ -96,6 +97,14 @@
     color: white!important;
     background: #1C1C1E!important;
     box-shadow: rgba(255, 255, 255, 0.117647) 0 1px 6px, rgba(255, 255, 255, 0.239216) 0 1px 4px !important
+  }
+
+  .highlight .c1 {
+    color: #33FF00!important;
+  }
+
+  .highlight .c {
+    color: #33FF00!important;
   }
 
 }

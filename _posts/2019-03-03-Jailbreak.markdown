@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "How to Jailbreak"
-subtitle:     "With unc0ver for iOS 11.0 - 12.1.2"
+subtitle:     "With unc0ver for iOS 11.0 - 12.4"
 date:         2019-03-03
 author:       "Ivan"
 header-img:   "img/post-bg-unc0ver.jpg"
@@ -14,6 +14,8 @@ tags:
     - unc0ver
     - Guide
 ---
+
+> You can use [checkra1n](https://checkra.in) tethered jailbreak for iOS 13+
 
 <!-- Italian Version -->
 
