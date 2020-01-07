@@ -14,25 +14,25 @@ tags:
     - development
 ---
 
-## What are tweaks
+# What are tweaks
 
 > Some people may want to [skip this paragraph](#requirements)
 
 It's been over a decade since Jay Freeman introduced Cydia and probably indirectly led the Jailbreak scene to be what it is today. **A mess**, but even a very nice place sometimes.
 
-Saurik, by the way, did not do all the job alone. The reason why the Jailbreak scene is alive - and despite what many people say - it probably is [more than ever](https://ivancristina.github.io/2019/09/29/checkm8/), is thanks to those heroes who do not wear caps (but do wear socks under sandals, in some cases 😣) are tweak developers. Essentially, a tweak is a customization not present natively in iOS software, but that can be installed via 3rd party stores. Tweaks can be as powerful as simple, and many times those tweaks features were so loved by users that Apple itself natively introduced them in its own software. In a word, tweaks are usually visionary.
+Saurik, by the way, did not do all the job alone. The reason why the Jailbreak scene is alive - and despite what many people say - it probably is [more than ever](/2019/09/29/checkm8/), is thanks to those heroes who do not wear caps (but do wear socks under sandals, in some cases 😣) are tweak developers. Essentially, a tweak is a customization not present natively in iOS software, but that can be installed via 3rd party stores. Tweaks can be as powerful as simple, and many times those tweaks features were so loved by users that Apple itself natively introduced them in its own software. In a word, tweaks are usually visionary.
 
-Tweaks are mainly written in Objective-C (Apple's own language prior to Swift) and uses some Logos syntax. The environment that allows user to create tweaks is called Theos. It is cross-platform and open-source. Theos did change a lot overthe years, and for sure still will, so this post could be obsolete even tomorrow. Theos uses Logos as compiler and creates .deb packages as result of compilation. Those packages can later be installed with those previously mentioned 3rd party stores (like Cydia, Zebra, Sileo and Installer), which in turn rely on APT, a Debian package manager.
+Tweaks are mainly written in Objective-C (Apple's own language prior to Swift) and uses some Logos syntax. The environment that allows user to create tweaks is called Theos. It is cross-platform and open-source. Theos did change a lot over the years, and for sure still will, so this post could be obsolete even tomorrow. Theos uses Logos as compiler and creates .deb packages as result of compilation. Those packages can later be installed with those previously mentioned 3rd party stores (like Cydia, Zebra, Sileo and Installer), which in turn rely on APT, a Debian package manager.
 
-### Requirements
+#### Requirements
 
 Even though this post could be followed with some variations on Windows and Mac (or even on your iDevice itself), many tweak developers use/require:
-- a Mac or an [Hackintosh](https://ivancristina.github.io/2017/10/01/Hackintosh/);
-- a [jailbroken iDevice](https://ivancristina.github.io/2019/03/03/Jailbreak/) for testing (could use even [Simulator](https://github.com/angelXwind/simject), but not reported here);
+- a Mac or an [Hackintosh](/2017/10/01/Hackintosh/);
+- a [jailbroken iDevice](/2019/03/03/Jailbreak/) for testing (could use even [Simulator](https://github.com/angelXwind/simject), but not reported here);
 - Internet connection;
 - Patience. A lot.
 
-#### 1. Theos
+### 1. Theos
 
 Follow Theos installing procedures for [macOS](https://github.com/theos/theos/wiki/Installation-macOS), [Linux](https://github.com/theos/theos/wiki/Installation-Linux), [iOS](https://github.com/theos/theos/wiki/Installation-iOS) or [Windows](https://github.com/theos/theos/wiki/Installation-Cygwin).
 
@@ -140,7 +140,7 @@ A Preference Bundle is indeed a panel appearing in your settings app, letting th
 `Info.plist` includes the bundleID of your PB.<br/>
 `Root.plist` instead, handles the appearance and structure of your PB.
 
-Let's then create a new button. First of all, we have to visually create our switch. Opening `Root.plist`, you will see that Theos generate some template code. If you're familiar with xml, you'll see that this is nothing but a simple array of dictionaries representing various specifiers. A very good list of them is reported [on iPhoneDevWiki](https://iphonedevwiki.net/index.php/Preferences_specifier_plist). Let's see an example.
+Let's then create a new button. First of all, we have to visually create our switch. Opening `Root.plist`, you will see that Theos generate some template code. If you're familiar with xml, you'll see that this is nothing but a simple array of dictionaries representing various specifiers. A very good list of them is reported [on iPhoneDevWiki](https://iphonedevwiki.net/index.php/Preferences_specifier_plist), but I even made a graphical view of the most important ones [here](/2020/01/06/prefspecifiers/). Let's see an example.
 
 ```xml
 <plist version="1.0">
