@@ -1,29 +1,18 @@
 
+> Puoi leggere il mio portfolio completo [qui](/portfolio/)
 
-> Vorrei scrivere tante belle cose,
-> ma ho la fantasia di uno sgabello. Mi disp.
+Ciao, sono **Ivan Cristina**, ma Ivan può bastare. Sono un **simulator engineer** alla *CAE* (e precedentemente a RyanAir), sviluppatore e grafico.
 
+Diplomato come Perito in Trasporti e Logistica specializzato in campo Aeronautico presso l'ITAER "Arturo Ferrarin" di Catania. Ho studiato inoltre presso l'Aeroclub di Catania, in veste di Private Pilot Student ed attualmente lavoro e studio full-time presso l'Università Insubria di Varese .
 
-Hey, sono **Ivan Cristina**, "programmatore", designer e mantenuto nullafacente. Se stai visitando questo sito, o ti sei perduto nei meandri del web, o sei un persona molto triste.
+Amo imparare nuovi linguaggu e solitamente realizzo alcuni progetti per mettermi alla prova. Potresti trovare qualcuno utile: in tal caso sentiti libero di visitare il mio [Github](https://github.com/ivancristina/).
 
-Diplomato come Perito in Trasporti e Logistica specializzato in campo Aeronautico presso l'ITAER "Arturo Ferrarin" di Catania. Studio inoltre presso l'Aeroclub di Catania, in veste di Private Pilot Student.
+#### Progetti
 
-Ogni tanto lavoro a qualcosa. Puoi vedere qualche progetto inutile, incompiuto o fallito nel mio [Github](https://github.com/ivancristina/).
-
-Tento miseramente di fare qualcosa nella vita, e qualche volta qualcosa funziona. Molto probabilmente questo sito no.
-
-
-##### Progetti
-
-- [unc0ver][1] · Website per unc0ver Jailbreak (iOS 11.0 - 11.4b3) - 2018
-- [App Website][2] · Web template per applicazioni iOS - 2018
-- [Hackintosh][3] · Intel Core iX-6/7xxx, HD Graphics 5/6xx, Nvidia GTX 9/10xx - 2017
+- [Questo sito](https://github.com/ivancristina/ivancristina.github.io) · Moderno, responsivo e open source - 2017/current
+- [Accent](https://github.com/ivancristina/accent) · Tweak iOS per cambiare la tinta di sistema - 2020
+- [Guetzli GUI](https://github.com/ivancristina/guetzli-gui) · GUI macOS per il compressore JPEG Guetzli, Swift - 2018
+- [App Website](/app_site/) · Temaplte Web per app iOS - 2018
+- [Hackintosh](/2017/10/01/Hackintosh/) · Intel Core iX-6/7xxx, HD Graphics 5/6xx, Nvidia GTX 9/10xx - 2017
 - [JactiveLTEam](https://jactivelteam.github.io/) · S4 Active (GT-I9525) - 2017
-- [Come compilare una ROM](https://ivancristina.it/HowToBuild/) · Generale, S4 Active (GT-I9525) - 2016
-- [LineageOS](https://forum.xda-developers.com/galaxy-s4-active/development/7-1-1-optimized-cyanogenmod-14-1-t3528753) · S4 Active (GT-I9525) - 2016
-- [Resurrection Remix OS](https://forum.xda-developers.com/galaxy-s4-active/development/7-1-1-rr-5-8-0-t3541969) · S4 Active (GT-I9525) - 2016
-
-
-[1]: //ivancristina.it/unc0ver/
-[2]: //ivancristina.it/app_site/
-[3]: //ivancristina.it/2017/10/01/Hackintosh/
+- [Come compilare una ROM Android](/HowToBuild/) · Guida, S4 Active (GT-I9525) - 2016

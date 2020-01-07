@@ -14,7 +14,7 @@ tags:
     - bootrom
 ---
 
-One of the main iOS Security features discouraging thieves to steal iPhones or iPads is the incredible locking system running behind iOS: iCloud Activation Lock. Basically, if you restore an iPhone with a passcode and an iCloud account active (pretty much every time, since iCloud services run behind pretty much the entire OS), you need to unlock the device with the credentials of the previous iCloud account logged in the device. Without them, you can't just proceed, and that iDevice becomes an iPaperweight(®). But as discussed on a [previous post](https://ivancristina.github.io/2019/09/29/checkm8/), a bootrom exploit called **checkm8** recently got release and it allows a partial unlock of the device.
+One of the main iOS Security features discouraging thieves to steal iPhones or iPads is the incredible locking system running behind iOS: iCloud Activation Lock. Basically, if you restore an iPhone with a passcode and an iCloud account active (pretty much every time, since iCloud services run behind pretty much the entire OS), you need to unlock the device with the credentials of the previous iCloud account logged in the device. Without them, you can't just proceed, and that iDevice becomes an iPaperweight(®). But as discussed on a [previous post](/2019/09/29/checkm8/), a bootrom exploit called **checkm8** recently got release and it allows a partial unlock of the device.
 
 > **Disclaimer:** this procedure is not intended to be followed on stolen iDevices. If you found one, return it to Apple and they could try to advice the legitimate owner (unless stupid data protection policy).
 
@@ -31,7 +31,7 @@ What works then? Well, first of all, the device itself, which is great. And most
 #### Requirements
 
 - iCloud locked iDevice;
-- an iMac, MacBook or an Hackintosh. If you don't know how to Hackintosh, you could take a look at [my guide](https://ivancristina.github.io/2017/10/01/Hackintosh/);
+- an iMac, MacBook or an Hackintosh. If you don't know how to Hackintosh, you could take a look at [my guide](/2017/10/01/Hackintosh/);
 - Internet connection;
 - 20-30 minutes.
 

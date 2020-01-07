@@ -284,7 +284,6 @@ img{width:75%;}
 .ps_text_active{content:url("/img/Specifiers/TextActive.jpeg");}
 .ps_securetext{content:url("/img/Specifiers/SecureText.jpeg");}
 .ps_securetext_active{content:url("/img/Specifiers/SecureTextActive.jpeg");}
-
 @media (prefers-color-scheme: dark) {
   .ps_selected{content:url("/img/Specifiers/Selected Dark.png");}
   .ps_deselected{content:url("/img/Specifiers/Deselected Dark.png");}
@@ -306,5 +305,13 @@ img{width:75%;}
   .ps_securetext{content:url("/img/Specifiers/SecureText Dark.jpeg");}
   .ps_securetext_active{content:url("/img/Specifiers/SecureTextActive Dark.jpeg");}
   .ps_static{content:url("/img/Specifiers/Static Dark.jpeg");}
+}
+@media (min-width:320px)  {
+  img{width:100%;}
+  .device{
+    zoom: 0.70;
+    margin:auto;
+    -moz-transform: scale(0.75);
+}
 }
 </style>
