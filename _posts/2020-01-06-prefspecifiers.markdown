@@ -18,6 +18,8 @@ tags:
 
 `Root.plist` is written in xml syntax, you'll see that this is nothing but a simple array of dictionaries representing various specifiers. A very good list of them is reported [on iPhoneDevWiki](https://iphonedevwiki.net/index.php/Preferences_specifier_plist), but let's see some of the most important ones.
 
+This website **detects the darkmode**, and in particular this page allows you to see the various cells in light/dark mode just my switching your **system** dark mode (supported by iOS, macOS and Windows). Try it out!
+
 <!-- Rounded switch -->
 <center><sub><b><font size="4.5">Toggle the switch to watch the values as active:</font></b></sub>
 <label class="switch">
