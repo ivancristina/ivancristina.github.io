@@ -4,26 +4,16 @@
 
 @font-face {
 
-  font-family: "SF Display";
+  font-family: "Inter";
   // font-weight: 400;
-  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+  src: url("/fonts/Inter-Regular.woff");
   font-weight: normal;
-  /*
-  font-family: 'huxico';
-  src: url('../fonts/huxico.eot');
-  src: url('../fonts/huxico.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/huxico.woff') format('woff'),
-  url('../fonts/huxico.ttf') format('truetype'),
-  url('../fonts/huxico.svg#huxico') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  */
 }
 
 @font-face {
-  font-family: "SF Display";
+  font-family: "Inter";
   // font-weight: 700;
-  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+  src: url("/fonts/Inter-Semibold.woff");
   font-weight: bold;
 }
 
@@ -67,7 +57,7 @@ body, html {
   margin: 0;
   background: #fefefe;
   background: linear-gradient(90deg, #fefefe, #f6fbfb);
-  font-family: "SF Display";
+  font-family: "Inter";
 }
 
 .main a {
@@ -186,10 +176,12 @@ h1 {
 
 h4 {
   font-size: 18px;
+  margin-bottom: .5rem!important;
 }
 
 h5 {
   font-size: 15px;
+  margin-top: 0px!important;
 }
 
 /* Made with http://icomoon.io/ */
@@ -240,7 +232,7 @@ h5 {
 }
 
 .cbp_tmtimeline>li .cbp_tmlabel h2 {
-  font-family: 'SF Display';
+  font-family: 'Inter';
   font-weight: bold;
   font-size: 15px;
   padding: 14px 20px;
@@ -258,7 +250,7 @@ h5 {
 .cbp_tmtimeline>li .cbp_tmicon {
   width: 40px;
   height: 40px;
-  font-family: 'SF Display';
+  font-family: 'Inter';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -280,27 +272,27 @@ h5 {
 
 .cbp_tmicon-phone:before {
   content: "\e004";
-  font-family: 'SF Display';
+  font-family: 'Inter';
 }
 
 .cbp_tmicon-screen:before {
   content: "\e005";
-  font-family: 'SF Display';
+  font-family: 'Inter';
 }
 
 .cbp_tmicon-html:before {
   content: "\e001";
-  font-family: 'SF Display';
+  font-family: 'Inter';
 }
 
 .cbp_tmicon-video:before {
   content: "\e002";
-  font-family: 'SF Display';
+  font-family: 'Inter';
 }
 
 .cbp_tmicon-font:before {
   content: "\e003";
-  font-family: 'SF Display';
+  font-family: 'Inter';
 }
 
 /** Venders Logo **/
@@ -670,4 +662,36 @@ img.icon {
   .cbp_tmlabel ul li.skill>span, .cbp_tmlabel ul li.skill>a {
     margin-right: 2px;
   }
+}
+
+.fade-in-image {
+  animation: fadeIn 10s;
+  -webkit-animation: fadeIn 10s;
+  -moz-animation: fadeIn 10s;
+  -o-animation: fadeIn 10s;
+  -ms-animation: fadeIn 10s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
