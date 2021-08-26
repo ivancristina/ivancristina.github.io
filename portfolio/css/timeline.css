@@ -32,25 +32,6 @@
   box-sizing: border-box;
 }
 
-/* Gradient
-
-background: linear-gradient(-45deg, #d7e8fc, #fefefe, #fef5ff);
-background-size: 400% 400%;
-animation: gradientBG 15s ease infinite;
-}
-
-@keyframes gradientBG {
-0% {
-background-position: 0% 50%;
-}
-50% {
-background-position: 100% 50%;
-}
-100% {
-background-position: 0% 50%;
-}
-*/
-
 body, html {
   font-size: 100%;
   padding: 0;
@@ -60,8 +41,21 @@ body, html {
   font-family: "Inter";
 }
 
-.main a {
-  color: #0085a1;
+.gradient {
+  color: #000; /* Fallback for older browsers */
+  color: rgba(0, 0, 0, 0.0)!important;
+  background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+  background-size: 400% 400%;
+  animation: flow 15s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: trasparent;
+}
+
+@keyframes flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 a:hover {
@@ -88,7 +82,6 @@ a:hover {
 
   header h1 {
     color: white;
-    background-image: -webkit-linear-gradient(92deg, white, #CBCBCB);
   }
 
   h2, h3, h4, h5
@@ -138,14 +131,12 @@ a:hover {
     color: white!important;
   }
 
-  .navbar-custom,
-  .navbar-default,
-  .navbar-collapse {
-    background-color: black!important;
-  }
-
   .navbar-custom.is-fixed {
     border-color: #ebeeee48!important;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white!important;
   }
 
   @media only screen and (max-width: 767px) {
@@ -168,20 +159,22 @@ a:hover {
 
 h1 {
   color: #343434;
-  background-image: -webkit-linear-gradient(92deg, #343434, #858585);
+  /* Fancy Gray Gradient */
+  /*background-image: -webkit-linear-gradient(92deg, #343434, #858585);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 10s infinite linear;
+  -webkit-animation: hue 10s infinite linear;*/
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: .5rem!important;
 }
 
 h5 {
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 0px!important;
+  font-weight: 600;
 }
 
 /* Made with http://icomoon.io/ */
@@ -296,153 +289,31 @@ h5 {
 }
 
 /** Venders Logo **/
-.i-pdf:before {
+
+.i-icon:before {
   content: "";
   display: block;
   width: 40px;
   height: 40px;
-  background: url("../images/PDF.png") 50% 50% no-repeat;
-  background-size: 25px;
+  background-size: 25px!important;
 }
 
-.i-seas:before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/SEAS.png") 50% 50% no-repeat;
-  background-size: 30px;
-}
-
-.i-ryanair:before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/RyanAir.png") 50% 50% no-repeat;
-  background-size: 25px;
-}
-
-.i-easyjet:before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 40px;
-  background: url("../images/easyJet.png") 50% 50% no-repeat;
-  background-size: 60px;
-}
-
-.i-cae:before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 40px;
-  background: url("../images/CAE.png") 50% 50% no-repeat;
-  background-size: 60px;
-}
-
-.i-google:before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/Google.png") 50% 50% no-repeat;
-  background-size: 25px;
-}
-
-.i-iab:before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/iab.png") 50% 50% no-repeat;
-  background-size: 30px;
-}
-
-.i-ferrarin:before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/Ferrarin.png") 50% 50% no-repeat;
-  background-size: 30px;
-}
-
-.i-tea:before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/TEA Circle.png") 50% 50% no-repeat;
-  background-size: 30px;
-}
-
-.i-tea-plain:before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/TEA.png") 50% 50% no-repeat;
-  background-size: 30px;
-}
-
-.i-cambridge:before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/Cambridge.png") 50% 50% no-repeat;
-  background-size: 25px;
-}
-
-.i-eipass:before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 40px;
-  background: url("../images/Eipass.png") 50% 50% no-repeat;
-  background-size: 45px;
-}
-
-.i-miur:before {
-  content: "";
-  display: inline-block;
-  width: 60px;
-  height: 40px;
-  background: url("../images/MIUR.png") 50% 50% no-repeat;
-  background-size: 60px;
-}
-
-.i-verga:before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/Verga.png") 50% 50% no-repeat;
-  background-size: 30px;
-}
-
-.i-xda:before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/XDA.png") 50% 50% no-repeat;
-  background-size: 30px;
-}
-
-.i-android:before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/Android.png") 50% 50% no-repeat;
-  background-size: 25px;
-}
-
-.cae {
-  color: #245EB2
-}
+.i-pdf:before{background:url("../images/PDF.png") 50% 50% no-repeat;}
+.i-seas:before{background:url("../images/SEAS.png") 50% 50% no-repeat;}
+.i-ryanair:before{background:url("../images/RyanAir.png") 50% 50% no-repeat;}
+.i-easyjet:before{background:url("../images/easyJet.png") 50% 50% no-repeat;}
+.i-cae:before{background:url("../images/CAE.png") 50% 50% no-repeat;}
+.i-google:before{background:url("../images/Google.png") 50% 50% no-repeat;}
+.i-iab:before{background:url("../images/iab.png") 50% 50% no-repeat;}
+.i-ferrarin:before{background:url("../images/Ferrarin.png") 50% 50% no-repeat;}
+.i-tea:before{background:url("../images/TEA Circle.png") 50% 50% no-repeat;}
+.i-tea-plain:before{background:url("../images/TEA.png") 50% 50% no-repeat;}
+.i-cambridge:before{background:url("../images/Cambridge.png") 50% 50% no-repeat;}
+.i-eipass:before{background:url("../images/Eipass.png") 50% 50% no-repeat;}
+.i-miur:before{background:url("../images/MIUR.png") 50% 50% no-repeat;}
+.i-verga:before{background:url("../images/Verga.png") 50% 50% no-repeat;}
+.i-xda:before{background:url("../images/XDA.png") 50% 50% no-repeat;}
+.i-android:before{background:url("../images/Android.png") 50% 50% no-repeat;}
 
 /******* Hux Branch *****/
 /* navbar - dark mode */
@@ -462,7 +333,6 @@ html {
 }
 
 header {
-  text-align: center;
   min-width: 100%;
   padding: 5em 0px;
   padding-bottom: 10em;
@@ -486,10 +356,6 @@ header p {
   letter-spacing: 1px;
   font-weight: 300;
   margin: 1.7em;
-}
-
-header img {
-  width: 175px;
 }
 
 .cbp_tmlabel .hux_ul {
@@ -664,12 +530,12 @@ img.icon {
   }
 }
 
-.fade-in-image {
-  animation: fadeIn 10s;
-  -webkit-animation: fadeIn 10s;
-  -moz-animation: fadeIn 10s;
-  -o-animation: fadeIn 10s;
-  -ms-animation: fadeIn 10s;
+.fade-in {
+  animation: fadeIn 7.5s;
+  -webkit-animation: fadeIn 7.5s;
+  -moz-animation: fadeIn 7.5s;
+  -o-animation: fadeIn 7.5s;
+  -ms-animation: fadeIn 7.5s;
 }
 @keyframes fadeIn {
   0% {opacity:0;}
@@ -694,4 +560,79 @@ img.icon {
 @-ms-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
+}
+
+/* Circle Animation*/
+
+.circle-settings {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.outer-circle {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  background-size: 500%;
+  border-radius: 50%;
+  animation: rotate 7.5s linear infinite;
+}
+
+.outer-circle span {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 50%;
+}
+
+.outer-circle span:nth-child(1) {
+  filter: blur(5px);
+}
+
+.outer-circle span:nth-child(2) {
+  filter: blur(10px);
+}
+
+.outer-circle span:nth-child(3) {
+  filter: blur(25px);
+}
+
+.outer-circle span:nth-child(4) {
+  filter: blur(150px);
+}
+
+.inner-circle {
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  background-image: url("/portfolio/images/Avatar.jpg");
+  background-size: contain;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: 10;
+  animation: balance 7.5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Balances Inner Circle Hue Rotation, which is impossible not to inherit from Outer as parent */
+@keyframes balance {
+  0% {
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
 }
