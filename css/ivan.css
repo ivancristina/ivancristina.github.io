@@ -662,7 +662,7 @@ pre.highlight {
 @font-face {
   font-family: "Inter";
   // font-weight: 700;
-  src: url("../fonts/Inter-Semibold.woff");
+  src: url("../fonts/Inter-SemiBold.woff");
   font-weight: bold;
 }
 body {
