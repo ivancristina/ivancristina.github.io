@@ -572,10 +572,10 @@ img.icon {
 /* Circle Animation*/
 
 .circle-settings {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -587,10 +587,13 @@ img.icon {
   border-radius: 50%;
   animation: rotate 2.5s linear infinite;
   transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
 }
 
 .outer-circle:hover {
   transform: scale(1.1);
+  transition: transform 1.5s ease;
+  -webkit-transition: transform 1.5s ease;
 }
 
 .outer-circle span {
@@ -656,4 +659,11 @@ img.icon {
   100% {
     filter: hue-rotate(0deg);
   }
+}
+
+@keyframes bounce {
+  0%, 20%, 50% {transform: scale(1);} 
+  40% {transform: scale(1.15);}
+  60% {transform: scale(1.125);}
+  80%, 100% {transform: scale(1.1);} 
 }
