@@ -3,7 +3,7 @@ title:                      Ivan's Git
 SEOTitle:                   Ivan | Git
 header-img:                 img/home-bg.jpg
 email:                      ivancristina5@gmail.com
-description:                "SIM Engineer. Private Pilot Student, IT if I really have to"
+description:                "Simulator Technician. Doing IT just when I have to"
 keyword:                    "ivan, ivanc, ivancristina, IvanCristina, @ivancristina, Ivan Cristina"
 url:                        "https://ivancristina.github.io/" # your host, for absolute URL
 baseurl:                    ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -13,15 +13,9 @@ future:                     true
 
 # SNS settings
 RSS:                        false
-#weibo_username:            ivancristina
-#zhihu_username:            ivancristina
 github_username:            ivancristina
 twitter_username:           ivan_cristin
 instagram_username:         nbahkp
-telegram_username:          IvanCristina
-xda_username:               IvanCristina
-xda_member_id:              6243385
-#facebook_username:         ivancristina
 linkedin_username:          ivan-cristina-368489168
 
 
@@ -71,7 +65,7 @@ netease_comment:            false
 
 # Analytics settings
 # Google Analytics
-ga_track_id: 'UA-99985915-2'            # Format: UA-xxxxxx-xx
+ga_track_id:                'UA-99985915-2'            # Format: UA-xxxxxx-xx
 ga_domain:                  ivancristina.github.io
 
 

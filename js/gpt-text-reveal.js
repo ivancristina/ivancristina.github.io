@@ -76,183 +76,183 @@ const textArrayFourteen = TextFourteen.split(" ");
 const textArrayFifteen = TextFifteen.split(" ");
 
 function revealTextOne() {
-  let index = 0;
+  let indexOne = 0;
   textElementOne.innerText = "";
   setInterval(() => {
-    if (index === textArrayOne.length) {
+    if (indexOne === textArrayOne.length) {
       clearInterval(this);
       return;
     }
-    textElementOne.innerText += ` ${textArrayOne[index]}`;
-    index++;
+    textElementOne.innerText += ` ${textArrayOne[indexOne]}`;
+    indexOne++;
   }, Math.random() * 300);
 }
 function revealTextTwo() {
-  let index = 0;
+  let indexTwo = 0;
   textElementTwo.innerText = "";
   setInterval(() => {
-    if (index === textArrayTwo.length) {
+    if (indexTwo === textArrayTwo.length) {
       clearInterval(this);
       return;
     }
-    textElementTwo.innerText += ` ${textArrayTwo[index]}`;
-    index++;
+    textElementTwo.innerText += ` ${textArrayTwo[indexTwo]}`;
+    indexTwo++;
   }, Math.random() * 300);
 }
 function revealTextThree() {
-  let index = 0;
+  let indexThree = 0;
   textElementThree.innerText = "";
   setInterval(() => {
-    if (index === textArrayThree.length) {
+    if (indexThree === textArrayThree.length) {
       clearInterval(this);
       return;
     }
-    textElementThree.innerText += ` ${textArrayThree[index]}`;
-    index++;
+    textElementThree.innerText += ` ${textArrayThree[indexThree]}`;
+    indexThree++;
   }, Math.random() * 300);
 }
 function revealTextFour() {
-  let index = 0;
+  let indexFour = 0;
   textElementFour.innerText = "";
   setInterval(() => {
-    if (index === textArrayFour.length) {
+    if (indexFour === textArrayFour.length) {
       clearInterval(this);
       return;
     }
-    textElementFour.innerText += ` ${textArrayFour[index]}`;
-    index++;
+    textElementFour.innerText += ` ${textArrayFour[indexFour]}`;
+    indexFour++;
   }, Math.random() * 300);
 }
 function revealTextFive() {
-  let index = 0;
+  let indexFive = 0;
   textElementFive.innerText = "";
   setInterval(() => {
-    if (index === textArrayFive.length) {
+    if (indexFive === textArrayFive.length) {
       clearInterval(this);
       return;
     }
-    textElementFive.innerText += ` ${textArrayFive[index]}`;
-    index++;
+    textElementFive.innerText += ` ${textArrayFive[indexFive]}`;
+    indexFive++;
   }, Math.random() * 300);
 }
 function revealTextSix() {
-  let index = 0;
+  let indexSix = 0;
   textElementSix.innerText = "";
   setInterval(() => {
-    if (index === textArraySix.length) {
+    if (indexSix === textArraySix.length) {
       clearInterval(this);
       return;
     }
-    textElementSix.innerText += ` ${textArraySix[index]}`;
-    index++;
+    textElementSix.innerText += ` ${textArraySix[indexSix]}`;
+    indexSix++;
   }, Math.random() * 300);
 }
 function revealTextSeven() {
-  let index = 0;
+  let indexSeven = 0;
   textElementSeven.innerText = "";
   setInterval(() => {
-    if (index === textArraySeven.length) {
+    if (indexSeven === textArraySeven.length) {
       clearInterval(this);
       return;
     }
-    textElementSeven.innerText += ` ${textArraySeven[index]}`;
-    index++;
+    textElementSeven.innerText += ` ${textArraySeven[indexSeven]}`;
+    indexSeven++;
   }, Math.random() * 300);
 }
 function revealTextEight() {
-  let index = 0;
+  let indexEight = 0;
   textElementEight.innerText = "";
   setInterval(() => {
-    if (index === textArrayEight.length) {
+    if (indexEight === textArrayEight.length) {
       clearInterval(this);
       return;
     }
-    textElementEight.innerText += ` ${textArrayEight[index]}`;
-    index++;
+    textElementEight.innerText += ` ${textArrayEight[indexEight]}`;
+    indexEight++;
   }, Math.random() * 300);
 }
 function revealTextNine() {
-  let index = 0;
+  let indexNine = 0;
   textElementNine.innerText = "";
   setInterval(() => {
-    if (index === textArrayNine.length) {
+    if (indexNine === textArrayNine.length) {
       clearInterval(this);
       return;
     }
-    textElementNine.innerText += ` ${textArrayNine[index]}`;
-    index++;
+    textElementNine.innerText += ` ${textArrayNine[indexNine]}`;
+    indexNine++;
   }, Math.random() * 300);
 }
 function revealTextTen() {
-  let index = 0;
+  let indexTen = 0;
   textElementTen.innerText = "";
   setInterval(() => {
-    if (index === textArrayTen.length) {
+    if (indexTen === textArrayTen.length) {
       clearInterval(this);
       return;
     }
-    textElementTen.innerText += ` ${textArrayTen[index]}`;
-    index++;
+    textElementTen.innerText += ` ${textArrayTen[indexTen]}`;
+    indexTen++;
   }, Math.random() * 300);
 }
 function revealTextEleven() {
-  let index = 0;
+  let indexEleven = 0;
   textElementEleven.innerText = "";
   setInterval(() => {
-    if (index === textArrayEleven.length) {
+    if (indexEleven === textArrayEleven.length) {
       clearInterval(this);
       return;
     }
-    textElementEleven.innerText += ` ${textArrayEleven[index]}`;
-    index++;
+    textElementEleven.innerText += ` ${textArrayEleven[indexEleven]}`;
+    indexEleven++;
   }, Math.random() * 300);
 }
 function revealTextTwelve() {
-  let index = 0;
+  let indexTwelve = 0;
   textElementTwelve.innerText = "";
   setInterval(() => {
-    if (index === textArrayTwelve.length) {
+    if (indexTwelve === textArrayTwelve.length) {
       clearInterval(this);
       return;
     }
-    textElementTwelve.innerText += ` ${textArrayTwelve[index]}`;
-    index++;
+    textElementTwelve.innerText += ` ${textArrayTwelve[indexTwelve]}`;
+    indexTwelve++;
   }, Math.random() * 300);
 }
 function revealTextThirteen() {
-  let index = 0;
+  let indexThirteen = 0;
   textElementThirteen.innerText = "";
   setInterval(() => {
-    if (index === textArrayThirteen.length) {
+    if (indexThirteen === textArrayThirteen.length) {
       clearInterval(this);
       return;
     }
-    textElementThirteen.innerText += ` ${textArrayThirteen[index]}`;
-    index++;
+    textElementThirteen.innerText += ` ${textArrayThirteen[indexThirteen]}`;
+    indexThirteen++;
   }, Math.random() * 300);
 }
 function revealTextFourteen() {
-  let index = 0;
+  let indexFourteen = 0;
   textElementFourteen.innerText = "";
   setInterval(() => {
-    if (index === textArrayFourteen.length) {
+    if (indexFourteen === textArrayFourteen.length) {
       clearInterval(this);
       return;
     }
-    textElementFourteen.innerText += ` ${textArrayFourteen[index]}`;
-    index++;
+    textElementFourteen.innerText += ` ${textArrayFourteen[indexFourteen]}`;
+    indexFourteen++;
   }, Math.random() * 300);
 }
 function revealTextFifteen() {
-  let index = 0;
+  let indexFifteen = 0;
   textElementFifteen.innerText = "";
   setInterval(() => {
-    if (index === textArrayFifteen.length) {
+    if (indexFifteen === textArrayFifteen.length) {
       clearInterval(this);
       return;
     }
-    textElementFifteen.innerText += ` ${textArrayFifteen[index]}`;
-    index++;
+    textElementFifteen.innerText += ` ${textArrayFifteen[indexFifteen]}`;
+    indexFifteen++;
   }, Math.random() * 300);
 }
 
@@ -270,8 +270,13 @@ revealTextEleven();
 revealTextTwelve();
 revealTextThirteen();
 revealTextFourteen();
-revealTextFifteen();
 
-const restartButton = document.querySelector("#restart-button");
+window.addEventListener('scroll', () => {
+    const scrollable = document.documentElement.scrollHeight - windows.innerHeight;
+    const scrolled = window.scrollY;
 
-restartButton.addEventListener("click", revealTextTwo);
+    if (Math.ceil() === scrollable) {
+        revealTextFifteen();
+        alert('You\'ve reached the bottom!');
+    }
+});
