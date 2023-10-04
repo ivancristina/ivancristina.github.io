@@ -18,7 +18,7 @@
 /* iOS 13 & macOS Mojave Dark mode support */
 @media (prefers-color-scheme: dark) {
   body, html {
-    background: black;
+    background: #161618;
     color: white!important;
   }
 
@@ -51,12 +51,12 @@
 
   .navbar-custom.is-fixed {
     border-color: #ebeeee48!important;
-    background-color: black!important;
+    background-color: #161618!important;
   }
 
   @media only screen and (max-width: 767px) {
     .navbar-collapse {
-      background-color: black!important;
+      background-color: #161618!important;
       box-shadow: rgba(255,255,255,.117647) 0 1px 6px,rgba(255,255,255,.239216) 0 1px 4px !important
     }
   }
@@ -79,7 +79,7 @@
   }
 
   select {
-    background: black!important;
+    background: #161618!important;
   }
 
   .pager li > a {
@@ -358,7 +358,6 @@ border-radius: 10px;
 }
 button.paper-button {
   border: 0;
-  /*font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;*/
   font-size: 1em;
   line-height: 25px;
   background-color: #ffffff;
@@ -670,7 +669,7 @@ body {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", sans-serif;
   line-height: 1.7;
   font-size: 16px;
   color: #404040;
@@ -692,7 +691,7 @@ h6 {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", sans-serif;
   line-height: 1.7;
   line-height: 1.1;
   font-weight: bold;
@@ -938,7 +937,7 @@ pre code {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", sans-serif;
   line-height: 1.7;
 }
 .navbar-custom .navbar-brand {
@@ -1089,7 +1088,7 @@ pre code {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", sans-serif;
   line-height: 1.7;
   font-size: 18px;
   line-height: 1.1;
@@ -1117,7 +1116,7 @@ pre code {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", sans-serif;
   line-height: 1.7;
   font-size: 17px;
   line-height: 1.4;
@@ -1192,7 +1191,7 @@ pre code {
     font-size: 16px;
   }
   .post-preview .post-meta {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .post-content-preview {
@@ -1298,7 +1297,7 @@ form .row:first-child .floating-label-form-group {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", sans-serif;
   line-height: 1.7;
   text-transform: uppercase;
   font-size: 14px;
@@ -1327,7 +1326,7 @@ form .row:first-child .floating-label-form-group {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", sans-serif;
   line-height: 1.7;
   text-transform: uppercase;
   font-size: 13px;
@@ -1512,7 +1511,7 @@ img::-moz-selection {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", "Arial", sans-serif;
   line-height: 1.7;
 }
 .mini-post-list .post-preview {
@@ -1546,7 +1545,7 @@ img::-moz-selection {
     font-size: 14px;
   }
   .mini-post-list .post-preview .post-meta {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 /* Tags support End*/

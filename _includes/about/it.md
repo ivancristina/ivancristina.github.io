@@ -1,11 +1,21 @@
 
 > Puoi leggere il mio portfolio completo [qui](/portfolio/)
 
-Ciao, sono **Ivan Cristina**, ma Ivan può bastare. Sono un **simulator engineer** alla *CAE* (e precedentemente a RyanAir), sviluppatore e grafico.
+Ciao, sono **Ivan Cristina**, ma Ivan può bastare. Sono un **Simulator Technician** alla *CAE* (e precedentemente a Ryanair), e <span title="So che è Latino Maccheronico, ma lo scriveva anche Cicerone">"in secundis"</span> anche (autodichiarato) sviluppatore e grafico.
 
-Diplomato come Perito in Trasporti e Logistica specializzato in campo Aeronautico presso l'ITAER "Arturo Ferrarin" di Catania. Ho studiato inoltre presso l'Aeroclub di Catania, in veste di Private Pilot Student ed attualmente lavoro e studio full-time presso l'Università Insubria di Varese .
+Diplomato come Perito in Trasporti e Logistica specializzato in campo Aeronautico presso l'ITAER "Arturo Ferrarin" di Catania, ho studiato inoltre presso l'Aeroclub di Catania, in veste di Private Pilot Student.
 
-Amo imparare nuovi linguaggu e solitamente realizzo alcuni progetti per mettermi alla prova. Potresti trovare qualcuno utile: in tal caso sentiti libero di visitare il mio [Github](https://github.com/ivancristina/).
+Adoro apprendere nuovi linguaggi. Oltre all'**Italiano**, parlo **Inglese**, **Spagnolo** e quel tanto di **Francese** che non ho ancora dimenticato.
+Tra lavoro e vita privata, ogni tanto mi tocca impararne anche qualcuno di programmazione. Nulla di eccelso, ma quanto basta per riuscire a combinare qualcosa in:
+- C, C#, Objective-C
+- ASP, ASP.net
+- VBS
+- Java
+- HTML, Markdown
+- CSS, Javascript
+- Proprietari lavorativi
+
+Mastico inoltre qualcosina di Swift e Kotlin. Solitamente realizzo alcuni progetti per mettermi alla prova. Potresti trovare qualcuno utile: in tal caso sentiti libero di visitare il mio [Github](https://github.com/ivancristina/).
 
 #### Progetti
 

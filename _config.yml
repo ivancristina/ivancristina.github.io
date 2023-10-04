@@ -6,7 +6,7 @@ email:                      ivancristina5@gmail.com
 description:                "Simulator Technician. Doing IT just when I have to"
 keyword:                    "ivan, ivanc, ivancristina, IvanCristina, @ivancristina, Ivan Cristina"
 url:                        "https://ivancristina.github.io/" # your host, for absolute URL
-baseurl:                    ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl:                    ""                            # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
 future:                     true
@@ -45,7 +45,7 @@ plugins:
 # document:                 http://jekyllrb.com/docs/configuration/#kramdown
 markdown:                   kramdown
 kramdown:
-  input:                    GFM                            # use Github Flavored Markdown !important
+  input:                    GFM                           # use Github Flavored Markdown !important
   syntax_highlighter_opts:
     span:
       line_numbers:         false
@@ -58,28 +58,25 @@ kramdown:
 # Disqus settings
 disqus_username:            ivancristina-github-io
 
-# Netease settings
-netease_comment:            false
-
 
 
 # Analytics settings
 # Google Analytics
-ga_track_id:                'UA-99985915-2'            # Format: UA-xxxxxx-xx
+ga_track_id:                'UA-99985915-2'               # Format: UA-xxxxxx-xx
 ga_domain:                  ivancristina.github.io
 
 
 
 # Sidebar settings
-sidebar:                    true                           # whether or not using Sidebar.
-sidebar-about-description:  "2000's Italian fella in love with planes ✈️"
-sidebar-avatar:             /img/avatar-ivan.jpg    # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar:                    true                          # whether or not using Sidebar.
+sidebar-about-description:  "Italian mate in love with Metal Birds ✈️ and Domotics 🏠"
+sidebar-avatar:             /img/avatar-ivan.jpg          # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # Featured Tags
-featured-tags:              true                     # whether or not using Feature-Tags
-featured-condition-size:    1              # A tag will be featured if the size of it is more than this condition value
+featured-tags:              true                          # whether or not using Feature-Tags
+featured-condition-size:    1                             # A tag will be featured if the size of it is more than this condition value
 
 
 
@@ -106,13 +103,22 @@ related: [
         title:              "SEAS",
         href:               "https://www.seas-italy.it"
     },{
-        title:              "RyanAir",
+        title:              "Ryanair",
         href:               "https://corporate.ryanair.com"
     },{
         title:              "easyJet",
         href:               "https://corporate.easyjet.com"
     },{
+        title:              "Accent",
+        href:               "https://ivancristina.github.io/repo/depiction/web/com.ivanc.accent.html"
+    },{
+        title:              "MoreRAM",
+        href:               "https://ivancristina.github.io/moreram/"
+    },{
         title:              "JactiveLTEam",
         href:               "https://jactivelteam.github.io"
+    },{
+        title:              "Neumorphic",
+        href:               "https://ivancristina.github.io/neumorphic/"
     }
 ]

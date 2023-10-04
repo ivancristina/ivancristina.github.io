@@ -1,11 +1,21 @@
 
 > You can read my complete portfolio [here](/portfolio/)
 
-Hi, I am **Ivan Cristina**, but Ivan's enough. I'm currently a **simulator engineer** at *CAE* (and previously RyanAir), developer and designer.
+Hi, I am **Ivan Cristina**, but Ivan's enough. I'm currently a **Simulator Technician** at *CAE* (and previously Ryanair), and <span title="I know it is Macaronic Latin, but even Cicero used it">"in secundis"</span> a (self-declared) developer and designer.
 
-Graduated in Transportation and Logistics specialized in Aeronautics at ITAER "Arturo Ferrarin" in Catania. Studied at the Aeroclub in Catania, as Private Pilot Student and currently full-time working and attending IT University in Varese (Italy).
+Graduated in Transportation and Logistics specialized in Aeronautics at ITAER "Arturo Ferrarin" in Catania, I also studied at the Catania's Aeroclub as Private Pilot Student.
 
-I love learning whatever kind of language and I usually started many projects in order to test myself. You can maybe find some of them useful: in that case feel free to check my [Github](https://github.com/ivancristina/).
+I love learning new languages. In addition to **Italian**, I speak **English**, **Spanish** and that little bit of **French** that I have not yet forgotten.
+Between work and private life, every now and then I have to learn some programming. Nothing exceptional, but just enough to be able to combine something in:
+- C, C#, Objective-C
+- ASP, ASP.net
+- VBS
+- Java
+- HTML, Markdown
+- CSS, Javascript
+- Work proprietaries
+
+I also know a little about Swift and Kotlin, and often start new projects to test myself. You can maybe find some of them useful: in that case feel free to check my [Github](https://github.com/ivancristina/).
 
 #### Projects
 

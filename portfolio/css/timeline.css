@@ -44,7 +44,7 @@ body, html {
 }
 
 .gradient {
-  color: #000; /* Fallback for older browsers */
+  color: #161618; /* Fallback for older browsers */
   color: rgba(0, 0, 0, 0.0)!important;
   background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
   background-size: 400% 400%;
@@ -446,7 +446,7 @@ img.icon {
 /* iOS 13 & macOS Mojave Dark mode support */
 @media (prefers-color-scheme: dark) {
   body, html {
-    background: black;
+    background: #161618;
   }
 
   a {
@@ -631,9 +631,9 @@ img.icon {
   border-radius: 50%;
   z-index: 10;
   animation: balance 2.5s linear infinite;
-  -moz-box-shadow:    inset 0 0 15px #000000;
-  -webkit-box-shadow: inset 0 0 15px #000000;
-  box-shadow:         inset 0 0 15px #000000;
+  -moz-box-shadow:    inset 0 0 15px #161618;
+  -webkit-box-shadow: inset 0 0 15px #161618;
+  box-shadow:         inset 0 0 15px #161618;
 }
 
 @keyframes rotate {
