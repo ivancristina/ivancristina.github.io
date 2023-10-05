@@ -2,20 +2,20 @@
 <html lang="en">
 
 {% include head.html %}
-{% seo %}
 
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="">
 
     {% include nav.html %}
+    {% include search.html %}
 
     {{ content }}
 
     {% include footer.html %}
 
 
-<!-- Socials thumbnail -->
-<img src="/img/avatar.jpg" width="0" height="0" />
+<!-- Image to hack wechat -->
+<img src="/img/avatar-ivan.jpg" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>

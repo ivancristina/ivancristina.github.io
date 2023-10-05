@@ -1,4 +1,4 @@
-> _If you wanna read the guide in English, just click on the selector right up here_
+> _For the English guide, just click on the selector right up here_
 
 Non è stato per niente facile, ma ne è valsa la pena! Un Hackintosh (quasi) completamente funzionante!
 

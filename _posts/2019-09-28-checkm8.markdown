@@ -5,7 +5,7 @@ subtitle:   "Explaining the iOS bootrom exploit"
 date:       2019-09-29
 author:     "Ivan"
 header-img: "img/post-bg-bootrom.jpg"
-header-mask:  0.3
+header-mask:  0.4
 catalog:      true
 tags:
     - iOS

@@ -5,6 +5,7 @@ subtitle:   "List of all my ROMs"
 date:       2017-05-23
 author:     "Ivan"
 header-img: "img/post-bg-rom.png"
+header-mask:  0.5
 tags:
     - OS
     - ROM

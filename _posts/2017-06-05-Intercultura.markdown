@@ -5,6 +5,7 @@ subtitle:   "Catania - Belgrade"
 date:       2017-06-05
 author:     "Ivan"
 header-img: "img/post-bg-intercultura.jpg"
+header-mask:  0.3
 tags:
     - Italy
     - Serbia

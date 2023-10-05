@@ -5,7 +5,7 @@ subtitle:   "How to begin with Theos Tweak Development"
 date:       2020-01-02
 author:     "Ivan"
 header-img: "img/post-bg-tweak.png"
-header-mask:  0.3
+header-mask:  0.4
 catalog:      true
 tags:
     - iOS

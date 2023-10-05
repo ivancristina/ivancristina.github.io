@@ -1,8 +1,10 @@
 /*
   Please note this CSS is currently in   prototype form. We'll implement a cleaned up version in Web Starter Kit.
 */
+
 .paper-snackbar {
-  transition-property: opacity, bottom, left, right, width, margin, border-radius;
+  transition-property: opacity, bottom, left, right, width, margin,
+    border-radius;
   transition-duration: 0.5s;
   transition-timing-function: ease;
   /*font-family: RobotoDraft;*/
@@ -17,9 +19,10 @@
   color: white;
   line-height: 22px;
   padding: 18px 24px;
-  bottom: 0;
+  bottom: 0px;
   opacity: 0;
 }
+
 @media (min-width: 640px) {
   .paper-snackbar {
     /*
@@ -32,6 +35,7 @@
       Action button: Roboto Medium 14 sp, all-caps text
       Default background fill: #323232 100%
     */
+
     min-width: 288px;
     max-width: 568px;
     display: inline-flex;
@@ -40,6 +44,7 @@
     bottom: -100px;
   }
 }
+
 @media (max-width: 640px) {
   .paper-snackbar {
     /*
@@ -48,10 +53,10 @@
     Multi-line snackbar height: 80 dp
     Text: Roboto Regular 14 sp
     Action button: Roboto Medium 14 sp, all-caps text
-    Default background fill: #323232 100%
+    Default background fill: #323232 100%  
   */
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
   }
 }
 
@@ -62,20 +67,25 @@
   font-size: inherit;
   text-transform: uppercase;
   color: #ffeb3b;
-  margin: 0 0 0 24px;
-  padding: 0;
+  margin: 0px 0px 0px 24px;
+  padding: 0px;
   min-width: min-content;
-  outline: 0;
+  outline: 0px;
 }
+
 /* Everything from here down is actually just for the demo - the material buttons and card, and various other pieces of styling */
+
 /* Variables */
+
 @blue: #4285f4;
 @white: #fff;
 @black: #000;
 @gray: #ccc;
 @button-width: 160px;
-@top: 1000; /* Buttons */
 
+@top: 1000;
+
+/* Buttons */
 .paper-button {
   position: relative;
   padding: 4px 0;
@@ -86,11 +96,12 @@
   color: @black;
   text-transform: uppercase;
   border-radius: 3px;
-  outline-color: @gray;
+  outline-color: @brand-gray;
 
   &:hover {
     cursor: pointer;
   }
+
   // we don't leverage ripple
   // .ripple {
   //     position: absolute;
@@ -124,12 +135,15 @@
 .paper-button.colored button {
   color: @blue;
 }
+
 // .paper-button .ripple {
 //   background-color: rgba(@gray, 0.5);
 // }
+
 // .paper-button.raised-button.colored .ripple {
 //   background-color: rgba(@white, 0.5);
 // }
+
 // .paper-button.raised-button .ripple {
 //   background-color: rgba(@gray, 0.5);
 // }
@@ -148,35 +162,35 @@
 }
 
 .paper-button[disabled] {
-  background-color: #EAEAEA !important;
-  color: #A8A8A8 !important;
+  background-color: #eaeaea !important;
+  color: #a8a8a8 !important;
   cursor: auto;
 }
 
 .paper-button:hover {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
-
 .paper-button.raised-button.colored:hover {
   background-color: #3367d6;
 }
 
 button.paper-button {
   border: 0;
+  /*font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;*/
   font-size: 1em;
   line-height: 25px;
   background-color: @white;
 }
 
 .paper-button input[type="submit"] {
-  outline-color: @gray;
+  outline-color: @brand-gray;
 }
 
 .paper-button.colored.raised-button input[type="submit"] {
   color: @white;
 }
-/** Shadows **/
 
+/** Shadows **/
 .paper-shadow-animated.paper-shadow {
   transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -208,8 +222,8 @@ button.paper-button {
 .paper-shadow-top-z-4 {
   box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21);
 }
-/** Card **/
 
+/** Card **/
 .card {
   background: white;
   width: 300px;

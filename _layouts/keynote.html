@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<!-- Socials thumbnail -->
-<!-- <img src="/img/avatar.jpg" width="0" height="0"> -->
+<!-- Image to hack wechat -->
+<!-- <img src="/img/avatar-ivan.jpg" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
 <!-- Post Header -->
@@ -23,7 +23,6 @@ layout: default
 				{{ content }}
 
                 <hr style="visibility: hidden;">
-
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
@@ -42,15 +41,16 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
+                <hr style="visibility: hidden;">
 
                 {% if site.disqus_username %}
-                <!-- Disquis comment start -->
+                <!-- disqus 评论框 start -->
                 <div class="comment">
                     <div id="disqus_thread" class="disqus-thread">
 
                     </div>
                 </div>
-                <!-- Disquis comment end -->
+                <!-- disqus 评论框 end -->
                 {% endif %}
 
             </div>
@@ -63,8 +63,8 @@ layout: default
                 <!-- Featured Tags -->
                 {% include featured-tags.html %}
 
-                <!-- Related Names -->
-                {% include related.html %}
+                <!-- Friends Blog -->
+                {% include friends.html %}
 
             </div>
         </div>
@@ -96,7 +96,7 @@ layout: default
 
 
 {% if site.disqus_username %}
-<!-- Disqus public JS code start (Needs to be inserted once) -->
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "{{site.disqus_username}}";
@@ -109,7 +109,7 @@ layout: default
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<!-- Disqus public JS code end -->
+<!-- disqus 公共JS代码 end -->
 {% endif %}
 
 
@@ -127,7 +127,7 @@ layout: default
 </script>
 <!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
 <script>
-    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/5.0.0/anchor.min.js",function(){
         anchors.options = {
           visible: 'always',
           placement: 'right',

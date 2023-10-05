@@ -1,7 +1,6 @@
 /* ===========================================================
  * sw-registration.js
  * ===========================================================
- * Ivan's Git 2018 @ivancristina
  * Copyright 2016 @huxpro
  * Licensed under Apache 2.0
  * Register service worker.
@@ -45,7 +44,7 @@ if(navigator.serviceWorker){
   navigator.serviceWorker.onmessage = (e) => {
     console.log('SW: SW Broadcasting:', event);
     const data = e.data
-
+    
     if(data.command == "UPDATE_FOUND"){
       console.log("UPDATE_FOUND_BY_SW", data);
       createSnackbar({

@@ -4,7 +4,8 @@ title:        "Hi ChatGPT"
 subtitle:     "Interview with OpenAI's GPT-3"
 date:         2023-02-13
 author:       "Ivan"
-header-img:   "img/post-bg-chatgpt.jpg"
+header-img:   "img/post-bg-chatgpt.gif"
+header-mask:  0.4
 tags:
     - Blog
     - AI

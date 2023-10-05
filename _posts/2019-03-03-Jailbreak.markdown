@@ -5,7 +5,7 @@ subtitle:     "With unc0ver for iOS 11.0 - 12.4"
 date:         2019-03-03
 author:       "Ivan"
 header-img:   "img/post-bg-unc0ver.jpg"
-header-mask:  0.3
+header-mask:  0.5
 catalog:      true
 multilingual: true
 tags:

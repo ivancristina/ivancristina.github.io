@@ -5,7 +5,7 @@ subtitle:   "A rant about a killer software"
 date:       2019-08-27
 author:     "Ivan"
 header-img: "img/post-bg-mcas.jpg"
-header-mask:  0.3
+header-mask:  0.4
 catalog:      true
 tags:
     - Boeing

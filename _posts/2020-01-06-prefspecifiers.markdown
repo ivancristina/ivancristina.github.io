@@ -5,7 +5,7 @@ subtitle:   "List of preference specifiers for Root.plist"
 date:       2020-01-06
 author:     "Ivan"
 header-img: "img/post-bg-tweak.png"
-header-mask:  0.3
+header-mask:  0.4
 catalog:      true
 tags:
     - iOS

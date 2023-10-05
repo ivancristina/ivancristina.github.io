@@ -3,11 +3,12 @@
     @param {boolean} short
 {% endcomment %}
 
-{% if include.type == 'post' %}
+{% if include.type == 'post' or include.type == 'page' %}
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
+        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');
+        background: {{ page.header-bg-css }};
     }
 
     {% if page.header-mask %}
@@ -19,8 +20,20 @@
     }
     {% endif %}
 </style>
+{% endif %}
+
+{% if include.type == 'post' %}
+{% if page.header-style == 'text' %}
+<header class="intro-header style-text" >
+{% else %}
 <header class="intro-header" >
+{% endif %}
     <div class="header-mask"></div>
+    {% if page.header-img-credit %}
+    <div class="header-img-credit">
+        Image by <a href="//{{page.header-img-credit-href}}">{{page.header-img-credit}}</a>
+    </div>
+    {% endif %}
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -55,14 +68,6 @@
         height: 100%;
         border: 0;
     }
-    /* Override Nav Style */
-    {% if page.navcolor == "invert" %}
-        .navbar-custom .nav li a,
-        .navbar-custom .nav li a:hover,
-        .navbar-custom .navbar-brand,
-        .navbar-custom .navbar-brand:hover {color:#777;}
-        .navbar-default .navbar-toggle .icon-bar {background-color:#777;}
-    {% endif %}
 </style>
 <header class="intro-header" >
     <iframe src="{{page.iframe}}"></iframe>
@@ -90,6 +95,7 @@
 
 {% if include.type == 'page' %}
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+  <div class="header-mask"></div>
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
