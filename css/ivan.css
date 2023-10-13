@@ -1854,3 +1854,42 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+.plane {
+  height: 10em!important;
+  width: auto!important;
+  min-height: 0.5rem;
+  max-width: 100%!important;
+  max-height: 100%!important;
+}
+.engine {
+  width: 5rem;
+  padding-bottom: 10px;
+}
+.airbus-progress {
+  background: #ccc;
+}
+.airbus-commercial-progress-bar {
+  background: #005587;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}
+.airbus-corporate-progress-bar {
+  background: #9a7c5e;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}
+.splide__pagination splide__pagination--ltr{
+  visibility: hidden!important;
+} 
+@media (min-width: 1200px) {
+  .engine {
+    width: 10%;
+  }
+}
+@media (min-width: 768px) {
+  .engine {
+    width: 10%;
+  }
+}
