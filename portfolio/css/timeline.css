@@ -3,7 +3,6 @@
 */
 
 @font-face {
-
   font-family: "Inter";
   // font-weight: 400;
   src: url("/fonts/Inter-Regular.woff");
@@ -216,17 +215,14 @@ h5 {
 .i-ryanair:before{background:url("../images/RyanAir.png") 50% 50% no-repeat;}
 .i-easyjet:before{background:url("../images/easyJet.png") 50% 50% no-repeat;}
 .i-cae:before{background:url("../images/CAE.png") 50% 50% no-repeat;}
-.i-google:before{background:url("../images/Google.png") 50% 50% no-repeat;}
-.i-iab:before{background:url("../images/iab.png") 50% 50% no-repeat;}
 .i-ferrarin:before{background:url("../images/Ferrarin.png") 50% 50% no-repeat;}
-.i-tea:before{background:url("../images/TEA Circle.png") 50% 50% no-repeat;}
-.i-tea-plain:before{background:url("../images/TEA.png") 50% 50% no-repeat;}
+.i-cogtech:before{background:url("../images/Cogtech.png") 50% 50% no-repeat;}
+.i-alsim:before{background:url("../images/Alsim.png") 50% 50% no-repeat;}
+.i-tea:before{background:url("../images/TEA.png") 50% 50% no-repeat;}
 .i-cambridge:before{background:url("../images/Cambridge.png") 50% 50% no-repeat;}
-.i-eipass:before{background:url("../images/Eipass.png") 50% 50% no-repeat;}
-.i-miur:before{background:url("../images/MIUR.png") 50% 50% no-repeat;}
-.i-verga:before{background:url("../images/Verga.png") 50% 50% no-repeat;}
 .i-xda:before{background:url("../images/XDA.png") 50% 50% no-repeat;}
 .i-android:before{background:url("../images/Android.png") 50% 50% no-repeat;}
+.i-apple:before{background:url("../images/Apple.png") 50% 50% no-repeat;}
 
 /******* Hux Branch *****/
 /* navbar - dark mode */
@@ -465,7 +461,7 @@ img.icon {
     color: white;
   }
 
-  h2, h3, h4, h5
+  h2, h3, h4, h5, #footer
   {
     color: white;
   }
